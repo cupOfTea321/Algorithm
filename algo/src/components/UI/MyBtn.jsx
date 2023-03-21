@@ -1,12 +1,12 @@
 import React from 'react';
 import {Button, Typography} from "@mui/material";
 import './UIStyle.css'
-const MyBtn = () => {
+const MyBtn = ({radius, display = 'flex'}) => {
     return (
-        <Button className={'myBtn'} sx={{
-            display: { xs: 'none', md: 'flex' },
+        <Button className={'myBtn allBtns'} sx={{
+            display: { xs: display, md: 'flex' },
             backgroundColor: '#A40000',
-            borderRadius: '14px',
+            borderRadius: radius,
             padding: {xl: '18px 30px',  md: '6px 10px', sm: '2px'}
         }}>
             <Typography sx={{
