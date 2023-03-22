@@ -4,6 +4,7 @@ import backImg from '../assets/back1.png'
 import FirstBanner from "../components/FirstBanner.jsx";
 import MainServices from "../components/MainServices.jsx";
 import PowersBlock from "../components/PowersBlock.jsx";
+import StagesBlock from "../components/StagesBlock.jsx";
 
 const MainPage = () => {
     return (
@@ -17,6 +18,7 @@ const MainPage = () => {
             </Box>
             <MainServices/>
             <PowersBlock/>
+            <StagesBlock/>
         </>
 
     );

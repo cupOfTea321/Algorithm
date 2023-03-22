@@ -8,14 +8,14 @@ const FirstBanner = () => {
         <Container maxWidth={'xl'}>
             <Box sx={{
                 color: 'white',
-                width: '63%',
+                width: {md: '63%', xs: '100%'},
                 display: 'flex',
                 flexDirection: 'column',
                 paddingTop: '15%',
                 gap: 2
             }}>
                 <Typography variant={'h1'} sx={{
-                    fontSize: '48px',
+                    fontSize: {lg: '48px', md: '36px', sm: '30px', xs: '36px'},
 
                 }}>
                     ОПТОВЫЕ ПОСТАВКИ БИОДИЗЕЛЬНОГО И ДИЗЕЛЬНОГО ТОПЛИВА

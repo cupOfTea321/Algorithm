@@ -26,19 +26,23 @@ const MainServices = () => {
                 </Typography>
                 <Box sx={{
                     marginTop: '2%',
-                    marginBottom: '5%',
-                    display: 'grid',
+                    marginBottom: {sm: '100px', xs: '180px'},
+                    display: {sm: 'grid'},
+
                     justifyContent: 'center',
                     gridTemplateColumns: 'repeat(2, 250px)',
                     gridTemplateRows: 'repeat(2, 70px)',
                     gap: 2,
                     height: '70px',
+
                 }}>
                     {services.map(service => (
                         <Box  sx={{
                             display: 'flex',
                             justifyContent: 'center',
-
+                            marginBottom: '20px',
+                            // padding: '10px'
+                            height: '45px'
                         }}>
                             <ServicesBtn text={service}/>
                         </Box>

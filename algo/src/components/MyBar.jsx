@@ -12,9 +12,6 @@ const pages = [
     {name: 'Каталог', route: '/clients'},
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
-
-
-
 const MyBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
@@ -58,8 +55,9 @@ const MyBar = () => {
                             aria-haspopup="true"
                             onClick={handleOpenNavMenu}
                             color="black"
+                            style={{height: '75px', width: '75px'}}
                         >
-                            <MenuIcon />
+                            <MenuIcon  style={{height: '45px', width: '45px'}}/>
                         </IconButton>
                         <Menu
                             id="menu-appbar"
@@ -99,6 +97,7 @@ const MyBar = () => {
                         <Box
                             sx={{
                                 mr: 2,
+                                // height: '60px',
                                 display: { xs: 'flex', md: 'none' },
                                 // flexGrow: 1,
                             }}>
@@ -107,7 +106,7 @@ const MyBar = () => {
                         <Box  sx={{  display: { xs: 'none', md: 'flex' } }}>
                             {pages.map((page) => (
                                 <NavLink key={page.name} style={{color: 'black'}} to={page.route}>
-                                    <MenuItem sx={{fontSize: '23px'}} onClick={handleCloseNavMenu}>
+                                    <MenuItem sx={{fontSize: {xl: '23px', lg: '18px'}}} onClick={handleCloseNavMenu}>
                                         {page.name}
                                     </MenuItem>
                                 </NavLink>

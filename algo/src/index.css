@@ -7,11 +7,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif !important;
-}
 
+}
+#root{
+
+}
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+
 }
 
 body {
@@ -20,6 +24,7 @@ body {
   position: relative;
   background-color: #F0EFEF !important;
   color: #000000 !important;
+  /*min-width: 450px;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
