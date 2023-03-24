@@ -7,7 +7,7 @@ const powersFirst = [
     {name: '4 ЖД-вагона', about: 'Прием в сутки',},
     {name: '6-12 ЖД-вагонов', about: 'Отгрузка в сутки',},
     {name: '6 единовременно', about: 'Отстой вагонов на собственных путях',},
-    {name: 'до 800 т сутки', about: 'Прием топлива из автомобильных цистертрн',},
+    {name: 'до 800 т сутки', about: 'Прием топлива из автомобильных цистерн',},
 ]
 const powersSecond = [
     {name: 'Цистерна 20 000 т', about: 'Максимальная мощность\n' + 'экспортных отгрузок\n' + 'ЖД-автоцистерн'},
@@ -38,10 +38,10 @@ const PowersBlock = () => {
                         maxWidth: '18%',
                         alignItems: '',
                         height: '150px',
-
+                        marginLeft: {lg: '0%', xs:'-4%'},
                     }}>
                         <Typography className={'oswFont'} variant={'h5'} sx={{
-                            fontSize: {xl: '20px', lg: '16px', md: '12px', sm: '16px', xs: '12px'},
+                            fontSize: {xl: '20px', lg: '16px', md: '12px', sm: '16px', xs: '10px'},
 
                             // marginTop: '40px'
                         }}>
@@ -72,7 +72,7 @@ const PowersBlock = () => {
                         </Box>
 
                         <Typography variant={'h6'} sx={{
-                            fontSize: {xl: '20px', lg: '16px', md: '12px',  sm: '16px', xs: '12px'},
+                            fontSize: {xl: '20px', lg: '16px', md: '12px',  sm: '16px', xs: '10px'},
                             marginBottom: '30%'
                         }}>
                             {power.about}
@@ -87,6 +87,7 @@ const PowersBlock = () => {
                 width: '100%',
                 alignItems: 'center',
                 marginTop: '3%',
+                marginLeft: {lg: '0%', xs:'-4%'},
             }}>
                 {powersSecond.map(power => (
                     <Grid item xs={4} sx={{
@@ -96,7 +97,7 @@ const PowersBlock = () => {
                         height: '150px'
                     }}>
                         <Typography className={'oswFont'} variant={'h5'}
-                                    sx={{fontSize: {xl: '20px', lg: '16px', md: '12px', sm: '16px', xs: '12px'}}}>
+                                    sx={{fontSize: {xl: '20px', lg: '16px', md: '12px', sm: '16px', xs: '10px'}}}>
                             {power.name}
                         </Typography>
                         <Box sx={{display: {md: 'block', sm: 'none', xs: 'none'},}}>
@@ -123,7 +124,7 @@ const PowersBlock = () => {
                         }}>
                             <img src={pointLeft} alt="point"/>
                         </Box>
-                        <Typography variant={'h6'} sx={{fontSize: {xl: '20px', lg: '16px', md: '12px',  sm: '16px', xs: '12px'}}}>
+                        <Typography variant={'h6'} sx={{fontSize: {xl: '20px', lg: '16px', md: '12px',  sm: '16px', xs: '10px'}}}>
                             {power.about}
                         </Typography>
 

@@ -16,9 +16,10 @@ const StagesBlock = () => {
             height: '740px',
             borderRadius: '40%',
             width: '200%',
-            marginLeft: '-50%'
+            marginLeft: '-50%',
+
         }}>
-            <Container maxWidth={'xl'} sx={{marginTop: '5%', paddingTop: '5%', width: '100vw'}}>
+            <Container maxWidth={'xl'} sx={{marginTop: '5%', paddingTop: '5%', width: '100vw', }}>
                 <Typography variant={'h3'} sx={{color: 'white', fontSize: '40px', textAlign: 'center'}}>
                     Как происходит работа?
                 </Typography>
@@ -44,7 +45,7 @@ const StagesBlock = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <Box sx={{display: 'flex', justifyContent: 'center', marginTop: '20px'}}>
+                <Box sx={{display: 'flex', justifyContent: 'center', marginTop: {md: '-40px', xs:'20px'}}}>
                     <MyBtn radius={'14px'}/>
                 </Box>
 
