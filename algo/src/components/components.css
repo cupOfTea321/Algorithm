@@ -35,3 +35,25 @@
         height: 160px;
     }
 }
+
+/*FOR LINES BLOCK*/
+@media (min-width: 1520px) {
+    #rightOil{
+        margin-left: -140px;
+    }
+    #leftOil{
+        margin-right: -80px;
+    }
+    #centerOil{
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 1520px) {
+    #rightOil{
+        margin-left: -120px;
+    }
+    #leftOil{
+        margin-right: -60px;
+    }
+}

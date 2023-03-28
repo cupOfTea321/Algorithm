@@ -16,7 +16,7 @@ const CircleBlock = () => {
     return (
         <Container maxWidth={'xl'}>
             <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <Typography sx={{fontSize: {sm:'34px', xs: '24px'}, textAlign: 'center', marginTop: '40px'}}>
+                <Typography sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: 'center', marginTop: '40px', fontWeight: 'bold'}}>
                     Преимущества биодизельного топлива
                 </Typography>
                 <Box sx={{display: {sm: 'flex', xs: 'none'}, flexDirection: 'column', alignItems: 'center'}}>
@@ -25,7 +25,7 @@ const CircleBlock = () => {
                 <Box sx={{display: {sm: 'none', xs: 'flex', flexDirection: 'column', alignItems: 'center'}}}>
                     {advantages.map(advantage => (
                         <>
-                            <Typography sx={{textAlign: 'center', marginTop: '10px'}}>
+                            <Typography sx={{textAlign: 'center', marginTop: '10px', fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>
                                 {advantage}
                             </Typography>
                             <img src={blood} alt='blood' style={{width: '20px', marginTop: '10px'}}/>

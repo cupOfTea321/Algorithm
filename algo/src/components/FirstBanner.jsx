@@ -28,10 +28,11 @@ const FirstBanner = () => {
                 <Box sx={{
                     display: 'flex',
                     gap: 2,
-                    marginTop: '5%'
+                    marginTop: '5%',
+                    flexDirection: {sm: 'row', xs: 'column'},
                 }}>
-                    <MyBtn radius={'32px'}/>
-                    <SecondBtn/>
+                    <MyBtn radius={'32px'} height={'70px'}/>
+                    <SecondBtn height={'70px'}/>
                 </Box>
             </Box>
         </Container>

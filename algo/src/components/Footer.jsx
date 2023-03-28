@@ -71,7 +71,7 @@ const Footer = () => {
                             <Typography>продукция</Typography>
                         </Box>
                         <Box sx={{width: {lg: '15%', xs: '50%'}}}>
-                            <MyBtn />
+                            <MyBtn width={'250px'} />
                         </Box>
                     </Box>
                 </Box>

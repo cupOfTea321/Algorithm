@@ -7,6 +7,7 @@ import AboutBlock from "../components/aboutComponents/AboutBlock.jsx";
 import AdvantagesBlock from "../components/AdvantagesBlock.jsx";
 import CircleBlock from "../components/aboutComponents/CircleBlock.jsx";
 import NewsAboutBlock from "../components/aboutComponents/NewsAboutBlock.jsx";
+import LinesBlock from "../components/aboutComponents/LinesBlock.jsx";
 
 const AboutPage = () => {
     return (
@@ -14,8 +15,8 @@ const AboutPage = () => {
             <Box sx={{
                 height: '740px',
                 background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg})`,
-                backgroundSize: 'cover',
-                borderRadius: {sm:'0 0px 10% 10%',xs: '0 0 5% 5%'},
+                backgroundSize: {sm: 'cover'},
+                borderRadius: {sm:'0 0px 15% 15%',xs: '0 0 0 0'},
                 zIndex: '100',
                 position: 'absolute',
                 top: '125px',
@@ -34,7 +35,7 @@ const AboutPage = () => {
             </Box>
             <CircleBlock/>
             <NewsAboutBlock/>
-
+            <LinesBlock/>
         </>
     );
 };
