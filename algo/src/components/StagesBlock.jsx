@@ -13,14 +13,14 @@ const StagesBlock = () => {
     return (
         <Box sx={{
             background: '#908B8B',
-            height: '740px',
+            height: {md: '740px', sm: '840px', xs: '790px'},
             borderRadius: '40%',
             width: '200%',
             marginLeft: '-50%',
 
         }}>
             <Container maxWidth={'xl'} sx={{marginTop: '5%', paddingTop: '5%', width: '100vw', }}>
-                <Typography variant={'h3'} sx={{color: 'white', fontSize: '40px', textAlign: 'center'}}>
+                <Typography className={'oswFont'} variant={'h3'} sx={{color: 'white', fontSize: '40px', textAlign: 'center'}}>
                     Как происходит работа?
                 </Typography>
                 <Grid container sx={{display: 'flex', justifyContent: 'space-between', width: '100%'}}>
@@ -36,7 +36,7 @@ const StagesBlock = () => {
                 <Grid container sx={{color: 'white', marginLeft: '-4%', display: 'flex', textAlign: 'center', marginTop: {lg: '-50px', md: '-280px', sm: '-520px', xs: '-520px'}}}>
                     {stages.map(stage => (
                         <Grid item lg={3} md={6} sm={12} xs={12} sx={{marginBottom: {md: '60px', sm: '30px', xs: '25px'}}}>
-                            <Typography variant={'h4'} sx={{fontSize: {lg:'34px', md: '26px', sm: '32px', xs: '32px'}}}>
+                            <Typography className={'oswFont'} variant={'h4'} sx={{fontSize: {lg:'34px', md: '26px', sm: '32px', xs: '32px'}}}>
                                 {stage.name}
                             </Typography>
                             <Typography variant={'h5'} sx={{fontSize: {lg: '24px', md: '18px', sm: '26px', xs: '18px'}}}>
@@ -46,7 +46,7 @@ const StagesBlock = () => {
                     ))}
                 </Grid>
                 <Box sx={{display: 'flex', justifyContent: 'center', marginTop: {md: '-40px', xs:'20px'}}}>
-                    <MyBtn radius={'14px'}/>
+                    <MyBtn radius={'14px'} height={'70px'}/>
                 </Box>
 
             </Container>

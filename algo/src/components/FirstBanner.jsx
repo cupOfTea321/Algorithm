@@ -2,19 +2,19 @@ import React from 'react';
 import {Box, Container, Typography} from "@mui/material";
 import MyBtn from "./UI/MyBtn.jsx";
 import SecondBtn from "./UI/SecondBtn.jsx";
-
+import './components.css'
 const FirstBanner = () => {
     return (
         <Container maxWidth={'xl'}>
             <Box sx={{
                 color: 'white',
-                width: {md: '63%', xs: '100%'},
+                width: {md: '48%', xs: '100%'},
                 display: 'flex',
                 flexDirection: 'column',
                 paddingTop: '15%',
                 gap: 2
             }}>
-                <Typography variant={'h1'} sx={{
+                <Typography className={'oswFont'} variant={'h1'} sx={{
                     fontSize: {lg: '48px', md: '36px', sm: '30px', xs: '36px'},
 
                 }}>

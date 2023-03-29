@@ -13,7 +13,7 @@ const advantages = [
 const AdvantagesBlock = () => {
     return (
         <Container maxWidth={'xl'}>
-            <Typography variant={'h4'} sx={{textAlign: 'center', marginTop: '5%'}}>
+            <Typography className={'oswFont'} variant={'h4'} sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: 'center', marginTop: '5%', }}>
                 Почему вы должны выбрать “Алгоритм”?
             </Typography>
             <Box sx={{marginTop: '4%', marginBottom: '5%'}}>

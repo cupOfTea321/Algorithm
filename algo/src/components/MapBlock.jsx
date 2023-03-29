@@ -7,7 +7,7 @@ const MapBlock = () => {
         <Container maxWidth={'xl'} sx={{marginTop: '5%'}}>
             <Box sx={{display: 'flex', alignItems: 'center', justifyContent: {lg: 'flex-end', md: 'center', sm: 'center', xs: 'center'}}}>
                 <img src={mark} alt="mark" style={{width: '55px', height: '70px'}}/>
-                <Typography sx={{fontSize: '42px', marginLeft: '2%'}}>
+                <Typography className={'oswFont'} sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: '', marginLeft: '2%'}}>
                     Мы на карте
                 </Typography>
             </Box>

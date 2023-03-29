@@ -2,6 +2,9 @@ import React from 'react';
 import {Box, Container, Grid, Typography} from "@mui/material";
 import './components.css'
 import pointLeft from '../assets/pointLeft.png'
+import mobileLine from "../assets/mobileLine.png";
+import MyBtn from "./UI/MyBtn.jsx";
+import SecondBtn from "./UI/SecondBtn.jsx";
 
 const powersFirst = [
     {name: '4 ЖД-вагона', about: 'Прием в сутки',},
@@ -18,15 +21,18 @@ const powersSecond = [
 const PowersBlock = () => {
     return (
         <Container maxWidth={'xl'}>
-            <Typography variant={'h4'} sx={{
-                marginTop: '10%',
-                fontSize: '26px',
+            <Typography className={'oswFont'} variant={'h4'} sx={{
+                marginTop: {sm: '150px', xs:'280px'},
+                fontSize: {sm:'34px', xs: '28px'},
                 marginBottom: '3%',
+                textAlign: {md: 'left',xs: 'center'}
             }}>
                 Предоставляемые мощности:
             </Typography>
+
+            {/*ПК версия*/}
             <Box sx={{
-                display: 'flex',
+                display: {sm: 'flex', xs: 'none'},
                 // gap: 2,
                 justifyContent: 'space-between',
                 width: '100%',
@@ -82,7 +88,7 @@ const PowersBlock = () => {
             </Box>
 
             <Box sx={{
-                display: 'flex',
+                display: {sm: 'flex', xs: 'none'},
                 justifyContent: 'space-between',
                 width: '100%',
                 alignItems: 'center',
@@ -131,6 +137,27 @@ const PowersBlock = () => {
                     </Grid>
                 ))}
             </Box>
+
+            {/*  Мобильная версия  */}
+            <Box sx={{display: {lg: 'none', md: 'flex', sm: 'flex', xs: 'flex'}, flexDirection: 'column', alignItems: 'center'}}>
+                {powersFirst.map(item => (
+                    <>
+                        <img src={mobileLine} style={{height: '90px', width: '21px', backgroundSize: 'cover', marginBottom: '20px', marginTop: '20px'}} alt=""/>
+                        <Typography className={'oswFont'} sx={{fontSize: {sm:'28px', xs: '24px'}, textAlign: 'center'}}>{item.name}</Typography>
+                        <Typography sx={{fontSize: {sm:'28px', xs: '20px'}, textAlign: 'center'}}>{item.about}</Typography>
+                    </>
+
+                ))}
+                {powersSecond.map(item => (
+                    <>
+                        <img src={mobileLine} style={{height: '90px', width: '21px', backgroundSize: 'cover', marginBottom: '20px', marginTop: '20px'}} alt=""/>
+                        <Typography className={'oswFont'}  sx={{fontSize: {sm:'28px', xs: '24px'}, textAlign: 'center'}}>{item.name}</Typography>
+                        <Typography sx={{fontSize: {sm:'28px', xs: '20px'}, textAlign: 'center'}}>{item.about}</Typography>
+                    </>
+
+                ))}
+            </Box>
+
         </Container>
 
 

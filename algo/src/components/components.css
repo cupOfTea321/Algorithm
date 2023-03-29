@@ -57,3 +57,23 @@
         margin-right: -60px;
     }
 }
+
+/*FOR SERVISES*/
+@media (min-width: 1520px) {
+    .serviceImg{
+        margin-left: -20px;
+        margin-top: -20px;
+    }
+}
+@media (max-width: 1520px) {
+    .serviceImg{
+        margin-left: -5px;
+        margin-top: -20px;
+    }
+}
+@media (max-width: 900px) {
+    .serviceImg{
+        margin-left: 0px;
+        margin-top: -20px;
+    }
+}

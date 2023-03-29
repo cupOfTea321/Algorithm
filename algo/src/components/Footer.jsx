@@ -33,44 +33,44 @@ const Footer = () => {
         }}>
             <Container maxWidth={'xl'}>
                 <Box sx={{display: 'flex', width: '100%', flexDirection: {sm:'row', xs: 'column'}, alignItems: {sm: 'flex-start', xs:'center'}}}>
-                    <Box sx={{marginRight: '6%'}}>
+                    <Box sx={{marginRight: '6%', marginTop: {sm: '0px', xs: '20px'}, width: {md:'10%'}}}>
                         <img id={'footerLogo'} style={{ marginBottom: '3%'}} src={logo} alt="LOGO"/>
-                        <Typography sx={{marginBottom: '1%'}}>
+                        <Typography sx={{marginBottom: '1%', fontSize: {sm: '16px', xs: '20px'}, fontWeight: 'bold'}}>
                             +7 965 235 77 33
                         </Typography>
-                        <Typography>
-                            <a href="#" style={{textDecoration: 'underline'}}>info@alg-bio.ru</a>
+                        <Typography sx={{fontSize: {sm: '16px', xs: '20px'}, fontWeight: 'bold'}}>
+                            <a href="#" style={{textDecoration: 'underline', color: 'black'}}>info@alg-bio.ru</a>
                         </Typography>
                     </Box>
                     <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: {sm: 'flex-start', xs:'center'}, width:'100%', flexDirection: {sm:'row', xs: 'column'}}}>
-                        <Box sx={{width: {lg: '15%', xs: '50%'}}}>
-                            <Typography sx={{fontWeight: 'bold'}}>Главная</Typography>
+                        <Box sx={{width: {lg: '15%', xs: '40%'}}}>
+                            <Typography sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>Главная</Typography>
                             {mainCol.map(row => (
-                                <Typography>{row.name}</Typography>
+                                <Typography sx={{fontSize: {sm: '16px', xs: '20px'}}}>{row.name}</Typography>
                             ))}
                         </Box>
-                        <Box sx={{width: {lg: '15%', xs: '50%'}}}>
-                            <Typography sx={{fontWeight: 'bold'}}>О биодизеле</Typography>
+                        <Box sx={{width: {lg: '15%', xs: '40%'}}}>
+                            <Typography sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>О биодизеле</Typography>
                             {aboutCol.map(row => (
-                                <Typography>{row.name}</Typography>
+                                <Typography sx={{fontSize: {sm: '16px', xs: '20px'}}}>{row.name}</Typography>
                             ))}
                         </Box>
-                        <Box sx={{width: {lg: '15%', xs: '50%'}}}>
-                            <Typography sx={{fontWeight: 'bold'}}>Клиентам/партнерам</Typography>
+                        <Box sx={{width: {lg: '15%', xs: '40%'}}}>
+                            <Typography sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>Клиентам/партнерам</Typography>
                             {clientsCol.map(row => (
-                                <Typography>{row.name}</Typography>
+                                <Typography sx={{fontSize: {sm: '16px', xs: '20px'}}}>{row.name}</Typography>
                             ))}
                         </Box>
-                        <Box sx={{width: {lg: '15%', xs: '50%'}}}>
-                            <Typography sx={{fontWeight: 'bold'}}>Услуги</Typography>
-                            <Typography>Перечень услуг</Typography>
-                            <Typography>Мощности</Typography>
+                        <Box sx={{width: {lg: '15%', xs: '40%'}}}>
+                            <Typography sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>Услуги</Typography>
+                            <Typography sx={{fontSize: {sm: '16px', xs: '20px'}}}>Перечень услуг</Typography>
+                            <Typography sx={{fontSize: {sm: '16px', xs: '20px'}}}>Мощности</Typography>
                         </Box>
-                        <Box sx={{width: {lg: '15%', xs: '50%'}}}>
-                            <Typography sx={{fontWeight: 'bold'}}>Каталог</Typography>
-                            <Typography>продукция</Typography>
+                        <Box sx={{width: {lg: '15%', xs: '40%'}}}>
+                            <Typography sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>Каталог</Typography>
+                            <Typography sx={{fontSize: {sm: '16px', xs: '20px'}}}>продукция</Typography>
                         </Box>
-                        <Box sx={{width: {lg: '15%', xs: '50%'}}}>
+                        <Box sx={{width: {lg: '15%', xs: '50%'}, display: {md: 'flex', sm: 'none', xs: 'none'}}}>
                             <MyBtn width={'250px'} />
                         </Box>
                     </Box>

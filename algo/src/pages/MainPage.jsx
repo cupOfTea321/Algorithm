@@ -25,13 +25,13 @@ const MainPage = () => {
             <PowersBlock/>
             <StagesBlock/>
             <AdvantagesBlock/>
-            <Box sx={{
-                height: '520px',
-                background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg2})`,
-                backgroundSize: 'cover'
-            }}>
-                <ArticlesPage/>
-            </Box>
+            {/*<Box sx={{*/}
+            {/*    height: '520px',*/}
+            {/*    background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg2})`,*/}
+            {/*    backgroundSize: 'cover'*/}
+            {/*}}>*/}
+            {/*    <ArticlesPage/>*/}
+            {/*</Box>*/}
             <MapBlock/>
             <FormBlock/>
         </>
