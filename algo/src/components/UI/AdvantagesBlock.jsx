@@ -1,6 +1,6 @@
 import React from 'react';
 import {Box, Container, Typography} from "@mui/material";
-import point from '../assets/pointRight.png'
+import point from '../../assets/pointRight.png'
 const advantages = [
     'Одни из первых, кто занимается биодизельным топливом',
     'Готовы к научно-исследовательскому обмену',

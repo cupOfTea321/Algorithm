@@ -7,9 +7,9 @@ import MyBtn from "./UI/MyBtn.jsx";
 const pages = [
     {name: 'Главная', route: '/'},
     {name: 'О биодизеле', route: '/about'},
-    {name: 'Клиентам/партнерам', route: '/delivery'},
+    {name: 'Клиентам/партнерам', route: '/clients'},
     {name: 'Услуги', route: '/services'},
-    {name: 'Каталог', route: '/clients'},
+    {name: 'Каталог', route: '/delivery'},
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const MyBar = () => {

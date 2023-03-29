@@ -5,11 +5,11 @@ import backImg2 from '../assets/back2.png'
 import FirstBanner from "../components/FirstBanner.jsx";
 import MainServices from "../components/MainServices.jsx";
 import PowersBlock from "../components/PowersBlock.jsx";
-import StagesBlock from "../components/StagesBlock.jsx";
-import AdvantagesBlock from "../components/AdvantagesBlock.jsx";
+import StagesBlock from "../components/UI/StagesBlock.jsx";
+import AdvantagesBlock from "../components/UI/AdvantagesBlock.jsx";
 import ArticlesPage from "../components/ArticlesPage.jsx";
 import MapBlock from "../components/MapBlock.jsx";
-import FormBlock from "../components/FormBlock.jsx";
+import FormBlock from "../components/UI/FormBlock.jsx";
 
 const MainPage = () => {
     return (

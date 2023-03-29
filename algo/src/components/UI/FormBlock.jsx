@@ -1,6 +1,6 @@
 import React from 'react';
 import {Box, Checkbox, Container, TextField, Typography} from "@mui/material";
-import MyBtn from "./UI/MyBtn.jsx";
+import MyBtn from "./MyBtn.jsx";
 import {CheckBox} from "@mui/icons-material";
 
 const FormBlock = () => {

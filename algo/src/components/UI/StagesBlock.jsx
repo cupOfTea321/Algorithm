@@ -1,6 +1,6 @@
 import React from 'react';
 import {Box, Container, Grid, Typography} from "@mui/material";
-import MyBtn from "./UI/MyBtn.jsx";
+import MyBtn from "./MyBtn.jsx";
 
 const stageNumbers = [1, 2, 3, 4]
 const stages = [

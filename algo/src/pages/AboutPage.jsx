@@ -4,7 +4,7 @@ import backImg from "../assets/Union.png";
 import backImg2 from "../assets/aboutBack2.png";
 import AboutBanner from "../components/aboutComponents/AboutBanner.jsx";
 import AboutBlock from "../components/aboutComponents/AboutBlock.jsx";
-import AdvantagesBlock from "../components/AdvantagesBlock.jsx";
+import AdvantagesBlock from "../components/UI/AdvantagesBlock.jsx";
 import CircleBlock from "../components/aboutComponents/CircleBlock.jsx";
 import NewsAboutBlock from "../components/aboutComponents/NewsAboutBlock.jsx";
 import LinesBlock from "../components/aboutComponents/LinesBlock.jsx";
