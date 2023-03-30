@@ -4,7 +4,7 @@ import backImg from '../assets/back1.png'
 import backImg2 from '../assets/back2.png'
 import FirstBanner from "../components/FirstBanner.jsx";
 import MainServices from "../components/MainServices.jsx";
-import PowersBlock from "../components/PowersBlock.jsx";
+import PowersBlock from "../components/UI/PowersBlock.jsx";
 import StagesBlock from "../components/UI/StagesBlock.jsx";
 import AdvantagesBlock from "../components/UI/AdvantagesBlock.jsx";
 import ArticlesPage from "../components/ArticlesPage.jsx";

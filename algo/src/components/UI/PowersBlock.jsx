@@ -1,10 +1,10 @@
 import React from 'react';
 import {Box, Container, Grid, Typography} from "@mui/material";
-import './components.css'
-import pointLeft from '../assets/pointLeft.png'
-import mobileLine from "../assets/mobileLine.png";
-import MyBtn from "./UI/MyBtn.jsx";
-import SecondBtn from "./UI/SecondBtn.jsx";
+import '../components.css'
+import pointLeft from '../../assets/pointLeft.png'
+import mobileLine from "../../assets/mobileLine.png";
+import MyBtn from "./MyBtn.jsx";
+import SecondBtn from "./SecondBtn.jsx";
 
 const powersFirst = [
     {name: '4 ЖД-вагона', about: 'Прием в сутки',},

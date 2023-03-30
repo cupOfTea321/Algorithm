@@ -27,7 +27,7 @@ const ClientsMainBlock = () => {
                 }}>
                     Ознакомьтесь с необходимой документацией перед оформлением заказа
                 </Typography>
-                <Box sx={{display: 'flex', width: '100%', justifyContent: 'center', gap: 6, marginTop: '5%'}}>
+                <Box sx={{display: 'flex', width: '100%', justifyContent: 'center', gap: {sm: 6, xs: 1}, marginTop: '5%'}}>
                     <Box sx={{background: 'white', borderRadius: '20px', width: '40%', }}>
                         <Typography sx={{fontSize: {md: '34px', sm:'26px', xs: '20px'}, color: '#A81A1A'}}>
                             Заключение договора
@@ -64,7 +64,7 @@ const ClientsMainBlock = () => {
                     </Typography>
                 </Box>
                 <Box sx={{display: 'flex', justifyContent: 'center', marginTop: '6%'}}>
-                    <MyBtn radius={'32px'}/>
+                    <MyBtn radius={'20px'} height={'50px'}/>
                 </Box>
             </Box>
         </Container>
