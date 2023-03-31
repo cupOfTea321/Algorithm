@@ -61,7 +61,7 @@ const PowersBlock = () => {
                                 padding: '0',
                                 // height: 0,
                                 border: 'none',
-                                borderTop: '1px solid #333',
+                                borderTop: '1px solid #A40000',
 
                             }}/>
                         </Box>
@@ -114,7 +114,7 @@ const PowersBlock = () => {
                                 padding: '0',
                                 height: 0,
                                 border: 'none',
-                                borderTop: '1px solid #333',
+                                borderTop: '1px solid #A40000',
 
                             }}/>
                         </Box>

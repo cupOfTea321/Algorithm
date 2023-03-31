@@ -7,10 +7,10 @@ import serv2 from '../assets/serv2.png'
 import serv3 from '../assets/serv3.png'
 import serv4 from '../assets/serv4.png'
 const services = [
-    {text: "Хранение", img: serv1},
-    {text: "Перевозка", img: serv2},
-    {text: "Оформление", img: serv3},
-    {text: "Отгрузка", img: serv4},
+    {text: "Хранение", img: serv1, link: 'services/storage'},
+    {text: "Перевозка", img: serv2, link: 'services/transportation'},
+    {text: "Оформление", img: serv3, link: 'services/registration'},
+    {text: "Отгрузка", img: serv4, link: 'services/shipment'},
 ]
 const MainServices = () => {
     return (
@@ -42,14 +42,14 @@ const MainServices = () => {
 
                 }}>
                     {services.map(service => (
-                        <Box  sx={{
+                        <Box key={service.text}  sx={{
                             display: 'flex',
                             justifyContent: 'center',
                             marginBottom: '40px',
                             // padding: '10px'
                             height: '45px'
                         }}>
-                            <ServicesBtn img={service.img} text={service.text}/>
+                            <ServicesBtn link={service.link} img={service.img} text={service.text}/>
                         </Box>
                     ))}
                 </Box>

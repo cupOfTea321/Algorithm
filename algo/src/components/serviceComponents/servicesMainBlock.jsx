@@ -5,12 +5,13 @@ import serv1 from '../../assets/services1.png'
 import serv2 from '../../assets/services2.png'
 import serv3 from '../../assets/services3.png'
 import serv4 from '../../assets/services4.png'
+import {Link, NavLink} from "react-router-dom";
 
 const services = [
-    {name: 'Хранение', path: '#', image: serv1},
-    {name: 'Перевалка', path: '#', image: serv2},
-    {name: 'Отгрузка', path: '#', image: serv3},
-    {name: 'Брокерские услуги', path: '#', image: serv4},
+    {name: 'Хранение', link: 'storage', image: serv1},
+    {name: 'Перевалка', link: 'transportation', image: serv2},
+    {name: 'Отгрузка', link: 'registration', image: serv3},
+    {name: 'Брокерские услуги', link: 'shipment', image: serv4},
 ]
 const ServicesMainBlock = () => {
     return (
@@ -56,15 +57,16 @@ const ServicesMainBlock = () => {
 
                 }}>
                     {services.map(service => (
-                        <Box  sx={{
-                            display: 'flex',
-                            justifyContent: 'center',
-                            marginBottom: '40px',
-                            // padding: '10px'
-                            // height: '45px'
-                        }}>
-                            <ServiceImgBlock image={service.image} name={service.name}/>
-                        </Box>
+                            <Box  sx={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                marginBottom: '40px',
+                                // padding: '10px'
+                                // height: '45px'
+                            }}>
+                                <ServiceImgBlock link={service.link} image={service.image} name={service.name}/>
+                            </Box>
+
                     ))}
                 </Box>
             </Box>

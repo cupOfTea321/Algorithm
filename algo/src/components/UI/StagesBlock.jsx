@@ -1,6 +1,7 @@
 import React from 'react';
 import {Box, Container, Grid, Typography} from "@mui/material";
 import MyBtn from "./MyBtn.jsx";
+import backRound from "../../assets/backRound.png";
 
 const stageNumbers = [1, 2, 3, 4]
 const stages = [
@@ -48,6 +49,10 @@ const StagesBlock = () => {
                 <Box sx={{display: 'flex', justifyContent: 'center', marginTop: {md: '-40px', xs:'20px'}}}>
                     <MyBtn radius={'14px'} height={'70px'}/>
                 </Box>
+                {/*  Фоновые элементы  */}
+                <Box component={'img'} src={backRound} alt="" sx={{width: {xl: '150px',sm: '100px', xs: '50px'}, position: 'absolute', right: 0, zIndex: '-1', bottom: {xl: '1300px', lg: '1200px', md: '1150px', sm: '1100px', xs: '1800px'}}}/>
+                <Box component={'img'} src={backRound} alt="" sx={{width: {xl: '150px',sm: '100px', xs: '50px'}, position: 'absolute', left: {sm:'-60px', xs: '0'}, zIndex: '-1', bottom: {sm:'600px', xs: '1500px'} }}/>
+                <Box component={'img'} src={backRound} alt="" sx={{width: {xl: '150px',sm: '100px', xs: '50px'}, position: 'absolute', right: 0, zIndex: '-1', bottom: {sm:'160px', xs: '1000px'}}}/>
 
             </Container>
         </Box>

@@ -2,6 +2,8 @@ import React from 'react';
 import {Box, Container, Typography} from "@mui/material";
 import danger from '../../assets/danger.png'
 import danger2 from '../../assets/danger2.png'
+import backVector1 from "../../assets/backVector1.png";
+import backVector2 from "../../assets/backVector2.png";
 
 
 
@@ -63,6 +65,11 @@ const NewsAboutBlock = () => {
                     </Box>
                 </Box>
             </Box>
+
+            {/*  Фоновые элементы  */}
+            <Box component={'img'} src={backVector1} alt="" sx={{width: {xl: '250px',sm: '200px', xs: '150px'}, position: 'absolute', zIndex: '-1', left: 0, bottom: {xl: '2000px', lg: '2000px', md: '1850px', sm: '1800px', xs: '4000px'}}}/>
+            <Box component={'img'} src={backVector2} alt="" sx={{width: {xl: '250px',sm: '200px', xs: '150px'}, position: 'absolute', right: '0', zIndex: '-1', bottom: {xl: '1000px', lg: '1000px', md: '1150px', sm: '1100px', xs: '2600px'}}}/>
+
         </Container>
     );
 };
