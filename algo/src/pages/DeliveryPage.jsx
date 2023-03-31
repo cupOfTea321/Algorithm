@@ -1,10 +1,19 @@
 import React from 'react';
+import MainDelivery from "../components/deliveryComponents/mainDelivery.jsx";
+import WhyDelivery from "../components/deliveryComponents/WhyDelivery.jsx";
+import FormBlock from "../components/UI/FormBlock.jsx";
+import {Box} from "@mui/material";
 
 const DeliveryPage = () => {
     return (
-        <div>
-            DeliveryPage
-        </div>
+        <>
+            <MainDelivery/>
+            <WhyDelivery/>
+            <Box sx={{marginTop: '4%'}}>
+                <FormBlock/>
+            </Box>
+
+        </>
     );
 };
 

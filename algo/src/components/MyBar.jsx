@@ -112,7 +112,7 @@ const MyBar = () => {
                                 </NavLink>
                             ))}
                         </Box>
-                        <MyBtn radius={'14px'} display={'none'} />
+                        <MyBtn radius={'14px'} display={'none'} width={'260px'}/>
                     </Box>
                 </Toolbar>
             </Container>

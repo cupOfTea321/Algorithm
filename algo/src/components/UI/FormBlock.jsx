@@ -16,9 +16,10 @@ const FormBlock = () => {
                 justifyContent: 'center',
                 marginTop: '3%',
                 width: '100%',
-                alignItems: 'center'
+                alignItems: 'center',
+                // marginLeft: {sm: '0', xs: '-2vw'}
             }}>
-                <Box component="form" sx={{ marginLeft: {sm: 0, xs: '-45%'}, width: {md: '30%', sm: '35%', xs: '30%'}}}>
+                <Box component="form" sx={{  width: {md: '30%', sm: '35%', xs: '30%'}, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                     <TextField
                         id="outlined-multiline-flexible"
                         label="ФИО"
@@ -48,7 +49,7 @@ const FormBlock = () => {
                         sx={{width: {cm:'360px', xs: '280px'}, marginBottom: '20px', background: '#E3D9D9'}}
                     />
                     <MyBtn height={'56px'}  width={{cm:'360px', xs: '280px'}}/>
-                    <Box sx={{display: 'flex', alignItems: 'center', marginTop: '2%', width: '100vw'}}>
+                    <Box sx={{display: 'flex', alignItems: 'center', marginTop: '2%'}}>
                         <input type={'checkbox'} style={{width: '20px', height: '20px', color: 'rgba(255, 255, 255, 0.4)'}}/>
                         <Typography sx={{marginLeft: '1%'}}>
                             Даю согласие на обработку данных
