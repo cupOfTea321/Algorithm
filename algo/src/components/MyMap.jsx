@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import {YMaps, Map, Placemark} from "react-yandex-maps";
 import mark from '../assets/mark.png'
+import './components.css'
 function MyMap() {
     const [ymaps, setYmaps] = useState(null);
     const [map, setMap] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
-    const center = [48.8866527839977,2.34310679732974];
+    const center = [52.957679, 40.391777];
     useEffect(() => {
 
 
@@ -13,7 +14,8 @@ function MyMap() {
 
         const myPlacemark = new ymaps.Placemark(center, {
             center: center,
-            zoom: 17
+            zoom: 10,
+            preset: 'islands#redIcon'
         });
 
         myPlacemark.controls.remove('geolocationControl'); // удаляем геолокацию
@@ -45,15 +47,17 @@ function MyMap() {
     }
     return (
         <YMaps
-            query={{ load: "package.full", apikey: "YOUR_API_KEY" }} // здесь нужно указать ключ API Яндекс Карт
+            query={{ load: "package.full", apikey: "fe5c4033-3bde-4268-b053-c0b515255152" }} // здесь нужно указать ключ API Яндекс Карт
             onApiAvaliable={handleApiAvaliable}
         >
             <Map
-                defaultState={{ center: center, zoom: 17 , controls: []}}
+                id={'mapBlock'}
+                defaultState={{ center: center, zoom: 10 , controls: []}}
                 options={{
-                    yandexMapDisablePoiInteractivity: true
+                    yandexMapDisablePoiInteractivity: true,
+
                 }}
-                width="120%"
+                width="140%"
                 height="400px"
                 onLoad={handleMapCreated}
             >
@@ -61,7 +65,8 @@ function MyMap() {
                     geometry={center}
                     options={{
                         // iconLayout: 'default#image',
-                        iconImageHref: {mark},
+                        // iconImageHref: {mark},
+                        preset: 'islands#redIcon',
                         iconImageSize: [30, 30],
                         balloonContentBody: 'Это метка на Яндекс.Картах',
                     }}

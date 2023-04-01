@@ -33,6 +33,29 @@ const OrderService = ({order}) => {
                     </Typography>
                     <MyBtn radius={'20px'} height={'54px'}/>
                 </Box>
+
+                {/* Фоновые круги */}
+                <Box component={'img'} src={backRound} sx={{
+                    position: 'absolute',
+                    width: '150px',
+                    zIndex: '-1',
+                    left: '10%',
+                    top: '780px'
+                }}/>
+                <Box component={'img'} src={backRound} sx={{
+                    position: 'absolute',
+                    width: '150px',
+                    zIndex: '-1',
+                    right: '10%',
+                    top: '800px'
+                }}/>
+                <Box component={'img'} src={backRound} sx={{
+                    position: 'absolute',
+                    width: '150px',
+                    zIndex: '-1',
+                    left: '50%',
+                    top: '980px'
+                }}/>
             </Box>
     );
 };
