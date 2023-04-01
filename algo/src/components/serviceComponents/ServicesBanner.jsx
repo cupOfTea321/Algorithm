@@ -2,14 +2,15 @@ import React from 'react';
 import {Box, Container, Grid, Typography} from "@mui/material";
 import star from '../../assets/star.png'
 import starBack from '../../assets/starBack.png'
-const storage = [
-    'Действуем в рамках нормативных документов',
-    'Гарантируем   качество',
-    'Контроль срока годности',
-    'Соблюдение условий хранения',
-]
-const ServicesBanner = () => {
+import backImg from "../../assets/servicesBack.png";
+const ServicesBanner = ({storage}) => {
     return (
+        <Box sx={{
+            paddingBottom: '5%',
+            background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg})`,
+            backgroundSize: 'cover',
+
+        }}>
         <Container maxWidth={'xl'}>
             <Box sx={{
                 color: 'white',
@@ -24,17 +25,16 @@ const ServicesBanner = () => {
                     fontSize: {lg: '48px', md: '36px', sm: '30px', xs: '36px'},
 
                 }}>
-                    ХРАНЕНИЕ ТОПЛИВА
+                    {storage.mainTitle}
                 </Typography>
                 <Typography variant={'h3'} sx={{
                     width: {md: '140%', sm: '100%'},
                     fontSize: '24px'
                 }}>
-                    Бережно храним вашу продукцию, соблюдая необходимые требования,
-                    чтобы сохранить все качества топлива
+                    {storage.secondTitle}
                 </Typography>
                 <Grid container sx={{width: {md: '200%', sm: '100%'}, marginTop: '10%', }}>
-                    {storage.map(item => (
+                    {storage.list.map(item => (
                         <Grid item lg={3} md={6} sm={6} xs={12} sx={{width: '25%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingBottom: '20px'}}>
                             <Box sx={{backgroundImage: `url(${starBack})`, height: '122px', width: '132px', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                                 <Box component={'img'} src={star} sx={{height: '35px', backgroundSize: 'cover', width: '35px', }}/>
@@ -48,6 +48,7 @@ const ServicesBanner = () => {
                 </Grid>
             </Box>
         </Container>
+        </Box>
     );
 };
 

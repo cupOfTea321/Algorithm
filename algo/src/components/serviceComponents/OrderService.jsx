@@ -2,9 +2,8 @@ import React from 'react';
 import {Box, Container, Typography} from "@mui/material";
 import backRound from '../../assets/backRound.png'
 import MyBtn from "../UI/MyBtn.jsx";
-const OrderService = () => {
+const OrderService = ({order}) => {
     return (
-        <Container maxWidth={'xl'}>
             <Box sx={{
                 display: 'flex',
                 background: '#908B8B',
@@ -25,18 +24,16 @@ const OrderService = () => {
                         Заказать услугу
                     </Typography>
                     <Typography sx={{fontSize: '22px'}}>
-                        Оформите заявку на услугу, и мы свяжемся
-                        с Вами в ближайшее время, ответим на все интересующие вопросы и начнем работу
+                        {order.secondTitle}
                     </Typography>
                 </Box>
                 <Box >
                     <Typography className={'oswFont'} sx={{marginBottom: '20px', fontSize: '28px'}}>
-                        15 р/т в сутки
+                        {order.quantity}
                     </Typography>
                     <MyBtn radius={'20px'} height={'54px'}/>
                 </Box>
             </Box>
-        </Container>
     );
 };
 
