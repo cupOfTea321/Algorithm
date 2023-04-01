@@ -1,9 +1,9 @@
 import React from 'react';
 import {Button, Typography} from "@mui/material";
 import './UIStyle.css'
-const MyBtn = ({radius, display = 'flex', width = '300px', height = 'auto'}) => {
+const MyBtn = ({radius, display = 'flex', width = '300px', height = 'auto', type = 'button', disabled = false}) => {
     return (
-        <Button className={'myBtn allBtns'} sx={{
+        <Button disabled={disabled} type={type} className={'myBtn allBtns'} sx={{
             display: { xs: display, md: 'flex' },
             backgroundColor: '#A40000',
             borderRadius: radius,
