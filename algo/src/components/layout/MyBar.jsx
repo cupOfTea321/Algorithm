@@ -5,15 +5,19 @@ import {NavLink} from "react-router-dom";
 import logo from '../../assets/logo.png'
 import MyBtn from "../UI/MyBtn.jsx";
 import ModalForm from "../UI/ModalForm.jsx";
-const pages = [
-    {name: 'Главная', route: '/'},
-    {name: 'О биодизеле', route: '/about'},
-    {name: 'Клиентам/партнерам', route: '/clients'},
-    {name: 'Услуги', route: '/services'},
-    {name: 'Каталог', route: '/delivery'},
-];
+import ChangeLangBtn from "../UI/ChangeLangBtn.jsx";
+import {useTranslation} from "react-i18next";
+
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const MyBar = () => {
+    const { t, i18n } = useTranslation();
+    const pages = [
+        {name: t("main"), route: '/'},
+        {name: t("about"), route: '/about'},
+        {name: t("clients"), route: '/clients'},
+        {name: t("services"), route: '/services'},
+        {name: t("catalog"), route: '/delivery'},
+    ];
     //for backdrop
     const [open, setOpen] = React.useState(false);
     const handleClose = () => {
@@ -133,6 +137,7 @@ const MyBar = () => {
                             <ModalForm/>
                         </Backdrop>
 
+                        <ChangeLangBtn/>
                     </Box>
                 </Toolbar>
             </Container>

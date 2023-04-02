@@ -3,7 +3,7 @@ import {Backdrop, Box, Container, Grid, Typography} from "@mui/material";
 import MyBtn from "./MyBtn.jsx";
 import backRound from "../../assets/backRound.png";
 import ModalForm from "./ModalForm.jsx";
-
+import stagesBack from '../../assets/stages.png'
 const stageNumbers = [1, 2, 3, 4]
 const stages = [
     {name: 'Консультация', about: 'Обсуждение всех деталей по телефону или при личной встрече: выбор объема, вида топлива, консультация по продукции, выбор способа доставки'},
@@ -21,12 +21,11 @@ const StagesBlock = () => {
     };
     return (
         <Box sx={{
-            background: '#908B8B',
-            height: {md: '740px', sm: '840px', xs: '790px'},
-            borderRadius: '40%',
-            width: '200%',
-            marginLeft: '-50%',
-
+            background: `url(${stagesBack})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'top center',
+            paddingBottom: '10%',
         }}>
             <Container maxWidth={'xl'} sx={{marginTop: '5%', paddingTop: '5%', width: '100vw', }}>
                 <Typography className={'oswFont'} variant={'h3'} sx={{color: 'white', fontSize: '40px', textAlign: 'center'}}>
@@ -34,7 +33,7 @@ const StagesBlock = () => {
                 </Typography>
                 <Grid container sx={{display: 'flex', justifyContent: 'space-between', width: '100%'}}>
                     {stageNumbers.map(stNum => (
-                        <Grid item lg={3} md={6} sm={12} xs={12}>
+                        <Grid key={stNum} item lg={3} md={6} sm={12} xs={12}>
                             <Typography variant={'h3'} sx={{fontSize: {md:'160px', sm: '120px', xs: '120px'}, lineHeight: '113.2%', color: '#A40000',}}>
                                 {stNum}
                             </Typography>
@@ -44,7 +43,7 @@ const StagesBlock = () => {
                 </Grid>
                 <Grid container sx={{color: 'white', marginLeft: '-4%', display: 'flex', textAlign: 'center', marginTop: {lg: '-50px', md: '-280px', sm: '-520px', xs: '-520px'}}}>
                     {stages.map(stage => (
-                        <Grid item lg={3} md={6} sm={12} xs={12} sx={{marginBottom: {md: '60px', sm: '30px', xs: '25px'}}}>
+                        <Grid key={stage.name} item lg={3} md={6} sm={12} xs={12} sx={{marginBottom: {md: '60px', sm: '30px', xs: '25px'}}}>
                             <Typography className={'oswFont'} variant={'h4'} sx={{fontSize: {lg:'34px', md: '26px', sm: '32px', xs: '32px'}}}>
                                 {stage.name}
                             </Typography>

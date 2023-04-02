@@ -19,7 +19,7 @@ const ForClientsPage = () => {
                 <ClientsMainBlock/>
             </Box>
             <Box sx={{
-                marginTop: '-15%'
+                marginTop: {sm:'-10%', xs: '-15%'}
             }}>
                 <StagesBlock/>
             </Box>

@@ -81,6 +81,7 @@ const MyForm = () => {
             <Box sx={{display: 'flex', alignItems: 'center', marginTop: '5%'}}>
                 <Checkbox
                     {...label}
+                    required
                     defaultChecked
                     sx={{
                         width: '20px', height: '20px',

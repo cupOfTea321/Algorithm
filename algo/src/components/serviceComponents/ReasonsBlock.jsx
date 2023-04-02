@@ -9,8 +9,8 @@ const ReasonsBlock = ({reasons, title}) => {
                         sx={{fontSize: {sm: '34px', xs: '28px'}, textAlign: {sm: 'left', xs: 'center'}}}>
                 {title}
             </Typography>
-            {reasons.map(reason => (
-                <Box sx={{display: 'flex', alignItems: 'center', marginTop: '20px'}}>
+            {reasons.map((reason, index) => (
+                <Box key={index} sx={{display: 'flex', alignItems: 'center', marginTop: '20px'}}>
                     <Box component={'img'} src={point} sx={{width: '25px', marginRight: '20px'}}/>
                     <Typography sx={{fontSize: {sm: '26px', xs: '20px'}}}>{reason}</Typography>
                 </Box>

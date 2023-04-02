@@ -23,13 +23,13 @@ const CircleBlock = () => {
                     <img src={circle} alt="circle" style={{width: '80%'}}/>
                 </Box>
                 <Box sx={{display: {sm: 'none', xs: 'flex', flexDirection: 'column', alignItems: 'center'}}}>
-                    {advantages.map(advantage => (
-                        <>
+                    {advantages.map((advantage, index) => (
+                        <Box sx={{textAlign: 'center'}} key={index}>
                             <Typography sx={{textAlign: 'center', marginTop: '10px', fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>
                                 {advantage}
                             </Typography>
                             <img src={blood} alt='blood' style={{width: '20px', marginTop: '10px'}}/>
-                        </>
+                        </Box>
                     ))}
                 </Box>
 

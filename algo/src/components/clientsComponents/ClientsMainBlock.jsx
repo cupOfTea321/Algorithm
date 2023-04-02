@@ -1,8 +1,9 @@
 import React from 'react';
 import {Backdrop, Box, Container, Typography} from "@mui/material";
-import {Link} from "react-router-dom";
 import MyBtn from "../UI/MyBtn.jsx";
 import ModalForm from "../UI/ModalForm.jsx";
+import ClientsDocs from "./ClientsDocs.jsx";
+
 
 const ClientsMainBlock = () => {
     const [open, setOpen] = React.useState(false);
@@ -12,16 +13,15 @@ const ClientsMainBlock = () => {
     const handleToggle = () => {
         setOpen(!open);
     };
+
     return (
         <Container maxWidth={'xl'}>
             <Box sx={{
-                // width: {md: '100%', xs: '100%'},
                 display: 'flex',
                 flexDirection: 'column',
                 paddingTop: '10%',
                 gap: 2,
                 textAlign: 'center',
-
             }}>
                 <Typography className={'oswFont'} variant={'h1'} sx={{
                     fontSize: {lg: '60px', md: '48px', sm: '42px', xs: '36px'},
@@ -44,16 +44,8 @@ const ClientsMainBlock = () => {
                             Договор поставки на условиях предоплаты
                         </Typography>
                     </Box>
-                    <Box sx={{background: 'white', borderRadius: '20px', width: '40%', height: '300px'}}>
-                        <Typography sx={{fontSize: {md: '34px', sm:'26px', xs: '20px'}, color: '#A81A1A'}}>
-                            Наша документация
-                        </Typography>
-                        <Typography>
-                            Наша отчетность
-                        </Typography>
-                        <Typography>
-                            ГОСТы
-                        </Typography>
+                    <Box sx={{display: 'flex', flexDirection: 'column',background: 'white', borderRadius: '20px', width: '40%', height: '300px'}}>
+                        <ClientsDocs/>
                     </Box>
                 </Box>
                 <Box sx={{display: 'flex', flexDirection: 'column', width: '82%', margin: '0 auto', background: 'white', borderRadius: '20px', gap: 2, marginTop: '2%'}}>
@@ -72,7 +64,7 @@ const ClientsMainBlock = () => {
                     </Typography>
                 </Box>
                 <Box sx={{display: 'flex', justifyContent: 'center', marginTop: '6%'}}>
-                    <MyBtn onClick={handleToggle} radius={'20px'} height={'50px'}/>
+                    <MyBtn onClick={handleToggle} radius={'20px'} height={'70px'}/>
                     <Backdrop
                         sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}
                         open={open}

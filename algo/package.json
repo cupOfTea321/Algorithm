@@ -14,9 +14,13 @@
     "@formspree/react": "^2.4.1",
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.13",
+    "i18next": "^22.4.14",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.2.0",
     "react": "^18.2.0",
     "react-doc-viewer": "^0.1.5",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.0",
     "react-router-dom": "^6.9.0",
     "react-yandex-maps": "^4.6.0",
     "yandex-maps": "^0.0.1"

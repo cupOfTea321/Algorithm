@@ -3,6 +3,7 @@ import {Box, Container, Typography} from "@mui/material";
 import point from "../../assets/pointRight.png";
 import backEL1 from '../../assets/backElement1.png'
 import backEL2 from '../../assets/backElement2.png'
+import stagesBack from '../../assets/stages.png'
 const advantages = [
     'Одни из первых, кто занимается биодизельным топливом',
     'Готовы к научно-исследовательскому обмену',
@@ -15,12 +16,11 @@ const advantages = [
 const WhyDelivery = () => {
     return (
         <Box sx={{
-            background: '#908B8B',
-            // height: '740px',
-            paddingBottom: '5%',
-            borderRadius: '40%',
-            width: '200%',
-            marginLeft: '-50%',
+            background: `url(${stagesBack})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'top center',
+            paddingBottom: '10%',
 
         }}>
             <Container maxWidth={'xl'} sx={{marginTop: '4%', paddingTop: '2%', width: '100vw', color: 'white'}}>
@@ -30,8 +30,8 @@ const WhyDelivery = () => {
                     Почему вы должны выбрать “Алгоритм”?
                 </Typography>
                 <Box sx={{marginTop: '4%', marginBottom: '5%'}}>
-                    {advantages.map(advantage => (
-                        <Box sx={{display: 'flex', alignItems: 'center'}}>
+                    {advantages.map((advantage, index) => (
+                        <Box key={index} sx={{display: 'flex', alignItems: 'center'}}>
                             <img src={point} alt={'point'} style={{width: '20px', height: '20px'}}/>
                             <Typography variant={'h5'} sx={{fontSize: {sm: '28px', xs: '20px'}, marginLeft: '4%'}}>
                                 {advantage}

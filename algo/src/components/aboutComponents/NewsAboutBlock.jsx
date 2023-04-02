@@ -34,11 +34,11 @@ const NewsAboutBlock = () => {
                         <img src={danger} alt="danger"/>
                     </Box>
                     <Box sx={{marginLeft: '20px', width: '100%'}}>
-                        {problems.map(problem => (
-                            <>
+                        {problems.map((problem, index) => (
+                            <Box key={index}>
                                 <Typography sx={{fontWeight: 'bold', fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>{problem.title}</Typography>
                                 <Typography sx={{fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>{problem.text}</Typography>
-                            </>
+                            </Box>
 
                         ))}
                     </Box>

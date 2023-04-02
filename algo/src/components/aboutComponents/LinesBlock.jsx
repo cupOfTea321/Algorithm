@@ -63,11 +63,11 @@ const LinesBlock = () => {
                 </Box>
                 {/*  Мобильная версия  */}
                 <Box sx={{display: {lg: 'none', md: 'flex', sm: 'flex', xs: 'flex'}, flexDirection: 'column', alignItems: 'center'}}>
-                    {afterLines.map(item => (
-                        <>
+                    {afterLines.map((item, index) => (
+                        <Box key={index} sx={{textAlign: 'center'}}>
                             <img src={mobileLine} style={{height: '90px', width: '31px', backgroundSize: 'cover', marginBottom: '20px', marginTop: '20px'}} alt=""/>
                             <Typography sx={{fontSize: {sm:'28px', xs: '24px'}, textAlign: 'center'}}>{item}</Typography>
-                        </>
+                        </Box>
 
                     ))}
                 </Box>

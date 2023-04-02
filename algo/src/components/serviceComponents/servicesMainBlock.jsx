@@ -57,7 +57,7 @@ const ServicesMainBlock = () => {
 
                 }}>
                     {services.map(service => (
-                            <Box  sx={{
+                            <Box key={service.name} sx={{
                                 display: 'flex',
                                 justifyContent: 'center',
                                 marginBottom: '40px',

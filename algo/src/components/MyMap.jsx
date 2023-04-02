@@ -57,7 +57,7 @@ function MyMap() {
                     yandexMapDisablePoiInteractivity: true,
 
                 }}
-                width="140%"
+                width="100%"
                 height="400px"
                 onLoad={handleMapCreated}
             >

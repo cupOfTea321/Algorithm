@@ -34,8 +34,8 @@ const ServicesBanner = ({storage}) => {
                     {storage.secondTitle}
                 </Typography>
                 <Grid container sx={{width: {md: '200%', sm: '100%'}, marginTop: '10%', }}>
-                    {storage.list.map(item => (
-                        <Grid item lg={3} md={6} sm={6} xs={12} sx={{width: '25%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingBottom: '20px'}}>
+                    {storage.list.map((item, index) => (
+                        <Grid key={index} item lg={3} md={6} sm={6} xs={12} sx={{width: '25%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingBottom: '20px'}}>
                             <Box sx={{backgroundImage: `url(${starBack})`, height: '122px', width: '132px', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                                 <Box component={'img'} src={star} sx={{height: '35px', backgroundSize: 'cover', width: '35px', }}/>
                             </Box>

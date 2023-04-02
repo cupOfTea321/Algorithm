@@ -39,8 +39,8 @@ const AboutBlock = () => {
                     <Typography component={'h2'} sx={{fontSize: '34px', }}>
                         Чем чревато введение СВАМ:
                     </Typography>
-                    {points.map(point => (
-                        <Box sx={{display: 'flex', alignItems: 'center'}}>
+                    {points.map((point, index) => (
+                        <Box key={index} sx={{display: 'flex', alignItems: 'center'}}>
                             <img src={rightPoint} alt="rightPoint" style={{height: '40px', width: '40px', marginRight: '20px'}}/>
                             <Typography sx={{fontSize: '24px', marginBottom: '20px', marginTop: '10px'}}>
                                 {point}

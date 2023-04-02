@@ -32,14 +32,14 @@ const PowersBlock = () => {
 
             {/*ПК версия*/}
             <Box sx={{
-                display: {sm: 'flex', xs: 'none'},
+                display: {md: 'flex', xs: 'none'},
                 // gap: 2,
                 justifyContent: 'space-between',
                 width: '100%',
                 alignItems: 'center'
             }}>
                 {powersFirst.map(power => (
-                    <Grid item xs={4} sx={{
+                    <Grid key={power.name} item xs={4} sx={{
                         justifyContent: 'space-between',
                         maxWidth: '18%',
                         alignItems: '',
@@ -88,7 +88,7 @@ const PowersBlock = () => {
             </Box>
 
             <Box sx={{
-                display: {sm: 'flex', xs: 'none'},
+                display: {md: 'flex', xs: 'none'},
                 justifyContent: 'space-between',
                 width: '100%',
                 alignItems: 'center',
@@ -96,7 +96,7 @@ const PowersBlock = () => {
                 marginLeft: {lg: '0%', xs:'-4%'},
             }}>
                 {powersSecond.map(power => (
-                    <Grid item xs={4} sx={{
+                    <Grid key={power.name} item xs={4} sx={{
                         justifyContent: 'space-between',
                         maxWidth: '18%',
                         alignItems: '',
@@ -139,21 +139,21 @@ const PowersBlock = () => {
             </Box>
 
             {/*  Мобильная версия  */}
-            <Box sx={{display: {lg: 'none', md: 'flex', sm: 'flex', xs: 'flex'}, flexDirection: 'column', alignItems: 'center'}}>
+            <Box sx={{display: {md: 'none', sm: 'flex', xs: 'flex'}, flexDirection: 'column', alignItems: 'center'}}>
                 {powersFirst.map(item => (
-                    <>
+                    <Box key={item.name} sx={{textAlign: 'center'}}>
                         <img src={mobileLine} style={{height: '90px', width: '21px', backgroundSize: 'cover', marginBottom: '20px', marginTop: '20px'}} alt=""/>
                         <Typography className={'oswFont'} sx={{fontSize: {sm:'28px', xs: '24px'}, textAlign: 'center'}}>{item.name}</Typography>
                         <Typography sx={{fontSize: {sm:'28px', xs: '20px'}, textAlign: 'center'}}>{item.about}</Typography>
-                    </>
+                    </Box>
 
                 ))}
                 {powersSecond.map(item => (
-                    <>
+                    <Box key={item.name} sx={{textAlign: 'center'}}>
                         <img src={mobileLine} style={{height: '90px', width: '21px', backgroundSize: 'cover', marginBottom: '20px', marginTop: '20px'}} alt=""/>
                         <Typography className={'oswFont'}  sx={{fontSize: {sm:'28px', xs: '24px'}, textAlign: 'center'}}>{item.name}</Typography>
                         <Typography sx={{fontSize: {sm:'28px', xs: '20px'}, textAlign: 'center'}}>{item.about}</Typography>
-                    </>
+                    </Box>
 
                 ))}
             </Box>
