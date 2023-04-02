@@ -1,9 +1,9 @@
 import React from 'react';
 import {Button, Typography} from "@mui/material";
 import './UIStyle.css'
-const SecondBtn = ({color = 'white', height = 'auto', width = '300px', text = 'Перейти к каталогу', fontSize = "{lg: '20px', sm: '14px'}"}) => {
+const SecondBtn = ({href = '', onClick = '',color = 'white', height = 'auto', width = '300px', text = 'Перейти к каталогу', fontSize = "{lg: '20px', sm: '14px'}"}) => {
     return (
-        <Button className={'secBtn allBtns'} sx={{
+        <Button href={href} onClick={onClick} className={'secBtn allBtns'} sx={{
             display: {md: 'flex' },
             // backgroundColor: '#A40000',
             border: '3px solid #A40000',

@@ -1,9 +1,17 @@
 import React from 'react';
-import {Box, Container, Typography} from "@mui/material";
+import {Backdrop, Box, Container, Typography} from "@mui/material";
 import {Link} from "react-router-dom";
 import MyBtn from "../UI/MyBtn.jsx";
+import ModalForm from "../UI/ModalForm.jsx";
 
 const ClientsMainBlock = () => {
+    const [open, setOpen] = React.useState(false);
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const handleToggle = () => {
+        setOpen(!open);
+    };
     return (
         <Container maxWidth={'xl'}>
             <Box sx={{
@@ -64,7 +72,14 @@ const ClientsMainBlock = () => {
                     </Typography>
                 </Box>
                 <Box sx={{display: 'flex', justifyContent: 'center', marginTop: '6%'}}>
-                    <MyBtn radius={'20px'} height={'50px'}/>
+                    <MyBtn onClick={handleToggle} radius={'20px'} height={'50px'}/>
+                    <Backdrop
+                        sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                        open={open}
+                        onClick={handleClose}
+                    >
+                        <ModalForm/>
+                    </Backdrop>
                 </Box>
             </Box>
         </Container>

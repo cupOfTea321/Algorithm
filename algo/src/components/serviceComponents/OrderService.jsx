@@ -1,8 +1,16 @@
 import React from 'react';
-import {Box, Container, Typography} from "@mui/material";
+import {Backdrop, Box, Container, Typography} from "@mui/material";
 import backRound from '../../assets/backRound.png'
 import MyBtn from "../UI/MyBtn.jsx";
+import ModalForm from "../UI/ModalForm.jsx";
 const OrderService = ({order}) => {
+    const [open, setOpen] = React.useState(false);
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const handleToggle = () => {
+        setOpen(!open);
+    };
     return (
             <Box sx={{
                 display: 'flex',
@@ -31,7 +39,14 @@ const OrderService = ({order}) => {
                     <Typography className={'oswFont'} sx={{marginBottom: '20px', fontSize: '28px'}}>
                         {order.quantity}
                     </Typography>
-                    <MyBtn radius={'20px'} height={'54px'}/>
+                    <MyBtn onClick={handleToggle} radius={'20px'} height={'54px'}/>
+                    <Backdrop
+                        sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                        open={open}
+                        onClick={handleClose}
+                    >
+                        <ModalForm/>
+                    </Backdrop>
                 </Box>
 
                 {/* Фоновые круги */}

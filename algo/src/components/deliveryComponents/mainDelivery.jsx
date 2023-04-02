@@ -1,12 +1,20 @@
 import React from 'react';
-import {Box, Container, Typography} from "@mui/material";
+import {Backdrop, Box, Container, Typography} from "@mui/material";
 import delivery1 from '../../assets/delivery1.png'
 import delivery2 from '../../assets/delivery2.png'
 import delivery3 from '../../assets/delivery3.png'
 import MyBtn from "../UI/MyBtn.jsx";
+import ModalForm from "../UI/ModalForm.jsx";
 
 
 const MainDelivery = () => {
+    const [open, setOpen] = React.useState(false);
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const handleToggle = () => {
+        setOpen(!open);
+    };
     return (
         <Container maxWidth={'xl'}>
             <Box sx={{display: 'flex', flexDirection: 'column', width: '100%', gap: 4, alignItems: {sm: 'flex-start', xs:'center'}, }}>
@@ -44,7 +52,14 @@ const MainDelivery = () => {
                             Биодизельное топливо
                         </Typography>
                     </Box>
-                    <MyBtn height={'70px'} radius={'20px'} width={{sm: '320px', xs: '230px'}}/>
+                    <MyBtn onClick={handleToggle} height={'70px'} radius={'20px'} width={{sm: '320px', xs: '230px'}}/>
+                    <Backdrop
+                        sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                        open={open}
+                        onClick={handleClose}
+                    >
+                        <ModalForm/>
+                    </Backdrop>
                 </Box>
 
             </Box>

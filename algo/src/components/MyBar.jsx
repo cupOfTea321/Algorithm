@@ -1,9 +1,10 @@
 import React from 'react';
-import {AppBar, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography} from "@mui/material";
+import {AppBar, Backdrop, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import {NavLink} from "react-router-dom";
 import logo from '../assets/logo.png'
 import MyBtn from "./UI/MyBtn.jsx";
+import ModalForm from "./UI/ModalForm.jsx";
 const pages = [
     {name: 'Главная', route: '/'},
     {name: 'О биодизеле', route: '/about'},
@@ -13,6 +14,15 @@ const pages = [
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const MyBar = () => {
+    //for backdrop
+    const [open, setOpen] = React.useState(false);
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const handleToggle = () => {
+        setOpen(!open);
+    };
+
     const [anchorElNav, setAnchorElNav] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
@@ -112,7 +122,15 @@ const MyBar = () => {
                                 </NavLink>
                             ))}
                         </Box>
-                        <MyBtn radius={'14px'} display={'none'} width={'260px'}/>
+                        <MyBtn  onClick={handleToggle} radius={'14px'} display={'none'} width={'260px'}/>
+                        <Backdrop
+                            sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                            open={open}
+                            onClick={handleClose}
+                        >
+                            <ModalForm/>
+                        </Backdrop>
+
                     </Box>
                 </Toolbar>
             </Container>

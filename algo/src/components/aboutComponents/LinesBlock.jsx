@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Container, Typography} from "@mui/material";
+import {Backdrop, Box, Container, Typography} from "@mui/material";
 import rightLine from '../../assets/rightLine.png'
 import leftLine from '../../assets/leftLine.png'
 import centerLine from '../../assets/centerLine.png'
@@ -7,6 +7,7 @@ import mobileLine from '../../assets/mobileLine.png'
 import oil from '../../assets/oil.png'
 import MyBtn from "../UI/MyBtn.jsx";
 import SecondBtn from "../UI/SecondBtn.jsx";
+import ModalForm from "../UI/ModalForm.jsx";
 
 const afterLines = [
     'Для систем отопления загородных домов',
@@ -14,6 +15,13 @@ const afterLines = [
     'Для различных механизмов и агрегатов ',
 ]
 const LinesBlock = () => {
+    const [open, setOpen] = React.useState(false);
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const handleToggle = () => {
+        setOpen(!open);
+    };
     return (
         <Container maxWidth={'xl'}>
             <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -69,8 +77,15 @@ const LinesBlock = () => {
                     gap: 2,
                     marginTop: '5%'
                 }}>
-                    <MyBtn radius={'32px'} height={'70px'}/>
-                    <SecondBtn color={'black'} height={'70px'}/>
+                    <MyBtn onClick={handleToggle} radius={'32px'} height={'70px'}/>
+                    <Backdrop
+                        sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                        open={open}
+                        onClick={handleClose}
+                    >
+                        <ModalForm/>
+                    </Backdrop>
+                    <SecondBtn href={'delivery'} color={'black'} height={'70px'}/>
                 </Box>
             </Box>
         </Container>

@@ -1,7 +1,8 @@
 import React from 'react';
-import {Box, Container, Grid, Typography} from "@mui/material";
+import {Backdrop, Box, Container, Grid, Typography} from "@mui/material";
 import MyBtn from "./MyBtn.jsx";
 import backRound from "../../assets/backRound.png";
+import ModalForm from "./ModalForm.jsx";
 
 const stageNumbers = [1, 2, 3, 4]
 const stages = [
@@ -11,6 +12,13 @@ const stages = [
     {name: 'Поставка', about: 'Доставка с помощью бензовозов и ж/д перевозок'},
 ]
 const StagesBlock = () => {
+    const [open, setOpen] = React.useState(false);
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const handleToggle = () => {
+        setOpen(!open);
+    };
     return (
         <Box sx={{
             background: '#908B8B',
@@ -47,7 +55,14 @@ const StagesBlock = () => {
                     ))}
                 </Grid>
                 <Box sx={{display: 'flex', justifyContent: 'center', marginTop: {md: '-40px', xs:'20px'}}}>
-                    <MyBtn radius={'14px'} height={'70px'}/>
+                    <MyBtn onClick={handleToggle} radius={'14px'} height={'70px'}/>
+                    <Backdrop
+                        sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                        open={open}
+                        onClick={handleClose}
+                    >
+                        <ModalForm/>
+                    </Backdrop>
                 </Box>
                 {/*  Фоновые элементы  */}
                 <Box component={'img'} src={backRound} alt="" sx={{width: {xl: '150px',sm: '100px', xs: '50px'}, position: 'absolute', right: 0, zIndex: '-1', bottom: {xl: '1300px', lg: '1200px', md: '1150px', sm: '1100px', xs: '1800px'}}}/>
