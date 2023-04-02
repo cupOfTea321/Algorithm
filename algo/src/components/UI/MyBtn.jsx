@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Typography} from "@mui/material";
 import './UIStyle.css'
-const MyBtn = ({onClick = '', radius, display = 'flex', width = '300px', height = 'auto', type = 'button', disabled = false}) => {
+const MyBtn = ({onClick, radius, display = 'flex', width = '300px', height = 'auto', type = 'button', disabled = false}) => {
     return (
         <Button onClick={onClick} disabled={disabled} type={type} className={'myBtn allBtns'} sx={{
             display: { xs: display, md: 'flex' },

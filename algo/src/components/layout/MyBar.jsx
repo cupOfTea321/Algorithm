@@ -2,9 +2,9 @@ import React from 'react';
 import {AppBar, Backdrop, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import {NavLink} from "react-router-dom";
-import logo from '../assets/logo.png'
-import MyBtn from "./UI/MyBtn.jsx";
-import ModalForm from "./UI/ModalForm.jsx";
+import logo from '../../assets/logo.png'
+import MyBtn from "../UI/MyBtn.jsx";
+import ModalForm from "../UI/ModalForm.jsx";
 const pages = [
     {name: 'Главная', route: '/'},
     {name: 'О биодизеле', route: '/about'},
@@ -50,6 +50,8 @@ const MyBar = () => {
                     marginTop: '20px'
                 }}>
                     <Box
+                        component={'a'}
+                        href={'/'}
                         sx={{
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },

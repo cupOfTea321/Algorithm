@@ -9,7 +9,7 @@ import MyMap from "./MyMap.jsx";
 
 const MapBlock = () => {
     return (
-        <Container maxWidth={'xl'} sx={{marginTop: '5%'}}>
+        <Container id={'mapBlock'} maxWidth={'xl'} sx={{marginTop: '5%'}}>
             <Box sx={{display: 'flex', alignItems: 'center', justifyContent: {lg: 'flex-end', md: 'center', sm: 'center', xs: 'center'}}}>
                 <img src={mark} alt="mark" style={{width: '55px', height: '70px'}}/>
                 <Typography className={'oswFont'} sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: '', marginLeft: '2%'}}>

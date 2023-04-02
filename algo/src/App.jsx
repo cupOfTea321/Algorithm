@@ -6,7 +6,7 @@ import AboutPage from "./pages/AboutPage.jsx";
 import DeliveryPage from "./pages/DeliveryPage.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
 import ForClientsPage from "./pages/ForClientsPage.jsx";
-import Layout from "./components/Layout.jsx";
+import Layout from "./components/layout/Layout.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import StorageService from "./pages/StorageService.jsx";
 import TransportationService from "./pages/TransportationService";
