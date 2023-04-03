@@ -37,7 +37,7 @@ const StagesBlock = () => {
                 <Grid container sx={{display: 'flex', justifyContent: 'space-between', width: '100%'}}>
                     {stageNumbers.map(stNum => (
                         <Grid key={stNum} item lg={3} md={6} sm={12} xs={12}>
-                            <Typography variant={'h3'} sx={{fontSize: {md:'160px', sm: '120px', xs: '120px'}, lineHeight: '113.2%', color: '#A40000',}}>
+                            <Typography variant={'h3'} sx={{fontSize: {md:'160px', sm: '120px', xs: '120px'}, lineHeight: '113.2%', color: '#A40000', fontWeight: 'bold', textShadow: '0 0 5px rgba(0, 0, 0, 0.3)'}}>
                                 {stNum}
                             </Typography>
                         </Grid>

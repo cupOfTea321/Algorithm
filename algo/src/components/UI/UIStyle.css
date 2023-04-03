@@ -1,9 +1,10 @@
 .myBtn:hover{
     color: white !important;
-    background-color: #A40000 !important;
-}
-.secBtn{
+    background-color: #b8180d !important;
 
+}
+.secBtn:hover{
+    background-color: rgba(255,255,255,0.1) !important;
 }
 .allBtns{
     width: 300px;
@@ -11,4 +12,14 @@
 .servicesBtn{
     color: white !important;
     background-color: #A40000 !important;
+    /* тень по умолчанию */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* переход для плавности анимации */
+    transition: box-shadow 0.3s ease-in-out;
+}
+.servicesBtn:hover{
+    color: white !important;
+    background-color: #b8180d !important;
+    /* тень при наведении мыши */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4  );
 }

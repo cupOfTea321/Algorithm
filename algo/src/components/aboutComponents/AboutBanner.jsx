@@ -49,7 +49,7 @@ const AboutBanner = () => {
                     >
                         <ModalForm/>
                     </Backdrop>
-                    <SecondBtn href={'delivery'} height={'70px'}/>
+                    <SecondBtn height={'70px'}/>
                 </Box>
             </Box>
         </Container>

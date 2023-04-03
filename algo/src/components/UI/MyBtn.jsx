@@ -9,7 +9,7 @@ const MyBtn = ({color = 'white', border = '',backgroundColor = '#A40000', onClic
             display: { xs: display, md: 'flex' },
             backgroundColor: backgroundColor,
             border: border,
-            borderRadius: radius,
+            borderRadius: "20px",
 
             padding: {xl: '18px 30px',  md: '12px 20px', sm: '2px'},
             width: width,

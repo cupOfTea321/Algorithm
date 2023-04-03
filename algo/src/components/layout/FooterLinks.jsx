@@ -4,6 +4,7 @@ import SecondBtn from "../UI/SecondBtn.jsx";
 import ModalForm from "../UI/ModalForm.jsx";
 import MyBtn from "../UI/MyBtn.jsx";
 import {useTranslation} from "react-i18next";
+import {NavLink} from "react-router-dom";
 
 
 
@@ -39,12 +40,11 @@ const FooterLinks = () => {
             <Grid item lg={2} md={4} sm={6} xs={12}>
 
                 <Typography
-                    href={'/'}
                     sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>
                     {t("footerMain")}
                 </Typography>
                 {mainCol.map(row => (
-                    <a key={row.id} href={'/'}>
+                    <NavLink key={row.id} to={'/'}>
                         <Typography
 
 
@@ -52,7 +52,7 @@ const FooterLinks = () => {
                         >
                             {row.name}
                         </Typography>
-                    </a>
+                    </NavLink>
 
                 ))}
             </Grid>
@@ -61,7 +61,7 @@ const FooterLinks = () => {
                     {t("footerAbout")}
                 </Typography>
                 {aboutCol.map(row => (
-                    <a key={row.id} href={'/about'}>
+                    <NavLink key={row.id} to={'/about'}>
                         <Typography
 
 
@@ -69,7 +69,7 @@ const FooterLinks = () => {
                         >
                             {row.name}
                         </Typography>
-                    </a>))}
+                    </NavLink>))}
             </Grid>
             <Grid item lg={2} md={4} sm={6} xs={12}>
                 <Typography sx={{
@@ -77,32 +77,32 @@ const FooterLinks = () => {
                     fontSize: {sm: '16px', xs: '20px'}
                 }}>{t("footerClients")}</Typography>
                 {clientsCol.map(row => (
-                    <a key={row.id} href={'/clients'}>
+                    <NavLink key={row.id} to={'/clients'}>
                         <Typography
                             sx={{fontSize: {sm: '16px', xs: '20px'}, color: 'black'}}
                         >
                             {row.name}
                         </Typography>
-                    </a>
+                    </NavLink>
                 ))}
             </Grid>
             <Grid item lg={2} md={4} sm={6} xs={12}>
                 <Typography
                     sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>{t("footerServices")}</Typography>
-                <a href="/services">
+                <NavLink to="/services">
                     <Typography sx={{fontSize: {sm: '16px', xs: '20px', color: 'black'}}}>{t("servicesTypes")}</Typography>
-                </a>
-                <a href="/services">
+                </NavLink>
+                <NavLink to="/services">
                     <Typography sx={{fontSize: {sm: '16px', xs: '20px', color: 'black'}}}>{t("servicesPowers")}</Typography>
-                </a>
+                </NavLink>
 
             </Grid>
             <Grid item lg={1} md={4} sm={6} xs={12}>
                 <Typography
                     sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>{t("footerCatalog")}</Typography>
-                <a href="/delivery">
+                <NavLink to="/delivery">
                     <Typography sx={{fontSize: {sm: '16px', xs: '20px'}, color: 'black'}}>{t("catalogProducts")}</Typography>
-                </a>
+                </NavLink>
             </Grid>
             <Grid item lg={3} md={4} sm={6} xs={12} sx={{display: {md: 'flex', sm: 'none', xs: 'none'}}}>
                 <MyBtn width={'300px'}  border={'3px solid #A40000'} radius={'20px'} backgroundColor={''} onClick={handleToggle} height={'54px'} color={'black'}/>
