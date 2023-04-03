@@ -2,30 +2,31 @@ import React from 'react';
 import {Backdrop, Grid, Typography} from "@mui/material";
 import SecondBtn from "../UI/SecondBtn.jsx";
 import ModalForm from "../UI/ModalForm.jsx";
+import MyBtn from "../UI/MyBtn.jsx";
+import {useTranslation} from "react-i18next";
 
 
-const mainCol = [
-    {id: 1, name: 'Наши услуги', link: '/'},
-    {id: 2, name: 'Мощности', link: '/'},
-    {id: 3, name: 'Этапы работы', link: '/'},
-    {id: 4, name: 'Почему мы?', link: '/'},
-    {id: 5, name: 'Статьи', link: '/'},
-    {id: 6, name: 'Мы на карте', link: '/'},
-]
-const aboutCol = [
-    {id: 1, name: 'Особенности'},
-    {id: 2, name: 'Преимущества'},
-    {id: 3, name: 'Направление использования'},
-]
-const clientsCol = [
-    {id: 1, name: 'Договоры'},
-    {id: 2, name: 'Документация'},
-    {id: 3, name: 'Утилизаторам'},
-    {id: 4, name: 'Этапы работы'},
-    {id: 5, name: 'Почему мы?'},
-]
 
 const FooterLinks = () => {
+    const { t, i18n } = useTranslation();
+    const mainCol = [
+        {id: 1, name: t("mainServ"), link: '/'},
+        {id: 2, name: t("mainCapacities"), link: '/'},
+        {id: 3, name: t("mainStages"), link: '/'},
+        {id: 4, name: t("mainWhy"), link: '/'},
+        {id: 5, name: t("mainMap"), link: '/'},
+    ]
+    const aboutCol = [
+        {id: 1, name: t("aboutKnow")},
+        {id: 2, name: t("aboutBenefits")},
+        {id: 3, name: t("aboutAreas")},
+    ]
+    const clientsCol = [
+        {id: 1, name: t("clientsDocs")},
+        {id: 2, name: t("clientsCollectors")},
+        {id: 3, name: t("clientsStages")},
+        {id: 4, name: t("clientsWhy")},
+    ]
     const [open, setOpen] = React.useState(false);
     const handleClose = () => {
         setOpen(false);
@@ -39,7 +40,8 @@ const FooterLinks = () => {
 
                 <Typography
                     href={'/'}
-                    sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>Главная
+                    sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>
+                    {t("footerMain")}
                 </Typography>
                 {mainCol.map(row => (
                     <a key={row.id} href={'/'}>
@@ -55,8 +57,9 @@ const FooterLinks = () => {
                 ))}
             </Grid>
             <Grid item lg={2} md={4} sm={6} xs={12}>
-                <Typography sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>О
-                    биодизеле</Typography>
+                <Typography sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>
+                    {t("footerAbout")}
+                </Typography>
                 {aboutCol.map(row => (
                     <a key={row.id} href={'/about'}>
                         <Typography
@@ -72,7 +75,7 @@ const FooterLinks = () => {
                 <Typography sx={{
                     fontWeight: 'bold',
                     fontSize: {sm: '16px', xs: '20px'}
-                }}>Клиентам/партнерам</Typography>
+                }}>{t("footerClients")}</Typography>
                 {clientsCol.map(row => (
                     <a key={row.id} href={'/clients'}>
                         <Typography
@@ -85,24 +88,24 @@ const FooterLinks = () => {
             </Grid>
             <Grid item lg={2} md={4} sm={6} xs={12}>
                 <Typography
-                    sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>Услуги</Typography>
+                    sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>{t("footerServices")}</Typography>
                 <a href="/services">
-                    <Typography sx={{fontSize: {sm: '16px', xs: '20px', color: 'black'}}}>Перечень услуг</Typography>
+                    <Typography sx={{fontSize: {sm: '16px', xs: '20px', color: 'black'}}}>{t("servicesTypes")}</Typography>
                 </a>
                 <a href="/services">
-                    <Typography sx={{fontSize: {sm: '16px', xs: '20px', color: 'black'}}}>Мощности</Typography>
+                    <Typography sx={{fontSize: {sm: '16px', xs: '20px', color: 'black'}}}>{t("servicesPowers")}</Typography>
                 </a>
 
             </Grid>
-            <Grid item lg={2} md={4} sm={6} xs={12}>
+            <Grid item lg={1} md={4} sm={6} xs={12}>
                 <Typography
-                    sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>Каталог</Typography>
+                    sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>{t("footerCatalog")}</Typography>
                 <a href="/delivery">
-                    <Typography sx={{fontSize: {sm: '16px', xs: '20px'}, color: 'black'}}>продукция</Typography>
+                    <Typography sx={{fontSize: {sm: '16px', xs: '20px'}, color: 'black'}}>{t("catalogProducts")}</Typography>
                 </a>
             </Grid>
-            <Grid item lg={2} md={4} sm={6} xs={12} sx={{display: {md: 'flex', sm: 'none', xs: 'none'}}}>
-                <SecondBtn onClick={handleToggle} height={'54px'} color={'black'} text={'Оставить заявку'}/>
+            <Grid item lg={3} md={4} sm={6} xs={12} sx={{display: {md: 'flex', sm: 'none', xs: 'none'}}}>
+                <MyBtn width={'300px'}  border={'3px solid #A40000'} radius={'20px'} backgroundColor={''} onClick={handleToggle} height={'54px'} color={'black'}/>
                 <Backdrop
                     sx={{
                         color: 'black',

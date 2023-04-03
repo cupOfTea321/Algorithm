@@ -4,16 +4,19 @@ import point from "../../assets/pointRight.png";
 import backEL1 from '../../assets/backElement1.png'
 import backEL2 from '../../assets/backElement2.png'
 import stagesBack from '../../assets/stages.png'
-const advantages = [
-    'Одни из первых, кто занимается биодизельным топливом',
-    'Готовы к научно-исследовательскому обмену',
-    'Информационная открытость',
-    'Удобство логистики',
-    'Высокий уровень оказания услуг',
-    'Поддержка клиентов на каждом этапе',
-    'Прозрачность поставки',
-]
+import {useTranslation} from "react-i18next";
+
 const WhyDelivery = () => {
+    const { t, i18n } = useTranslation();
+    const advantages = [
+        t("catalog1"),
+        t("catalog2"),
+        t("catalog3"),
+        t("catalog4"),
+        t("catalog5"),
+        t("catalog6"),
+        t("catalog7"),
+    ]
     return (
         <Box sx={{
             background: `url(${stagesBack})`,
@@ -27,7 +30,7 @@ const WhyDelivery = () => {
 
                 <Typography className={'oswFont'} variant={'h4'}
                             sx={{fontSize: {sm: '34px', xs: '28px'}, textAlign: 'center', marginTop: '5%',}}>
-                    Почему вы должны выбрать “Алгоритм”?
+                    {t("catalogWhy")}
                 </Typography>
                 <Box sx={{marginTop: '4%', marginBottom: '5%'}}>
                     {advantages.map((advantage, index) => (

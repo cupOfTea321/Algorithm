@@ -4,14 +4,17 @@ import MyBtn from "./MyBtn.jsx";
 import backRound from "../../assets/backRound.png";
 import ModalForm from "./ModalForm.jsx";
 import stagesBack from '../../assets/stages.png'
+import {useTranslation} from "react-i18next";
 const stageNumbers = [1, 2, 3, 4]
-const stages = [
-    {name: 'Консультация', about: 'Обсуждение всех деталей по телефону или при личной встрече: выбор объема, вида топлива, консультация по продукции, выбор способа доставки'},
-    {name: 'Договор', about: 'Формирование цены, заключение договора'},
-    {name: 'Оплата', about: 'Проверка качества, оплата продукта, формирование следующей поставки'},
-    {name: 'Поставка', about: 'Доставка с помощью бензовозов и ж/д перевозок'},
-]
+
 const StagesBlock = () => {
+    const { t, i18n } = useTranslation();
+    const stages = [
+        {name: t("title1"), about: t("stage1")},
+        {name: t("title2"), about: t("stage2")},
+        {name: t("title3"), about: t("stage3")},
+        {name: t("title4"), about: t("stage4")},
+    ]
     const [open, setOpen] = React.useState(false);
     const handleClose = () => {
         setOpen(false);
@@ -29,7 +32,7 @@ const StagesBlock = () => {
         }}>
             <Container maxWidth={'xl'} sx={{marginTop: '5%', paddingTop: '5%', width: '100vw', }}>
                 <Typography className={'oswFont'} variant={'h3'} sx={{color: 'white', fontSize: '40px', textAlign: 'center'}}>
-                    Как происходит работа?
+                    {t("stagesBlock")}
                 </Typography>
                 <Grid container sx={{display: 'flex', justifyContent: 'space-between', width: '100%'}}>
                     {stageNumbers.map(stNum => (
@@ -41,7 +44,7 @@ const StagesBlock = () => {
 
                     ))}
                 </Grid>
-                <Grid container sx={{color: 'white', marginLeft: '-4%', display: 'flex', textAlign: 'center', marginTop: {lg: '-50px', md: '-280px', sm: '-520px', xs: '-520px'}}}>
+                <Grid container sx={{color: 'white', marginLeft: '-4%', display: 'flex', textAlign: 'center', marginTop: {lg: '-50px', md: '-280px', sm: '-520px', xs: '-500px'}}}>
                     {stages.map(stage => (
                         <Grid key={stage.name} item lg={3} md={6} sm={12} xs={12} sx={{marginBottom: {md: '60px', sm: '30px', xs: '25px'}}}>
                             <Typography className={'oswFont'} variant={'h4'} sx={{fontSize: {lg:'34px', md: '26px', sm: '32px', xs: '32px'}}}>

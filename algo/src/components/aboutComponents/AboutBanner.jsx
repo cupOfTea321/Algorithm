@@ -3,8 +3,10 @@ import {Backdrop, Box, Container, Typography} from "@mui/material";
 import MyBtn from "../UI/MyBtn.jsx";
 import SecondBtn from "../UI/SecondBtn.jsx";
 import ModalForm from "../UI/ModalForm.jsx";
+import {useTranslation} from "react-i18next";
 
 const AboutBanner = () => {
+    const { t, i18n } = useTranslation();
     const [open, setOpen] = React.useState(false);
     const handleClose = () => {
         setOpen(false);
@@ -26,12 +28,12 @@ const AboutBanner = () => {
                     fontSize: {lg: '48px', md: '36px', sm: '30px', xs: '36px'},
 
                 }}>
-                    Мы одни из первых стали производителями Биодизеля в России
+                    {t("aboutMain")}
                 </Typography>
                 <Typography variant={'h3'} sx={{
                     fontSize: '24px'
                 }}>
-                    Закажите биодизельное топливо высокого качества и ощутите разницу с ископаемым!
+                    {t("aboutMain2")}
                 </Typography>
                 <Box sx={{
                     display: 'flex',

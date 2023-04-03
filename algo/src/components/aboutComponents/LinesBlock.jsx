@@ -8,13 +8,16 @@ import oil from '../../assets/oil.png'
 import MyBtn from "../UI/MyBtn.jsx";
 import SecondBtn from "../UI/SecondBtn.jsx";
 import ModalForm from "../UI/ModalForm.jsx";
+import {useTranslation} from "react-i18next";
 
-const afterLines = [
-    'Для систем отопления загородных домов',
-    'На автотранспорте в чистом виде и в различных смесях с дизельным топливом',
-    'Для различных механизмов и агрегатов ',
-]
+
 const LinesBlock = () => {
+    const { t, i18n } = useTranslation();
+    const afterLines = [
+        t("area1"),
+        t("area2"),
+        t("area3"),
+    ]
     const [open, setOpen] = React.useState(false);
     const handleClose = () => {
         setOpen(false);
@@ -26,10 +29,10 @@ const LinesBlock = () => {
         <Container maxWidth={'xl'}>
             <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <Typography sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: 'center', marginTop: '40px', fontWeight: 'bold'}}>
-                    В каких направлениях пригодна наша продукция
+                    {t("areasBlock")}
                 </Typography>
                 <Typography sx={{fontSize: {sm:'28px', xs: '24px'}, textAlign: 'center', marginTop: '40px', width: '80%'}}>
-                    ООО “Алгоритм” занимается разработкой качественного биодизельного топлива как для внутреннего рынка, так и на экспорт.
+                    {t("areas")}
                 </Typography>
                 {/* ПК версия */}
                 <Box sx={{display: {lg: 'flex', md: 'none', sm: 'none', xs: 'none'}, flexDirection: 'column', alignItems: 'center'}}>
@@ -42,19 +45,19 @@ const LinesBlock = () => {
                         <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column', margin: {xl:'0 100px', lg: '0 150px'}}}>
                             <img id={'leftOil'} src={oil} alt="" style={{width: '30px'}}/>
                             <Typography sx={{fontSize: {sm:'28px', xs: '24px'}, width: '200%'}}>
-                                Для систем отопления загородных домов
+                                {t("area1")}
                             </Typography>
                         </Box>
                         <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column', margin: '0 120px', marginTop: '50px'}}>
                             <img id={'centerOil'} src={oil} alt="" style={{width: '30px'}}/>
                             <Typography sx={{fontSize: {sm:'28px', xs: '24px'}, width: '140%'}}>
-                                На автотранспорте в чистом виде и в различных смесях с дизельным топливом
+                                {t("area2")}
                             </Typography>
                         </Box>
                         <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column', margin: {xl:'0 120px', lg: '0 170px'}}}>
                             <img id={'rightOil'} src={oil} alt="" style={{width: '30px'}}/>
                             <Typography sx={{fontSize: {lg:'28px', md: '24px', sm: '24px'}, width: '200%'}}>
-                                Для различных механизмов и агрегатов
+                                {t("area3")}
                             </Typography>
                         </Box>
                     </Box>

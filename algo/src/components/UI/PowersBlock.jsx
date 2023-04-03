@@ -3,22 +3,24 @@ import {Box, Container, Grid, Typography} from "@mui/material";
 import '../components.css'
 import pointLeft from '../../assets/pointLeft.png'
 import mobileLine from "../../assets/mobileLine.png";
-import MyBtn from "./MyBtn.jsx";
-import SecondBtn from "./SecondBtn.jsx";
+import {useTranslation} from "react-i18next";
 
-const powersFirst = [
-    {name: '4 ЖД-вагона', about: 'Прием в сутки',},
-    {name: '6-12 ЖД-вагонов', about: 'Отгрузка в сутки',},
-    {name: '6 единовременно', about: 'Отстой вагонов на собственных путях',},
-    {name: 'до 800 т сутки', about: 'Прием топлива из автомобильных цистерн',},
-]
-const powersSecond = [
-    {name: 'Цистерна 20 000 т', about: 'Максимальная мощность\n' + 'экспортных отгрузок\n' + 'ЖД-автоцистерн'},
-    {name: '8 000 тыс .', about: 'Прием - отгрузка ЖД цистерн\n' + 'в сутки'},
-    {name: '3000 т', about: 'Парк хранения',},
-    {name: 'Экспорт /внутренний\n' + 'рынок', about: 'Автомобильный налив',},
-]
+
 const PowersBlock = () => {
+    const { t, i18n } = useTranslation();
+    const powersFirst = [
+        {name: t("power1"), about: t("titlePower1")},
+        {name: t("power2"), about: t("titlePower2")},
+        {name: t("power3"), about: t("titlePower3")},
+        {name: t("power4"), about: t("titlePower4")},
+    ]
+    const powersSecond = [
+        {name: t("power5"), about: t("titlePower5")},
+        {name: t("power6"), about: t("titlePower6")},
+        {name: t("power7"), about: t("titlePower7")},
+        {name: t("power8"), about: t("titlePower8")},
+    ]
+
     return (
         <Container maxWidth={'xl'}>
             <Typography className={'oswFont'} variant={'h4'} sx={{
@@ -27,7 +29,7 @@ const PowersBlock = () => {
                 marginBottom: '3%',
                 textAlign: {md: 'left',xs: 'center'}
             }}>
-                Предоставляемые мощности:
+                {t("powersBlock")}
             </Typography>
 
             {/*ПК версия*/}

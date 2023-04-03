@@ -6,13 +6,16 @@ import serv1 from '../assets/serv1.png'
 import serv2 from '../assets/serv2.png'
 import serv3 from '../assets/serv3.png'
 import serv4 from '../assets/serv4.png'
-const services = [
-    {text: "Хранение", img: serv1, link: 'services/storage'},
-    {text: "Перевозка", img: serv2, link: 'services/transportation'},
-    {text: "Оформление", img: serv3, link: 'services/registration'},
-    {text: "Отгрузка", img: serv4, link: 'services/shipment'},
-]
+import {useTranslation} from "react-i18next";
+
 const MainServices = () => {
+    const { t, i18n } = useTranslation();
+    const services = [
+        {text: t("storage"), img: serv1, link: 'services/storage'},
+        {text: t("transportation"), img: serv2, link: 'services/transportation'},
+        {text: t("registration"), img: serv3, link: 'services/registration'},
+        {text: t("shipment"), img: serv4, link: 'services/shipment'},
+    ]
     return (
         <Container maxWidth={'xl'}>
             <Box sx={{
@@ -27,7 +30,7 @@ const MainServices = () => {
 
                     fontSize: {sm:'34px', xs: '28px'}, textAlign: 'center', marginTop: '40px'
                 }}>
-                    КАКИЕ УСЛУГИ МЫ ОКАЗЫВАЕМ?
+                    {t("servicesBlock")}
                 </Typography>
                 <Box sx={{
                     marginTop: {sm: '2%', xs: '5%'},

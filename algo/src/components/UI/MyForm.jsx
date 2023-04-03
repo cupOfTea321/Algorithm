@@ -3,10 +3,12 @@ import {Box, Checkbox, TextField, Typography} from "@mui/material";
 import {useForm, ValidationError} from "@formspree/react";
 import MyBtn from "./MyBtn.jsx";
 import {useEffect, useState} from "react";
+import {useTranslation} from "react-i18next";
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 const MyForm = () => {
+    const { t, i18n } = useTranslation();
     const [state, handleSubmit] = useForm("meqwrlkb");
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
@@ -28,7 +30,7 @@ const MyForm = () => {
                 onChange={e => setName(e.target.value)}
                 id="name"
                 name="name"
-                label="ФИО"
+                label={t("clientName")}
                 required
                 multiline
                 maxRows={4}
@@ -39,7 +41,7 @@ const MyForm = () => {
                 onChange={e => setPhone(e.target.value)}
                 id="phone"
                 name="phone"
-                label="Номер телефона"
+                label={t("clientNumber")}
                 multiline
                 maxRows={4}
                 sx={{width: {cm:'360px', xs: '280px'}, marginBottom: '20px', background: '#E3D9D9'}}
@@ -65,7 +67,7 @@ const MyForm = () => {
                 onChange={e => setMessage(e.target.value)}
                 id="message"
                 name="message"
-                label="Комментарий"
+                label={t("clientComment")}
                 required
                 multiline
 
@@ -92,7 +94,7 @@ const MyForm = () => {
                     }}
                 />
                 <Typography sx={{marginLeft: '3%', fontSize: '12px'}}>
-                    Даю согласие на обработку данных
+                    {t("clientClick")}
                 </Typography>
             </Box>
 

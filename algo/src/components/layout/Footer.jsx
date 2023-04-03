@@ -3,8 +3,9 @@ import {Backdrop, Box, Container, Typography} from "@mui/material";
 import logo from '../../assets/footerLogo.png'
 import policy from '../../docs/policy.pdf'
 import FooterLinks from "./FooterLinks.jsx";
+import {useTranslation} from "react-i18next";
 const Footer = () => {
-
+    const { t, i18n } = useTranslation();
     const [openPolicy, setOpenPolicy] = React.useState(false);
     const handleClosePolicy = () => {
         setOpenPolicy(false);
@@ -28,7 +29,7 @@ const Footer = () => {
                     <Box sx={{
                         paddingRight: {sm: '6%', xs: '0%'},
                         marginTop: {sm: '0px', xs: '20px'},
-                        width: {md: '10%'},
+                        width: {md: '20%'},
                         marginBottom: '2%'
                     }}>
                         <a href="#">
@@ -50,9 +51,9 @@ const Footer = () => {
                     {/*<a  target="_blank" rel="noopener noreferrer">Политика обработки персональных данных</a>*/}
 
                     <Typography onClick={handleTogglePolicy} component={'a'} sx={{color: 'black', textDecoration: 'underline'}}>
-                        Политика обработки персональных данных
+                        {t("policy1")}
                     </Typography>
-                    <Typography onClick={handleTogglePolicy} component={'a'} sx={{color: 'black', textDecoration: 'underline'}}>Согласие на обработку персональных данных</Typography>
+                    <Typography onClick={handleTogglePolicy} component={'a'} sx={{color: 'black', textDecoration: 'underline'}}>{t("policy2")}</Typography>
                     <Backdrop
                         sx={{
                             color: 'black',

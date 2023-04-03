@@ -5,9 +5,11 @@ import delivery2 from '../../assets/delivery2.png'
 import delivery3 from '../../assets/delivery3.png'
 import MyBtn from "../UI/MyBtn.jsx";
 import ModalForm from "../UI/ModalForm.jsx";
+import {useTranslation} from "react-i18next";
 
 
 const MainDelivery = () => {
+    const { t, i18n } = useTranslation();
     const [open, setOpen] = React.useState(false);
     const handleClose = () => {
         setOpen(false);
@@ -19,29 +21,29 @@ const MainDelivery = () => {
         <Container maxWidth={'xl'}>
             <Box sx={{display: 'flex', flexDirection: 'column', width: '100%', gap: 4, alignItems: {sm: 'flex-start', xs:'center'}, }}>
                 <Typography sx={{fontSize: {lg: '40px', md: '32px', sm: '28px', xs: '24px'}, textAlign: {sm: 'left', xs: 'center'}}}>
-                    Топливо и нефтепродукты с доставкой за 24 часа
+                    {t("catalogMain")}
                 </Typography>
                 <Box sx={{display: 'flex', gap: 4, width: '60%', justifyContent: 'space-between', flexDirection: {sm:'row', xs: 'column'},}}>
                     <Box sx={{display: 'flex',  alignItems: 'center'}}>
                         <img src={delivery1} alt="" style={{width: '80px', marginRight: '20px'}}/>
                         <Box>
                             <Typography sx={{fontWeight: 'bold'}}>
-                                Дизельное топливо
+                                {t("catalogTitle1")}
                             </Typography>
-                            <Typography>Летнее</Typography>
-                            <Typography>Зимнее</Typography>
-                            <Typography>Межсезонное</Typography>
+                            <Typography>{t("catalogText11")}</Typography>
+                            <Typography>{t("catalogText12")}</Typography>
+                            <Typography>{t("catalogText13")}</Typography>
                         </Box>
                     </Box>
                     <Box sx={{display: 'flex', alignItems: 'center'}}>
                         <img src={delivery2} alt="" style={{width: '80px', marginRight: '20px'}}/>
                         <Box>
                             <Typography sx={{fontWeight: 'bold'}}>
-                                Бензин
+                                {t("catalogTitle2")}
                             </Typography>
-                            <Typography>Бензин АИ-92</Typography>
-                            <Typography>Бензин АИ-95</Typography>
-                            <Typography>Бензин АИ-98</Typography>
+                            <Typography>{t("catalogText21")}</Typography>
+                            <Typography>{t("catalogText22")}</Typography>
+                            <Typography>{t("catalogText23")}</Typography>
                         </Box>
                     </Box>
                 </Box>
@@ -49,7 +51,7 @@ const MainDelivery = () => {
                     <Box sx={{display: 'flex',  alignItems: 'center',}}>
                         <img src={delivery3} alt="" style={{width: '80px', marginRight: '20px'}}/>
                         <Typography sx={{fontWeight: 'bold'}}>
-                            Биодизельное топливо
+                            {t("catalogTitle3")}
                         </Typography>
                     </Box>
                     <MyBtn onClick={handleToggle} height={'70px'} radius={'20px'} width={{sm: '320px', xs: '230px'}}/>

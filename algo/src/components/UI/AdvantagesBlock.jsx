@@ -1,20 +1,23 @@
 import React from 'react';
 import {Box, Container, Typography} from "@mui/material";
 import point from '../../assets/pointRight.png'
-const advantages = [
-    'Одни из первых, кто занимается биодизельным топливом',
-    'Готовы к научно-исследовательскому обмену',
-    'Информационная открытость',
-    'Удобство логистики',
-    'Высокий уровень оказания услуг',
-    'Поддержка клиентов на каждом этапе',
-    'Прозрачность поставки',
-]
+import {useTranslation} from "react-i18next";
+
 const AdvantagesBlock = () => {
+    const { t, i18n } = useTranslation();
+    const advantages = [
+        t("point1"),
+        t("point2"),
+        t("point3"),
+        t("point4"),
+        t("point5"),
+        t("point6"),
+        t("point7"),
+    ]
     return (
         <Container maxWidth={'xl'}>
             <Typography className={'oswFont'} variant={'h4'} sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: 'center', marginTop: '5%', }}>
-                Почему вы должны выбрать “Алгоритм”?
+                {t("whyUsBlock")}
             </Typography>
             <Box sx={{marginTop: '4%', marginBottom: '5%'}}>
                 {advantages.map((advantage, index) => (

@@ -3,9 +3,11 @@ import {Backdrop, Box, Container, Typography} from "@mui/material";
 import MyBtn from "../UI/MyBtn.jsx";
 import ModalForm from "../UI/ModalForm.jsx";
 import ClientsDocs from "./ClientsDocs.jsx";
+import {useTranslation} from "react-i18next";
 
 
 const ClientsMainBlock = () => {
+    const { t, i18n } = useTranslation();
     const [open, setOpen] = React.useState(false);
     const handleClose = () => {
         setOpen(false);
@@ -27,39 +29,30 @@ const ClientsMainBlock = () => {
                     fontSize: {lg: '60px', md: '48px', sm: '42px', xs: '36px'},
                     color: '#A81A1A',
                 }}>
-                    ОПТОВЫЕ ПОСТАВКИ БИОДИЗЕЛЬНОГО И ДИЗЕЛЬНОГО ТОПЛИВА С 2016 ГОДА
+                    {t("clientsMain")}
                 </Typography>
                 <Typography variant={'h3'} sx={{
                     fontSize: '28px',
                     color: '#A81A1A',
                 }}>
-                    Ознакомьтесь с необходимой документацией перед оформлением заказа
+                    {t("clientsMain2")}
                 </Typography>
                 <Box sx={{display: 'flex', width: '100%', justifyContent: 'center', gap: {sm: 6, xs: 1}, marginTop: '5%'}}>
-                    <Box sx={{background: 'white', borderRadius: '20px', width: '40%', }}>
-                        <Typography sx={{fontSize: {md: '34px', sm:'26px', xs: '20px'}, color: '#A81A1A'}}>
-                            Заключение договора
-                        </Typography>
-                        <Typography>
-                            Договор поставки на условиях предоплаты
-                        </Typography>
-                    </Box>
-                    <Box sx={{display: 'flex', flexDirection: 'column',background: 'white', borderRadius: '20px', width: '40%', height: '300px'}}>
+
+                    <Box sx={{display: 'flex', flexDirection: 'column',background: 'white', borderRadius: '20px',  width: '82%', paddingTop: '20px', paddingBottom: '20px'}}>
                         <ClientsDocs/>
                     </Box>
                 </Box>
                 <Box sx={{display: 'flex', flexDirection: 'column', width: '82%', margin: '0 auto', background: 'white', borderRadius: '20px', gap: 2, marginTop: '2%'}}>
                     <Typography sx={{fontSize: {md: '34px', sm:'26px', xs: '20px'}, color: '#A81A1A'}}>
-                        “Алгоритм” утилизаторам
+                        {t("algo")}
                     </Typography>
                     <Typography sx={{fontSize: '20px'}}>
-                        Мы предлагаем сотрудничество юридическим лицам, индивидуальным предпринимателям,
-                        осуществляющим различную деятельность с отходами производства и потребления с целью
-                        покупки и дальнейшего использования для производства биодизельного топлива.
+                        {t("algoAbout")}
                     </Typography>
                     <Typography sx={{fontSize: '20px'}}>
                         <a href={'#'} style={{textDecoration: 'underline', color: 'black', marginBottom: '10px'}}>
-                            Читать подробнее
+                            {t("algoMore")}
                         </a>
                     </Typography>
                 </Box>

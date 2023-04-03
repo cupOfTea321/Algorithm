@@ -3,31 +3,36 @@ import {Container} from "@mui/material";
 import ServicesBanner from "../components/serviceComponents/ServicesBanner.jsx";
 import OrderService from "../components/serviceComponents/OrderService.jsx";
 import ReasonsBlock from "../components/serviceComponents/ReasonsBlock.jsx";
+import {useTranslation} from "react-i18next";
 
 
 
-const storage = {
-    mainTitle: 'БРОКЕРСКИЕ УСЛУГИ',
-    secondTitle: 'Осуществляем взаимодействие с клиринговыми компаниями, поставщиками и контрагентами, обладая при этом полным членством на бирже',
-    list: [
-        'Проконсультируем на всех этапах',
-        'Гарантируем качество',
-        'Прозрачность операций',
-        'Безопасность при проведении расчета',
-    ]
-}
-const order = {
-    secondTitle: 'Оформите заявку на услугу, и мы свяжемся с Вами в ближайшее время, чтобы предоставить точный расчёт',
-    quantity: '50 р/т - заключение сделки',
-}
-const reasonTitle = 'Формат взаимодействия и расчет цены:'
-const reasons = [
-    'Заключение сделки',
-    'Возмещение расходов',
-    'Биржевый сбор',
-    'Клиринговый сбор',
-]
+
 const ShipmentService = () => {
+    const { t, i18n } = useTranslation();
+
+    const storage = {
+        mainTitle: t("shipmentMain"),
+        secondTitle: t("shipmentSecond"),
+        list: [
+            t("shipment1"),
+            t("shipment2"),
+            t("shipment3"),
+            t("shipment4"),
+        ]
+    }
+    const order = {
+        secondTitle: t("shipmentAbout"),
+        quantity: t("shipmentPrice")
+    }
+    const reasonTitle = t("shipmentRequests")
+    const reasons = [
+        t("shipmentRequest1"),
+        t("shipmentRequest2"),
+        t("shipmentRequest3"),
+        t("shipmentRequest4"),
+    ]
+
     return (
         <>
             <ServicesBanner storage={storage}/>

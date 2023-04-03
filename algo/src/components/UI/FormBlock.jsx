@@ -4,12 +4,13 @@ import MyBtn from "./MyBtn.jsx";
 import { pink } from '@mui/material/colors';
 import { useForm, ValidationError } from '@formspree/react';
 import MyForm from "./MyForm.jsx";
+import {useTranslation} from "react-i18next";
 const FormBlock = () => {
-
+    const { t, i18n } = useTranslation();
     return (
         <Container maxWidth={'xl'}>
             <Typography variant={'h3'} sx={{fontSize: '42px', textAlign: 'center'}}>
-                Не нашли нужный сервис?
+                {t("pageForm")}
             </Typography>
             <Box sx={{
 
@@ -24,9 +25,7 @@ const FormBlock = () => {
 
                 <MyForm/>
                 <Typography sx={{fontSize: {md: '26px', sm: '20px'}, width: {md: '40%', sm: '60%'}, marginLeft: {lg:'50px'}}}>
-                    Оставляйте заявку на сайте
-                    Мы обязательно с Вами свяжемся
-                    и обсудим оставшиеся вопросы.
+                    {t("pageFormText")}
                 </Typography>
             </Box>
         </Container>

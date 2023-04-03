@@ -3,36 +3,39 @@ import {Box, Container} from "@mui/material";
 import ServicesBanner from "../components/serviceComponents/ServicesBanner.jsx";
 import OrderService from "../components/serviceComponents/OrderService.jsx";
 import ReasonsBlock from "../components/serviceComponents/ReasonsBlock.jsx";
+import {useTranslation} from "react-i18next";
 
 
-
-const storage = {
-    mainTitle: 'ОТГРУЗКА ТОПЛИВА',
-    secondTitle: 'Обеспечиваем своевременную доставку топлива, оформленную документацию и высокий уровень оказания услуги',
-    list: [
-        'Не допускаем аварийных ситуаций',
-        'Клиентская поддержка',
-        'Качественная продукция',
-        'Отгрузка в сутки: от 6 до 12 ЖД вагонов',
-    ]
-}
-const order = {
-    secondTitle: 'Оформите заявку на услугу, и мы свяжемся с Вами в ближайшее время, ответим на все интересующие вопросы и начнем работу',
-    quantity: '',
-}
-const reasons = [
-    'Ж/Д поставки',
-    'Танкерные перевозки по воде',
-]
-const reasonTitle = 'Способы доставки:'
-const reasons2 = [
-    'Документальное оформление',
-    'Допуск транспортного средства к перевозке',
-    'Соблюдение требований безопасности при перевозке и отгрузке',
-    'Подготовленные водители т/с',
-]
-const reasonTitle2 = 'Условия перевозки:'
 const RegistrationService = () => {
+    const { t, i18n } = useTranslation();
+    const storage = {
+        mainTitle: t("registrationMain"),
+        secondTitle: t("registrationSecond"),
+        list: [
+            t("registration1"),
+            t("registration2"),
+            t("registration3"),
+            t("registration4"),
+        ]
+    }
+    const order = {
+        secondTitle: t("orderAbout"),
+        quantity: '',
+    }
+    const reasonTitle = t("registrationWays")
+    const reasons = [
+        t("registrationWay1"),
+        t("registrationWay2"),
+    ]
+
+    const reasonTitle2 = t("registrationRequests")
+    const reasons2 = [
+        t("registrationRequest1"),
+        t("registrationRequest2"),
+        t("registrationRequest3"),
+        t("registrationRequest4"),
+    ]
+
     return (
         <>
             <ServicesBanner storage={storage}/>

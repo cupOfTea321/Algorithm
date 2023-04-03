@@ -4,7 +4,9 @@ import balance from "../../docs/Bukhgalterskii_774_balans_1.pdf";
 import balance2 from "../../docs/Bukhgalterskii_774_balans_2.pdf";
 import uchet from "../../docs/svidetelstvo_o_postanovke_na_uchet.pdf";
 import {Backdrop, Box, Typography} from "@mui/material";
+import {useTranslation} from "react-i18next";
 const ClientsDocs = () => {
+    const { t, i18n } = useTranslation();
     const [openBalance, setOpenBalance] = React.useState(false);
     const handleCloseBalance = () => {
         setOpenBalance(false);
@@ -29,11 +31,11 @@ const ClientsDocs = () => {
     return (
         <>
             <Typography sx={{fontSize: {md: '34px', sm:'26px', xs: '20px'}, color: '#A81A1A'}}>
-                Наша документация
+                {t("docs")}
             </Typography>
 
-            <Typography onClick={handleToggleBalance} component={'a'} sx={{color: 'black', cursor: 'pointer'}}>
-                Бухгалтерский баланс 1
+            <Typography onClick={handleToggleBalance} component={'a'} sx={{color: 'black', cursor: 'pointer', fontSize: '20px'}}>
+                {t("balance1")}
             </Typography>
             <Backdrop
                 sx={{
@@ -52,8 +54,8 @@ const ClientsDocs = () => {
                 </Box>
             </Backdrop>
 
-            <Typography onClick={handleToggleBalance2} component={'a'} sx={{color: 'black', cursor: 'pointer'}}>
-                Бухгалтерский баланс 2
+            <Typography onClick={handleToggleBalance2} component={'a'} sx={{color: 'black', cursor: 'pointer',  fontSize: '20px'}}>
+                {t("balance2")}
             </Typography>
             <Backdrop
                 sx={{
@@ -71,8 +73,8 @@ const ClientsDocs = () => {
                      }} frameBorder='1'>
                 </Box>
             </Backdrop>
-            <Typography onClick={handleToggleUchet} component={'a'} sx={{color: 'black', cursor: 'pointer'}}>
-                Свидетельство о постановке на учёт
+            <Typography onClick={handleToggleUchet} component={'a'} sx={{color: 'black', cursor: 'pointer',  fontSize: '20px'}}>
+                {t("registrationDoc")}
             </Typography>
             <Backdrop
                 sx={{

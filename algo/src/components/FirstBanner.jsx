@@ -4,7 +4,9 @@ import MyBtn from "./UI/MyBtn.jsx";
 import SecondBtn from "./UI/SecondBtn.jsx";
 import './components.css'
 import ModalForm from "./UI/ModalForm.jsx";
+import {useTranslation} from "react-i18next";
 const FirstBanner = () => {
+    const { t, i18n } = useTranslation();
     const [open, setOpen] = React.useState(false);
     const handleClose = () => {
         setOpen(false);
@@ -26,12 +28,12 @@ const FirstBanner = () => {
                     fontSize: {lg: '48px', md: '36px', sm: '30px', xs: '36px'},
 
                 }}>
-                    ОПТОВЫЕ ПОСТАВКИ БИОДИЗЕЛЬНОГО И ДИЗЕЛЬНОГО ТОПЛИВА
+                    {t("mainBanner")}
                 </Typography>
                 <Typography variant={'h3'} sx={{
                     fontSize: '24px'
                 }}>
-                    Закажите топливо высокого качества с доставкой за 24 часа
+                    {t("mainBanner2")}
                 </Typography>
                 <Box sx={{
                     display: 'flex',

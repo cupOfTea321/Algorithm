@@ -3,7 +3,9 @@ import {Backdrop, Box, Container, Typography} from "@mui/material";
 import backRound from '../../assets/backRound.png'
 import MyBtn from "../UI/MyBtn.jsx";
 import ModalForm from "../UI/ModalForm.jsx";
+import {useTranslation} from "react-i18next";
 const OrderService = ({order}) => {
+    const { t, i18n } = useTranslation();
     const [open, setOpen] = React.useState(false);
     const handleClose = () => {
         setOpen(false);
@@ -29,7 +31,7 @@ const OrderService = ({order}) => {
             }}>
                 <Box sx={{width: {lg: '50%', sm: '100%', xs: '100%'}}}>
                     <Typography className={'oswFont'} sx={{fontSize: '34px', marginBottom: '20px'}}>
-                        Заказать услугу
+                        {t("orderService")}
                     </Typography>
                     <Typography sx={{fontSize: '22px'}}>
                         {order.secondTitle}

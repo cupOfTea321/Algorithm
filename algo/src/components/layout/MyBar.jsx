@@ -136,8 +136,10 @@ const MyBar = () => {
                         >
                             <ModalForm/>
                         </Backdrop>
+                        <Box sx={{marginLeft: '10px'}}>
+                            <ChangeLangBtn/>
+                        </Box>
 
-                        <ChangeLangBtn/>
                     </Box>
                 </Toolbar>
             </Container>

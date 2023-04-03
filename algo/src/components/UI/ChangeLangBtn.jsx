@@ -19,14 +19,13 @@ const ChangeLangBtn = () => {
                     borderRadius: '50%',
                     color: 'rgba(0, 0, 0, 0.25)',
                     border: '1px solid rgba(0, 0, 0, 0.25)',
-                    height: '50px',
-                    width: '50px'
+                    height: '60px',
+                    width: '50px',
+                    fontSize: '18px'
                 }}>
                     En
                 </Button>
 
-                <div style={{color: 'black'}}>{t("text")}</div>
-                {/*<div style={{color: 'black'}}>{t("hello")}</div>*/}
             </>
         )
     }
@@ -39,14 +38,12 @@ const ChangeLangBtn = () => {
                 borderRadius: '50%',
                 color: 'rgba(0, 0, 0, 0.25)',
                 border: '1px solid rgba(0, 0, 0, 0.25)',
-                height: '50px',
-                width: '50px'
+                height: '60px',
+                width: '50px',
+                fontSize: '18px'
             }}>
                 Ru
             </Button>
-
-            <div style={{color: 'black'}}>{t("text")}</div>
-            {/*<div style={{color: 'black'}}>{t("hello")}</div>*/}
         </>
     );
 };
