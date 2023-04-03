@@ -12,6 +12,7 @@ import StorageService from "./pages/StorageService.jsx";
 import TransportationService from "./pages/TransportationService";
 import RegistrationService from "./pages/RegistrationService.jsx";
 import ShipmentService from "./pages/ShipmentService.jsx";
+import CollectorsPage from "./pages/CollectorsPage.jsx";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                   <Route path={'services/registration'} exact element={<RegistrationService/>}/>
                   <Route path={'services/shipment'} exact element={<ShipmentService/>}/>
                   <Route path={'clients'} exact element={<ForClientsPage/>}/>
+                  <Route path={'clients/collectors'} exact element={<CollectorsPage/>}/>
                   <Route path={'*'} element={<NotFound/>}/>
               </Route>
           </Routes>

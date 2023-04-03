@@ -4,6 +4,7 @@ import MyBtn from "../UI/MyBtn.jsx";
 import ModalForm from "../UI/ModalForm.jsx";
 import ClientsDocs from "./ClientsDocs.jsx";
 import {useTranslation} from "react-i18next";
+import {NavLink} from "react-router-dom";
 
 
 const ClientsMainBlock = () => {
@@ -51,9 +52,9 @@ const ClientsMainBlock = () => {
                         {t("algoAbout")}
                     </Typography>
                     <Typography sx={{fontSize: '20px'}}>
-                        <a href={'#'} style={{textDecoration: 'underline', color: 'black', marginBottom: '10px'}}>
+                        <NavLink to={'collectors'} style={{textDecoration: 'underline', color: 'black', marginBottom: '10px'}}>
                             {t("algoMore")}
-                        </a>
+                        </NavLink>
                     </Typography>
                 </Box>
                 <Box sx={{display: 'flex', justifyContent: 'center', marginTop: '6%'}}>
