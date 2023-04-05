@@ -21,7 +21,7 @@ const CollectorsLaws = () => {
     return (
         <Container maxWidth={'xl'}>
             <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '10%', marginBottom: '5%'}}>
-                <Typography className={'oswFont'} sx={{textAlign: 'center', fontSize: '34px', width: '60%'}}>
+                <Typography className={'oswFont'} sx={{textAlign: 'center', fontSize: '34px', width: {sm: '60%', xs: '100%'}}}>
                     {t("collectorsLaws")}
                 </Typography>
             </Box>

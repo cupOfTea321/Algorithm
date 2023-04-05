@@ -79,7 +79,7 @@ const MyForm = () => {
                 field="message"
                 errors={state.errors}
             />
-            <MyBtn disabled={state.submitting} type={'submit'} height={'56px'}  width={{cm:'360px', xs: '280px'}}/>
+            <MyBtn borderRadius={'5px'} disabled={state.submitting} type={'submit'} height={'56px'}  width={{cm:'360px', xs: '280px'}}/>
             <Box sx={{display: 'flex', alignItems: 'center', marginTop: '5%'}}>
                 <Checkbox
                     {...label}

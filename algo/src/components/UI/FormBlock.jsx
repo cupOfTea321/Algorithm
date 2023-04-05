@@ -17,7 +17,7 @@ const FormBlock = () => {
                 display: 'flex',
                 flexDirection: {lg: 'row', md: 'column', sm: 'column', xs: 'column'},
                 justifyContent: 'center',
-                marginTop: '3%',
+                marginTop: '8%',
                 width: '100%',
                 alignItems: 'center',
                 // marginLeft: {sm: '0', xs: '-2vw'}

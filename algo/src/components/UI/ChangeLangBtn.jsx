@@ -20,7 +20,7 @@ const ChangeLangBtn = () => {
                     color: 'rgba(0, 0, 0, 0.25)',
                     border: '1px solid rgba(0, 0, 0, 0.25)',
                     height: '60px',
-                    width: '50px',
+                    width: '36px',
                     fontSize: '18px'
                 }}>
                     En

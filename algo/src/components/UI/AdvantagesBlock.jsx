@@ -21,8 +21,9 @@ const AdvantagesBlock = () => {
             </Typography>
             <Box sx={{marginTop: '4%', marginBottom: '5%'}}>
                 {advantages.map((advantage, index) => (
-                    <Box key={index} sx={{display: 'flex', alignItems: 'center'}}>
-                        <img src={point} alt={'point'} style={{width: '20px', height: '20px'}}/>
+                    <Box key={index} sx={{display: 'flex', alignItems: 'center', marginBottom: '20px'}}>
+                        <Box component={'img'} src={point} alt={'point'} sx={{width: {sm: '20px',  xs:'15px'}}}/>
+
                         <Typography variant={'h5'} sx={{fontSize: {sm:'28px', xs: '20px'}, marginLeft: '4%'}}>
                             {advantage}
                         </Typography>

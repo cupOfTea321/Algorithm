@@ -29,15 +29,15 @@ const NewsAboutBlock = () => {
                 <Typography sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: 'center', marginTop: '40px', fontWeight: 'bold'}}>
                     {t("comparisonBlock")}
                 </Typography>
-                <Box sx={{display: 'flex', alignItems: 'center', flexDirection: {sm: 'row', xs: 'column'}, marginTop: '20px'}}>
+                <Box sx={{display: 'flex', alignItems: 'center', flexDirection: {sm: 'row', xs: 'column'}, marginTop: '60px'}}>
                     <Box sx={{width: '100%'}}>
                         <img src={danger} alt="danger"/>
                     </Box>
                     <Box sx={{marginLeft: '20px', width: '100%'}}>
                         {problems.map((problem, index) => (
                             <Box key={index}>
-                                <Typography sx={{fontWeight: 'bold', fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>{problem.title}</Typography>
-                                <Typography sx={{fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>{problem.text}</Typography>
+                                <Typography sx={{ fontWeight: 'bold', fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>{problem.title}</Typography>
+                                <Typography sx={{marginBottom: '20px',fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>{problem.text}</Typography>
                             </Box>
 
                         ))}
@@ -48,11 +48,11 @@ const NewsAboutBlock = () => {
                         <Typography sx={{fontWeight: 'bold', fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>
                             {t("problemTitle5")}
                         </Typography>
-                        <Typography sx={{fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>
+                        <Typography sx={{marginBottom: '20px',fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>
                             {t("problem5")}
                         </Typography>
 
-                        <Typography sx={{fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>
+                        <Typography sx={{marginBottom: '20px', fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>
                             {t("problemTitle6")}
                         </Typography>
                         <Typography sx={{fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>

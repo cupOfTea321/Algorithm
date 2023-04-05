@@ -36,7 +36,7 @@ const FooterLinks = () => {
         setOpen(!open);
     };
     return (
-        <Grid container spacing={2} sx={{width: '100%', textAlign: {sm: 'left', xs: 'center'}}}>
+        <Grid container spacing={6} sx={{width: '100%', textAlign: {sm: 'left', xs: 'center'}}}>
             <Grid item lg={2} md={4} sm={6} xs={12}>
 
                 <Typography
@@ -97,15 +97,15 @@ const FooterLinks = () => {
                 </NavLink>
 
             </Grid>
-            <Grid item lg={1} md={4} sm={6} xs={12}>
+            <Grid item lg={2} md={4} sm={6} xs={12}>
                 <Typography
                     sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>{t("footerCatalog")}</Typography>
                 <NavLink to="/delivery">
                     <Typography sx={{fontSize: {sm: '16px', xs: '20px'}, color: 'black'}}>{t("catalogProducts")}</Typography>
                 </NavLink>
             </Grid>
-            <Grid item lg={3} md={4} sm={6} xs={12} sx={{display: {md: 'flex', sm: 'none', xs: 'none'}}}>
-                <MyBtn width={'300px'}  border={'3px solid #A40000'} radius={'20px'} backgroundColor={''} onClick={handleToggle} height={'54px'} color={'black'}/>
+            <Grid item lg={2} md={4} sm={6} xs={12} sx={{display: {md: 'flex', sm: 'none', xs: 'none'}}}>
+                <MyBtn weight={'normal'} size={'{xl: `12px`, lg: `16px`}'} width={'300px'}  border={'3px solid #A40000'} radius={'20px'} backgroundColor={''} onClick={handleToggle} height={'54px'} color={'black'}/>
                 <Backdrop
                     sx={{
                         color: 'black',

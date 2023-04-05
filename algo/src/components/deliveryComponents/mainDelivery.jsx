@@ -27,7 +27,7 @@ const MainDelivery = () => {
                     <Box sx={{display: 'flex',  alignItems: 'center', width: '120%'}}>
                         <img src={delivery1} alt="" style={{width: '80px', marginRight: '20px'}}/>
                         <Box>
-                            <Typography sx={{fontWeight: 'bold', fontSize: '28px'}}>
+                            <Typography sx={{fontWeight: 'bold', fontSize: {sm:'28px', xs: '24px'}}}>
                                 {t("catalogTitle1")}
                             </Typography>
                             <Typography sx={{fontSize: '20px'}}>{t("catalogText11")}</Typography>
@@ -38,7 +38,7 @@ const MainDelivery = () => {
                     <Box sx={{display: 'flex', alignItems: 'center'}}>
                         <img src={delivery2} alt="" style={{width: '80px', marginRight: '20px'}}/>
                         <Box>
-                            <Typography sx={{fontWeight: 'bold', fontSize: '28px'}}>
+                            <Typography sx={{fontWeight: 'bold', fontSize: {sm:'28px', xs: '24px'}}}>
                                 {t("catalogTitle2")}
                             </Typography>
                             <Typography sx={{fontSize: '20px'}}>{t("catalogText21")}</Typography>
@@ -50,7 +50,7 @@ const MainDelivery = () => {
                 <Box sx={{display: 'flex', gap: 5, width: '65%', justifyContent: 'space-between', flexDirection: {sm:'row', xs: 'column'}, marginTop: '4%'}}>
                     <Box sx={{display: 'flex',  alignItems: 'center',}}>
                         <img src={delivery3} alt="" style={{width: '80px', marginRight: '20px'}}/>
-                        <Typography sx={{fontWeight: 'bold', fontSize: '28px'}}>
+                        <Typography sx={{fontWeight: 'bold', fontSize: {sm:'28px', xs: '24px'}}}>
                             {t("catalogTitle3")}
                         </Typography>
                     </Box>

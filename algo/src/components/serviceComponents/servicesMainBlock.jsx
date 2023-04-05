@@ -36,7 +36,7 @@ const ServicesMainBlock = () => {
                         </Typography>
                     </Box>
                     <Box sx={{width: {md: '40%', sm: '100%', xs: '100%'}, marginLeft: {lg: '20px'}}}>
-                        <Typography sx={{ fontSize: {lg: '40px', md: '32px', sm: '28px', xs: '24px'},}}>
+                        <Typography sx={{ fontSize: {lg: '32px', md: '26px', sm: '24px', xs: '24px'},}}>
                             {t("ourServices")}
                         </Typography>
                     </Box>
@@ -59,8 +59,7 @@ const ServicesMainBlock = () => {
                                 display: 'flex',
                                 justifyContent: 'center',
                                 marginBottom: '40px',
-                                // padding: '10px'
-                                // height: '45px'
+                                height: {sm: '360px', xs: '240px'}
                             }}>
                                 <ServiceImgBlock link={service.link} image={service.image} name={service.name}/>
                             </Box>

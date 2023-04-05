@@ -23,7 +23,7 @@ const ClientsMainBlock = () => {
                 display: 'flex',
                 flexDirection: 'column',
                 paddingTop: '10%',
-                gap: 2,
+                gap: 4,
                 textAlign: 'center',
             }}>
                 <Typography className={'oswFont'} variant={'h1'} sx={{
@@ -38,13 +38,13 @@ const ClientsMainBlock = () => {
                 }}>
                     {t("clientsMain2")}
                 </Typography>
-                <Box sx={{display: 'flex', width: '100%', justifyContent: 'center', gap: {sm: 6, xs: 1}, marginTop: '5%'}}>
+                <Box sx={{display: 'flex', width: '100%', justifyContent: 'center', gap: {sm: 6, xs: 1}, marginTop: '3%'}}>
 
                     <Box sx={{display: 'flex', flexDirection: 'column',background: 'white', borderRadius: '20px',  width: '82%', paddingTop: '20px', paddingBottom: '20px'}}>
                         <ClientsDocs/>
                     </Box>
                 </Box>
-                <Box sx={{display: 'flex', flexDirection: 'column', width: '82%', margin: '0 auto', background: 'white', borderRadius: '20px', gap: 2, marginTop: '2%'}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', width: '82%', margin: '0 auto', background: 'white', borderRadius: '20px', gap: 2,  paddingTop: '20px', paddingBottom: '20px'}}>
                     <Typography sx={{fontSize: {md: '34px', sm:'26px', xs: '20px'}, color: '#A81A1A'}}>
                         {t("algo")}
                     </Typography>

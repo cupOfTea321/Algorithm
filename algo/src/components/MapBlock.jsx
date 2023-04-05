@@ -4,6 +4,7 @@ import mark from '../assets/mark.png'
 import map from '../assets/back3_test.png'
 import MyMap from "./MyMap.jsx";
 import {useTranslation} from "react-i18next";
+import MyMobileMap from "./MyMobileMap.jsx";
 
 
 
@@ -22,6 +23,14 @@ const MapBlock = () => {
                 <Typography sx={{fontSize: {lg: '34px', md: '26px', sm: '20px', xs: '16px'}}}>
                     {t("mapAbout")}
                 </Typography>
+                {/*<Box  sx={{display: {sm: 'block', xs: 'none'}}}>*/}
+                {/*    <MyMap/>*/}
+                {/*</Box>*/}
+                {/*/!* мобильная карта*!/*/}
+                {/*<Box  sx={{display: {sm: 'none', xs: 'block'}}}>*/}
+                {/*    <MyMobileMap/>*/}
+                {/*</Box>*/}
+
                 <MyMap/>
             </Box>
 

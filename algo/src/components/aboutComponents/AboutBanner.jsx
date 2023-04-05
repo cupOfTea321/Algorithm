@@ -18,7 +18,7 @@ const AboutBanner = () => {
         <Container maxWidth={'xl'}>
             <Box sx={{
                 color: 'white',
-                width: {md: '63%', xs: '100%'},
+                width: {md: '70%', xs: '100%'},
                 display: 'flex',
                 flexDirection: 'column',
                 paddingTop: '15%',

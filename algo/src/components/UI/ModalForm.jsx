@@ -6,7 +6,6 @@ import {Paper} from "@mui/material";
 const ModalForm = () => {
     const handleModalClick = (event) => {
         event.stopPropagation();
-        // your code
     }
     return (
         <Paper sx={{

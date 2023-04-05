@@ -1,6 +1,6 @@
 {
     "main": "Home",
-    "about": "About us",
+    "about": "Biodiesel",
     "clients": "Clients",
     "services": "Services",
     "catalog": "Catalog",
@@ -62,10 +62,7 @@
     "clientClick": "I give my consent to data processing",
     "pageFormText": "Leave a request on the site. We will definitely get back to you and discuss any remaining issues.",
 
-
-
-
-    "aboutMain" : "We were one of the first Biodiesel producers in Russia",
+    "aboutMain" : "WE WERE ONE OF THE FIRST BIODIESEL PRODUCERS IN RUSSIA",
     "aboutMain2": "Order high-quality biodiesel and experience the difference with fossil fuels!",
 
     "leftAbout" : "What do you need to know about fuel?",

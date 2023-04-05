@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import {YMaps, Map, Placemark} from "react-yandex-maps";
-import mark from '../assets/mark.png'
-import './components.css'
-function MyMap() {
+import React from 'react';
+import {useEffect, useState} from "react";
+import {Map, Placemark, YMaps} from "react-yandex-maps";
+
+const MyMobileMap = () => {
     const [ymaps, setYmaps] = useState(null);
     const [map, setMap] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
@@ -30,7 +30,7 @@ function MyMap() {
 
         myPlacemark.geoObjects.add(myPlacemark);
 
-    }, [ymaps, map, window.location, window.location.search]);
+    }, [ymaps, map]);
 
     const handleApiAvaliable = (ymaps) => {
         setYmaps(ymaps);
@@ -47,17 +47,17 @@ function MyMap() {
     }
     return (
         <YMaps
-            query={{ load: "package.full", apikey: "01e39a49-db0e-48a6-b400-563d5cd5fa10" }} // здесь нужно указать ключ API Яндекс Карт
+            query={{ load: "package.full", apikey: "fe5c4033-3bde-4268-b053-c0b515255152" }} // здесь нужно указать ключ API Яндекс Карт
             onApiAvaliable={handleApiAvaliable}
         >
             <Map
                 id={'mapBlock'}
-                defaultState={{ center: center, zoom: 10, controls: []}}
+                defaultState={{ center: center, zoom: 10 , controls: []}}
                 options={{
-                    // yandexMapDisablePoiInteractivity: true,
+                    yandexMapDisablePoiInteractivity: true,
 
                 }}
-                width="100%"
+                width="300px"
                 height="400px"
                 onLoad={handleMapCreated}
             >
@@ -74,6 +74,6 @@ function MyMap() {
             </Map>
         </YMaps>
     );
-}
+};
 
-export default MyMap;
+export default MyMobileMap;

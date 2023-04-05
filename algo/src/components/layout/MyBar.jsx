@@ -119,16 +119,19 @@ const MyBar = () => {
                             }}>
                             <img src={logo} alt={'LOGO'}/>
                         </Box>
-                        <Box  sx={{  display: { xs: 'none', md: 'flex' } }}>
+                        <Box  sx={{  display: { xs: 'none', md: 'flex' }}}>
                             {pages.map((page) => (
-                                <NavLink key={page.name} style={{color: 'black'}} to={page.route}>
+                                <NavLink key={page.name} style={{color: 'black', paddingRight: '20px'}} to={page.route}>
                                     <MenuItem sx={{fontSize: {xl: '23px', lg: '18px'}}} onClick={handleCloseNavMenu}>
                                         {page.name}
                                     </MenuItem>
                                 </NavLink>
                             ))}
                         </Box>
-                        <MyBtn  onClick={handleToggle} radius={'14px'} display={'none'} width={'260px'}/>
+                        <Box sx={{paddingRight: '10px'}}>
+                            <MyBtn weight={'normal'}  onClick={handleToggle} radius={'14px'} display={'none'} width={'260px'}/>
+                        </Box>
+
                         <Backdrop
                             sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}
                             open={open}

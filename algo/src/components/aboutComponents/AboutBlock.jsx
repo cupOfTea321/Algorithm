@@ -23,8 +23,8 @@ const AboutBlock = () => {
                 paddingTop: {lg: '15%', md: '25%', sm: '30%', xs: '50%'},
                 gap: 2
             }}>
-                <Box sx={{color: 'black', background: 'white', width: {lg: '45%', md: '80%'}, padding: '10px', borderRadius: '20px ', marginRight: {lg: '60px', md: '0', sm: '0', xs: '0'}}}>
-                    <Typography variant={'h4'} sx={{marginBottom: '20px', paddingTop: '20px'}}>
+                <Box sx={{color: 'black', background: 'white', width: {lg: '45%', md: '80%'}, padding: '30px', borderRadius: '20px ', marginRight: {lg: '60px', md: '0', sm: '0', xs: '0'}}}>
+                    <Typography variant={'h4'} sx={{marginBottom: '20px', paddingTop: '20px', fontWeight: 'bold'}}>
                         {t("leftAbout")}
                     </Typography>
                     <Typography sx={{fontSize: {xl: '32px', lg: '28px', md: '26px', sm: '20px', xs: '16px'}, marginBottom: '20px'}}>

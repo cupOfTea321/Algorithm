@@ -19,6 +19,7 @@ const SecondBtn = ({to = '/delivery', onClick ,color = 'white', height = 'auto',
                 <Typography sx={{
                     fontSize: fontSize,
                     color: color,
+                    fontWeight: 'bold',
                 }}>
                     {t("secondBtn")}
                 </Typography>

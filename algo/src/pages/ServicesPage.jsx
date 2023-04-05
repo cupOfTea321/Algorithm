@@ -14,7 +14,10 @@ const ServicesPage = () => {
             }}>
                 <ServicesMainBlock/>
             </Box>
-            <PowersBlock/>
+            <Box sx={{marginTop: {sm: '0', xs:'-40%'}}}>
+                <PowersBlock/>
+            </Box>
+
             <Box sx={{marginTop: '80px'}}>
                 <FormBlock/>
             </Box>
