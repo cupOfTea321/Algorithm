@@ -33,6 +33,7 @@ const CollectorsLaws = () => {
                     </Box>
 
                 ))}
+                <Typography sx={{fontSize: '28px', color: '#A40000', marginBottom: '10px'}}>{t("collectorsPoint2")}</Typography>
                 <Typography sx={{fontSize: '28px', color: '#A40000'}}>{t("collectorsPoint")}</Typography>
 
             </Box>

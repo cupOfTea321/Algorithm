@@ -52,7 +52,7 @@
     "point6": "Customer support at every stage",
     "point7": "Transparency of delivery",
 
-    "mapBlock": "We are on the map",
+    "mapBlock": "Our location",
     "mapAbout": "LLC \"Algorithm\" is a modern production enterprise, which focuses on the storage, transshipment, processing, and shipment of diesel fuel from Russian manufacturers through the Michurinsk-Nikolskoye oil products terminal.",
 
     "pageForm": "Didn't find the right service?",
@@ -65,12 +65,12 @@
     "aboutMain" : "WE WERE ONE OF THE FIRST BIODIESEL PRODUCERS IN RUSSIA",
     "aboutMain2": "Order high-quality biodiesel and experience the difference with fossil fuels!",
 
-    "leftAbout" : "What do you need to know about fuel?",
+    "leftAbout" : "What do you need to know about biodiesel fuel?",
     "p1" : "Biodiesel is a type of fuel consisting of biological raw materials that solves the problem of the need to reduce CO2 emissions.",
     "p2" : "Almost all States have now adopted the Paris Agreement under the UN Climate Change Convention. ",
-    "p3" : "A new CBAM system for accounting for carbon dioxide emissions turnover has been introduced.",
+    "p3" : "A new SVAM system for accounting for carbon dioxide emissions turnover has been introduced.",
 
-    "rightAbout" : "What is the risk of introducing SWAMS?",
+    "rightAbout" : "What is the risk of introducing SVAM?",
     "warning1" : "introduction of a bordertax on CO2 emissions;",
     "warning2" : "conductedan internal audit of emissions in companies;",
     "warning3" : "monitoring of changesin CO2 emission quotes;",
@@ -78,11 +78,11 @@
 
     "benefitsBlock": "Benefits of biodiesel",
     "benefit1": "Complete biodegradation in case of leaks within a month",
-    "benefit2": "No persistent smell",
-    "benefit3": "Economic benefits of introducing a border tax",
-    "benefit4": "Biodiesel - as acomponent of diesel fuel? The completeness of fuel combustion increases due to the oxygen content in biodiesel",
-    "benefit5": "Easily washed off with water",
-    "benefit6": "Reintroduction of waste back into the production process",
+    "benefit2": "No persistent odor",
+    "benefit3": "Economic benefit from the introduction a border tax",
+    "benefit4": "Biodiesel - as a component of diesel fuel. The completeness of fuel combustion increases due to the oxygen content in biodiesel",
+    "benefit5": "Easy to wash off with water",
+    "benefit6": "Re-involvement of waste back into the production process",
 
     "comparisonBlock": "Comparison with fossil fuels:",
     "problemTitle1": "The main problem of fossil fuels -",
@@ -198,7 +198,7 @@
     "catalogTitle3": "Biodiesel fuel",
 
     "catalogWhy": "Why should you choose “Algorithm\"?",
-    "catalog1": "Some of the first people involved in biodiesel",
+    "catalog1": "One of the first biodiesel producers",
     "catalog2": "Ready for a research exchange",
     "catalog3": "Information openness",
     "catalog4": "Logistics support",
@@ -214,12 +214,13 @@
     "collectorsAction3": "Processing",
     "collectorsAction4": "Recycling facilities",
     "collectorsLaws": "Waste that the company offers to interact with:",
-    "collectorsLaw1": "FKKO 73611001314",
+    "collectorsLaw1": "ФККО 73611001314",
     "collectorsText1": "Vegetable oils used in cooking",
-    "collectorsLaw2": "FKKO 40166113335",
+    "collectorsLaw2": "ФККО 40166113335",
     "collectorsText2": "Fat products based on vegetable and animal fats in polypropylene packaging that have lost their consumer properties",
-    "collectorsLaw3": "FKKO 30114000000",
+    "collectorsLaw3": "ФККО 30114000000",
     "collectorsText3": "Waste from the production of vegetable oils and fats",
+    "collectorsPoint2": "*ФККО (FCCW) - Federal Classification Catalog of Waste",
     "collectorsPoint": "*And other related waste",
 
     "footerMain": "Home",
