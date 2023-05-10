@@ -27,7 +27,8 @@ const AboutPage = () => {
                 <AboutBanner/>
             </Box>
             <Box sx={{
-                height: {lg: '940px', md: '1240px'},
+                // height: {lg: '940px', md: '1240px'},
+                paddingBottom: '5%',
                 background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg2})`,
                 backgroundSize: 'cover',
                 marginTop: '590px',

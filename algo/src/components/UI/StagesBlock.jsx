@@ -33,7 +33,7 @@ const StagesBlock = () => {
                 <Typography className={'oswFont'} variant={'h3'} sx={{color: 'white', fontSize: '40px', textAlign: 'center'}}>
                     {t("stagesBlock")}
                 </Typography>
-                <Grid spacing={1} container sx={{color: 'white', marginLeft: '-4%', display: 'flex', textAlign: 'center', }}>
+                <Grid spacing={1} container sx={{color: 'white', display: 'flex', textAlign: 'center', }}>
                     {stages.map((stage, index) => (
                         <Grid key={stage.name} item lg={3} md={6} sm={12} xs={12} sx={{marginBottom: {md: '60px', sm: '30px', xs: '25px'}}}>
                             <Typography variant={'h3'} sx={{fontSize: {md:'160px', sm: '120px', xs: '120px'}, lineHeight: '113.2%', color: '#A40000', fontWeight: 'bold', textShadow: '0 0 5px rgba(0, 0, 0, 0.3)'}}>

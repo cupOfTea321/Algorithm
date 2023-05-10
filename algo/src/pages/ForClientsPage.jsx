@@ -11,8 +11,6 @@ const ForClientsPage = () => {
     return (
         <>
             <Box sx={{
-                height: '1290px',
-                // background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg})`,
                 background: `radial-gradient(103.57% 169.05% at 50% 50%, rgba(221, 214, 214, 0.9) 0%, rgba(220, 215, 215, 0.27) 56.4%, rgba(217, 217, 217, 0) 100%), url(${backImg})`,
                 backgroundSize: 'cover'
             }}>

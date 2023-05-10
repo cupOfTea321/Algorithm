@@ -37,9 +37,9 @@ const LinesBlock = () => {
                 {/* ПК версия */}
                 <Box sx={{display: {lg: 'flex', md: 'none', sm: 'none', xs: 'none'}, flexDirection: 'column', alignItems: 'center'}}>
                     <Box sx={{display: 'flex', justifyContent: 'space-between', height: '140px', marginTop: '20px'}}>
-                        <img style={{backgroundSize: 'cover', margin: '0 140px'}} src={leftLine} alt=""/>
-                        <img style={{backgroundSize: 'cover', margin: '0 140px', height: '140%'}} src={centerLine} alt=""/>
-                        <img style={{ backgroundSize: 'cover', margin: '0 140px'}} src={rightLine} alt=""/>
+                        <Box component={'img'} sx={{backgroundSize: 'cover', margin: '0 140px'}} src={leftLine} alt=""/>
+                        <Box component={'img'} sx={{backgroundSize: 'cover', margin: '0 140px', height: '140%'}} src={centerLine} alt=""/>
+                        <Box component={'img'} sx={{ backgroundSize: 'cover', margin: '0 140px'}} src={rightLine} alt=""/>
                     </Box>
                     <Box sx={{display: 'flex', marginTop: '30px', marginLeft: '90px'}}>
                         <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column', margin: {xl:'0 100px', lg: '0 150px'}}}>
@@ -56,7 +56,7 @@ const LinesBlock = () => {
                         </Box>
                         <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column', margin: {xl:'0 120px', lg: '0 170px'}}}>
                             <img id={'rightOil'} src={oil} alt="" style={{width: '30px'}}/>
-                            <Typography sx={{fontSize: {lg:'28px', md: '24px', sm: '24px'}, width: '200%'}}>
+                            <Typography sx={{fontSize: {lg:'28px', md: '24px', sm: '24px'}, width: {lg: '200%'}}}>
                                 {t("area3")}
                             </Typography>
                         </Box>

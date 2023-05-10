@@ -2,7 +2,7 @@ import React from 'react';
 import {Box, Typography} from "@mui/material";
 import {Link, NavLink} from "react-router-dom";
 import '../components.css'
-const ServiceImgBlock = ({image, name, link}) => {
+const DocImgBlock = ({image, name, link}) => {
     return (
         <Link to={link}  >
             <Box className={'servicesImg'}  sx={{
@@ -10,8 +10,8 @@ const ServiceImgBlock = ({image, name, link}) => {
                 marginBottom: '44%',
                 backgroundSize: 'cover',
                 borderRadius: '20px',
-                height: {sm:'360px', xs: '260px'},
-                width: {lg: '560px', md: '480px', sm: '480px', xs: '80vw'},
+                height: {sm:'360px', xs: '200px'},
+                width: {xl: '560px',lg: '420px', md: '480px', sm: '420px', xs: '320px'},
             }}>
                 <Box  sx={{
 
@@ -20,19 +20,16 @@ const ServiceImgBlock = ({image, name, link}) => {
                     backgroundImage: `url(${image})`,
                     backgroundSize: 'cover',
                     opacity: '0.4',
-                    height: {sm:'360px', xs: '260px'},
-                    width: {lg: '560px', md: '480px', sm: '480px', xs: '80vw'},
+                    height: {sm:'360px', xs: '200px'},
+                    width: {xl: '560px', lg: '420px',md: '480px', sm: '420px', xs: '320px'},
 
 
                 }}>
 
                 </Box>
-                <Typography className={'serviceName'} sx={{fontSize: {sm: '34px', xs: '28px'}, color: '#A40000',
-                    textDecoration: 'underline', textAlign: 'center', marginTop: {sm:'-200px', xs: '-150px'},
-                    filter: 'blur(0px)', opacity: '1'}}>
-                    {name}
-                </Typography>
+
             </Box>
+
         </Link>
 
 
@@ -40,4 +37,4 @@ const ServiceImgBlock = ({image, name, link}) => {
     );
 };
 
-export default ServiceImgBlock;
+export default DocImgBlock;

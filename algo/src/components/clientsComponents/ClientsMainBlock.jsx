@@ -40,11 +40,11 @@ const ClientsMainBlock = () => {
                 </Typography>
                 <Box sx={{display: 'flex', width: '100%', justifyContent: 'center', gap: {sm: 6, xs: 1}, marginTop: '3%'}}>
 
-                    <Box sx={{display: 'flex', flexDirection: 'column',background: 'white', borderRadius: '20px',  width: '82%', paddingTop: '20px', paddingBottom: '20px'}}>
+                    <Box sx={{display: 'flex', flexDirection: 'column',background: 'white', borderRadius: '20px',  width: {sm: '82%', xs: '98%'}, paddingTop: '20px', paddingBottom: '20px'}}>
                         <ClientsDocs/>
                     </Box>
                 </Box>
-                <Box sx={{display: 'flex', flexDirection: 'column', width: '82%', margin: '0 auto', background: 'white', borderRadius: '20px', gap: 2,  paddingTop: '20px', paddingBottom: '20px'}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', width: {sm: '82%', xs: '98%'}, margin: '0 auto', background: 'white', borderRadius: '20px', gap: 2,  paddingTop: '20px', paddingBottom: '20px'}}>
                     <Typography sx={{fontSize: {md: '34px', sm:'26px', xs: '20px'}, color: '#A81A1A'}}>
                         {t("algo")}
                     </Typography>
@@ -57,7 +57,7 @@ const ClientsMainBlock = () => {
                         </NavLink>
                     </Typography>
                 </Box>
-                <Box sx={{display: 'flex', justifyContent: 'center', marginTop: '6%'}}>
+                <Box sx={{display: 'flex', justifyContent: 'center', marginTop: '2%', marginBottom: '10%'}}>
                     <MyBtn onClick={handleToggle} radius={'20px'} height={'70px'}/>
                     <Backdrop
                         sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}
