@@ -20,10 +20,10 @@ const MainServices = () => {
         <Container maxWidth={'xl'}>
             <Box sx={{
                 // gap: 2,
-                marginTop: '5%',
+                marginTop: '3%',
                 flexFlow: 'row nowrap',
 
-            }}>
+            }} className={'animate__animated animate__fadeInUp wow'} >
                 <Typography variant={'h3'} className={'oswFont'} sx={{
                     display: 'flex',
                     justifyContent: 'center',
@@ -32,20 +32,21 @@ const MainServices = () => {
                 }}>
                     {t("servicesBlock")}
                 </Typography>
-                <Box sx={{
-                    marginTop: {sm: '2%', xs: '5%'},
-                    marginBottom: {sm: '100px', xs: '180px'},
+                <Grid container sx={{
+                    marginTop: {sm: '3%', xs: '5%'},
+                    marginBottom: {sm: '3%', xs: '330px'},
                     display: {sm: 'grid'},
 
                     justifyContent: 'center',
-                    gridTemplateColumns: 'repeat(2, 250px)',
-                    gridTemplateRows: 'repeat(2, 70px)',
+                    gridTemplateColumns: {lg: 'repeat(4, 250px)', md: 'repeat(2, 250px)', sm: 'repeat(2, 250px)', xs: 'repeat(2, 200px)'},
+                    gridTemplateRows: 'repeat(1, 70px)',
                     gap: 2,
                     height: '70px',
 
-                }}>
+
+                }} className={'animate__animated animate__fadeInUp wow'}>
                     {services.map(service => (
-                        <Box key={service.text}  sx={{
+                        <Grid item  key={service.text}  sx={{
                             display: 'flex',
                             justifyContent: 'center',
                             marginBottom: '40px',
@@ -53,9 +54,9 @@ const MainServices = () => {
                             height: '45px'
                         }}>
                             <ServicesBtn link={service.link} img={service.img} text={service.text}/>
-                        </Box>
+                        </Grid>
                     ))}
-                </Box>
+                </Grid>
 
 
             </Box>

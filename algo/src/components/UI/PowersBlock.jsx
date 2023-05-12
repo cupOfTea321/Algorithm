@@ -22,14 +22,15 @@ const PowersBlock = () => {
     ]
 
     return (
-        <Container maxWidth={'xl'}>
+        <Container maxWidth={'xl'} >
             <Typography className={'oswFont'} variant={'h4'} sx={{
-                marginTop: {sm: '150px', xs:'280px'},
+                marginTop: {lg: '3%',md: '120px',sm: '120px', xs:'280px'},
                 fontSize: {sm:'34px', xs: '28px'},
                 marginBottom: '3%',
                 textAlign: {md: 'left',xs: 'center'}
-            }}>
-                {t("powersBlock")}
+            }} >
+                {/*{t("powersBlock")}*/}
+                ПРЕДОСТАВЛЯЕМЫЕ МОЩНОСТИ
             </Typography>
 
             {/*ПК версия*/}
@@ -39,7 +40,7 @@ const PowersBlock = () => {
                 justifyContent: 'space-between',
                 width: '100%',
                 alignItems: 'center'
-            }}>
+            }} className={'animate__animated animate__fadeInLeft wow'}>
                 {powersFirst.map(power => (
                     <Grid key={power.name} item xs={4} sx={{
                         justifyContent: 'space-between',
@@ -94,14 +95,15 @@ const PowersBlock = () => {
                 alignItems: 'center',
                 marginTop: '3%',
                 marginLeft: {lg: '0%', xs:'-4%'},
-            }}>
+            }} className={'animate__animated animate__fadeInLeft wow'}>
                 {powersSecond.map(power => (
                     <Grid key={power.name} item xs={4} sx={{
                         justifyContent: 'space-between',
                         maxWidth: '18%',
                         alignItems: '',
                         height: '150px'
-                    }}>
+
+                    }} className={'animate__animated animate__fadeInLeft wow'}>
                         <Typography className={'oswFont'} variant={'h5'}
                                     sx={{fontSize: {xl: '20px', lg: '16px', md: '12px', sm: '16px', xs: '10px'}}}>
                             {power.name}

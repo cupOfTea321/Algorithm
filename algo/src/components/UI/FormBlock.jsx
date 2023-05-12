@@ -9,22 +9,23 @@ const FormBlock = () => {
     const { t, i18n } = useTranslation();
     return (
         <Container maxWidth={'xl'}>
-            <Typography variant={'h3'} sx={{fontSize: '42px', textAlign: 'center'}}>
+            <Typography variant={'h3'} sx={{fontSize: '42px', textAlign: 'center', marginTop: '3%'}}>
                 {t("pageForm")}
             </Typography>
-            <Box sx={{
+            <Box  sx={{
 
                 display: 'flex',
                 flexDirection: {lg: 'row', md: 'column', sm: 'column', xs: 'column'},
                 justifyContent: 'center',
                 marginTop: '8%',
                 width: '100%',
-                alignItems: 'center',
-                // marginLeft: {sm: '0', xs: '-2vw'}
+                alignItems: {lg: 'flex-start', md: 'center', sm: 'center', xs: 'center'},
             }}>
+                <Box className={'animate__animated animate__fadeInLeft wow'}>
+                    <MyForm />
+                </Box>
 
-                <MyForm/>
-                <Typography sx={{fontSize: {md: '26px', sm: '20px'}, width: {md: '40%', sm: '60%'}, marginLeft: {lg:'50px'}}}>
+                <Typography className={'animate__animated animate__fadeInRight wow'} sx={{fontSize: {md: '26px', sm: '20px'}, width: {md: '40%', sm: '60%'}, marginLeft: {lg:'50px'}, textAlign: {lg:'left', md: 'center'}}}>
                     {t("pageFormText")}
                 </Typography>
             </Box>

@@ -2,7 +2,7 @@ import React from 'react';
 import {AppBar, Backdrop, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import {NavLink} from "react-router-dom";
-import logo from '../../assets/logo.png'
+import logo from '../../assets/footerLogo.png'
 import MyBtn from "../UI/MyBtn.jsx";
 import ModalForm from "../UI/ModalForm.jsx";
 import ChangeLangBtn from "../UI/ChangeLangBtn.jsx";
@@ -60,7 +60,7 @@ const MyBar = () => {
                             mr: 2,
                             display: { xs: 'none', md: 'flex' },
                         }}>
-                        <img src={logo} alt={'LOGO'}/>
+                        <Box component={'img'} sx={{width: {md: '80px', sm: '60px'}}} src={logo} alt={'LOGO'}/>
                     </Box>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -117,7 +117,7 @@ const MyBar = () => {
                                 display: { xs: 'flex', md: 'none' },
                                 // flexGrow: 1,
                             }}>
-                            <img src={logo} alt={'LOGO'}/>
+                            <Box component={'img'} sx={{width: {md: '80px', sm: '60px', xs: '60px'}}} src={logo} alt={'LOGO'}/>
                         </Box>
                         <Box  sx={{  display: { xs: 'none', md: 'flex' }}}>
                             {pages.map((page) => (

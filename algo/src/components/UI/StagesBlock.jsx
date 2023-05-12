@@ -27,9 +27,9 @@ const StagesBlock = () => {
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'top center',
-            paddingBottom: '10%',
+            paddingBottom: '5%',
         }}>
-            <Container maxWidth={'xl'} sx={{marginTop: '5%', paddingTop: '5%', width: '100vw', }}>
+            <Container maxWidth={'xl'} sx={{marginTop: '5%', paddingTop: '5%', width: '100vw', }} className={'animate__animated animate__fadeInUp wow'}>
                 <Typography className={'oswFont'} variant={'h3'} sx={{color: 'white', fontSize: '40px', textAlign: 'center'}}>
                     {t("stagesBlock")}
                 </Typography>
@@ -60,10 +60,11 @@ const StagesBlock = () => {
                 </Box>
                 {/*  Фоновые элементы  */}
                 {/*<Box component={'img'} src={backRound} alt="" sx={{width: {xl: '150px',sm: '100px', xs: '50px'}, position: 'absolute', right: 0, zIndex: '-1', bottom: {xl: '1400px', lg: '1200px', md: '1150px', sm: '1100px', xs: '1800px'}}}/>*/}
-                <Box component={'img'} src={backRound} alt="" sx={{width: {xl: '150px',sm: '100px', xs: '50px'}, position: 'absolute', left: {sm:'-60px', xs: '0'}, zIndex: '-1', bottom: {sm:'600px', xs: '1500px'} }}/>
-                <Box component={'img'} src={backRound} alt="" sx={{width: {xl: '150px',sm: '100px', xs: '50px'}, position: 'absolute', right: 0, zIndex: '-1', bottom: {sm:'160px', xs: '1000px'}}}/>
+
 
             </Container>
+            <Box component={'img'} src={backRound} alt="" sx={{width: {xl: '150px',sm: '100px', xs: '50px'}, position: 'absolute', left: {sm:'-60px', xs: '0'}, zIndex: '-1', bottom: {sm:'600px', xs: '1500px'} }}/>
+            <Box component={'img'} src={backRound} alt="" sx={{width: {xl: '150px',sm: '100px', xs: '50px'}, position: 'absolute', right: 0, zIndex: '-1', bottom: {sm:'160px', xs: '1000px'}}}/>
         </Box>
 
     );

@@ -18,22 +18,29 @@ const FirstBanner = () => {
         <Container maxWidth={'xl'}>
             <Box sx={{
                 color: 'white',
-                width: {md: '48%', xs: '100%'},
+                width: {md: '60%', xs: '100%'},
                 display: 'flex',
                 flexDirection: 'column',
-                paddingTop: '15%',
+                paddingTop: '10%',
+                // justifyContent: 'center',
                 gap: 2
-            }}>
+            }} className={'animate__animated animate__fadeInLeft'}>
                 <Typography className={'oswFont'} variant={'h1'} sx={{
                     fontSize: {lg: '48px', md: '36px', sm: '30px', xs: '36px'},
 
                 }}>
-                    {t("mainBanner")}
+                    {/*{t("mainBanner")}*/}
+                    Группа компаний АЛТ -
                 </Typography>
                 <Typography variant={'h3'} sx={{
-                    fontSize: '24px'
+                    fontSize: {sm: '24px', xs: '18px'}
                 }}>
-                    {t("mainBanner2")}
+                    {/*{t("mainBanner2")}*/}
+                    современная <Typography sx={{color: '#A40000', fontSize: {sm: '24px', xs: '18px'}}} component={'span'}>топливная группа</Typography>,
+                    объединяющая в себе юридические лица, осуществляющие деятельность в области разработки, внедрения, консультирования по вопросам
+                    эмиссии парниковых газов сокращением СО2 и технологий возобновляемых источников энергии, в том числе реализацией проекта производства
+                    биодизельного FAME из любого вида сырьяи биодизельного топлива, а также хранения, перевалки, экспортного оформления продуктов нефтепереработки,
+                    производства товаров-присадок, в том числе через собственный терминал на станции Мичуринск Воронежский, услуги смешанной логистики.
                 </Typography>
                 <Box sx={{
                     display: 'flex',
@@ -42,16 +49,17 @@ const FirstBanner = () => {
                     flexDirection: {sm: 'row', xs: 'column'},
                 }}>
                     <MyBtn onClick={handleToggle} radius={'32px'} height={'70px'}/>
-                    <Backdrop
-                        sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}
-                        open={open}
-                        onClick={handleClose}
-                    >
-                        <ModalForm/>
-                    </Backdrop>
+
                     <SecondBtn to={'../delivery'} height={'70px'}/>
                 </Box>
             </Box>
+            <Backdrop
+                sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                open={open}
+                onClick={handleClose}
+            >
+                <ModalForm/>
+            </Backdrop>
         </Container>
     );
 };

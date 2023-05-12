@@ -18,7 +18,8 @@ const MainPage = () => {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'top center',
-            }}>
+            }} >
+
                 <FirstBanner/>
             </Paper>
             <MainServices/>
