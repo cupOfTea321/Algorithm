@@ -29,7 +29,7 @@ const OrderService = ({order}) => {
                 margin: '0 auto',
                 marginTop: '4%',
             }}>
-                <Box sx={{width: {lg: '50%', sm: '100%', xs: '100%'}}}>
+                <Box className={'animate__animated animate__fadeInLeft wow'} sx={{width: {lg: '50%', sm: '100%', xs: '100%'}}}>
                     <Typography className={'oswFont'} sx={{fontSize: '34px', marginBottom: '20px'}}>
                         {t("orderService")}
                     </Typography>
@@ -37,7 +37,7 @@ const OrderService = ({order}) => {
                         {order.secondTitle}
                     </Typography>
                 </Box>
-                <Box >
+                <Box className={'animate__animated animate__fadeInRight wow'} >
                     <Typography className={'oswFont'} sx={{marginBottom: '20px', fontSize: '28px'}}>
                         {order.quantity}
                     </Typography>

@@ -23,10 +23,10 @@ const WhyDelivery = () => {
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'top center',
-            paddingBottom: '10%',
+            paddingBottom: '2%',
 
         }}>
-            <Container maxWidth={'xl'} sx={{marginTop: '4%', paddingTop: '2%', width: '100vw', color: 'white'}}>
+            <Container className={'animate__animated animate__fadeInUp wow'} maxWidth={'xl'} sx={{marginTop: '4%', paddingTop: '2%', width: '100vw', color: 'white'}}>
 
                 <Typography className={'oswFont'} variant={'h4'}
                             sx={{fontSize: {sm: '34px', xs: '28px'}, textAlign: 'center', marginTop: '5%',}}>
@@ -44,11 +44,12 @@ const WhyDelivery = () => {
                 </Box>
 
 
-                {/*  Фоновые элементы  */}
-                <Box component={'img'} src={backEL1} alt="" sx={{width: {xl: '150px',sm: '100px', xs: '50px'}, position: 'absolute', right: 0, top: {sm: '700px', xs: '650px'},}}/>
-                {/*<img src={backEL1} alt="" style={{width: '150px', position: 'absolute', right: 0, top: '700px'}}/>*/}
-                <img src={backEL2} alt="" style={{width: '250px', position: 'absolute', zIndex: '-1'}}/>
+
             </Container>
+            {/*  Фоновые элементы  */}
+            <Box component={'img'} src={backEL1} alt="" sx={{width: {xl: '150px',sm: '100px', xs: '50px'}, position: 'absolute', right: 0, top: {sm: '700px', xs: '650px'},}}/>
+            {/*<img src={backEL1} alt="" style={{width: '150px', position: 'absolute', right: 0, top: '700px'}}/>*/}
+            <img src={backEL2} alt="" style={{width: '250px', position: 'absolute', zIndex: '-1'}}/>
         </Box>
     );
 };

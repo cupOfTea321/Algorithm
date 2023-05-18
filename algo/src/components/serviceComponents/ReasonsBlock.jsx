@@ -4,7 +4,7 @@ import point from '../../assets/pointRight.png'
 
 const ReasonsBlock = ({reasons, title}) => {
     return (
-        <Box sx={{marginTop: '50px'}}>
+        <Box sx={{marginTop: '50px'}} className={'animate__animated animate__fadeInLeft wow'}>
             <Typography className={'oswFont'}
                         sx={{fontSize: {sm: '34px', xs: '28px'}, textAlign: {sm: 'left', xs: 'center'}}}>
                 {title}

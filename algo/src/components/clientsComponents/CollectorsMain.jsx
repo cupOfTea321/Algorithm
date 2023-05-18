@@ -11,7 +11,7 @@ const CollectorsMain = () => {
             backgroundSize: 'cover',
 
         }}>
-            <Container maxWidth={'xl'}>
+            <Container maxWidth={'xl'} className={'animate__animated animate__fadeInLeft wow'}>
                 <Box sx={{
                     color: 'white',
                     width: {md: '48%', xs: '100%'},

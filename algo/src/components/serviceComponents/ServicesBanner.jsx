@@ -21,19 +21,19 @@ const ServicesBanner = ({storage}) => {
                 gap: 2,
                 textAlign: {sm: 'left', xs: 'center'}
             }}>
-                <Typography className={'oswFont'} variant={'h1'} sx={{
+                <Typography className={'oswFont animate__animated animate__fadeInLeft wow'} variant={'h1'} sx={{
                     fontSize: {lg: '48px', md: '36px', sm: '30px', xs: '36px'},
 
                 }}>
                     {storage.mainTitle}
                 </Typography>
-                <Typography variant={'h3'} sx={{
+                <Typography className={'animate__animated animate__fadeInLeft wow'} variant={'h3'} sx={{
                     width: {md: '140%', sm: '100%'},
                     fontSize: '24px'
                 }}>
                     {storage.secondTitle}
                 </Typography>
-                <Grid container sx={{width: {md: '200%', sm: '100%'}, marginTop: '10%', }}>
+                <Grid className={'animate__animated animate__fadeInUp wow'} container sx={{width: {md: '200%', sm: '100%'}, marginTop: '10%', }}>
                     {storage.list.map((item, index) => (
                         <Grid key={index} item lg={3} md={6} sm={6} xs={12} sx={{width: '25%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingBottom: '20px'}}>
                             <Box sx={{backgroundImage: `url(${starBack})`, height: '122px', width: '132px', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>

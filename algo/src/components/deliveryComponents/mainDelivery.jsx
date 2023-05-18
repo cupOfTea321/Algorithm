@@ -19,12 +19,12 @@ const MainDelivery = () => {
     };
     return (
         <Container maxWidth={'xl'}>
-            <Box sx={{display: 'flex', flexDirection: 'column', width: '100%', gap: 4, alignItems: {sm: 'flex-start', xs:'center'}, }}>
-                <Typography sx={{fontSize: {lg: '40px', md: '32px', sm: '28px', xs: '24px'}, textAlign: {sm: 'left', xs: 'center'}}}>
+            <Box sx={{display: 'flex', flexDirection: 'column', width: '100%', gap: 4, alignItems: 'center', }}>
+                <Typography className={'animate__animated animate__fadeInDown wow'} sx={{fontSize: {lg: '40px', md: '32px', sm: '28px', xs: '24px'}, }}>
                     {t("catalogMain")}
                 </Typography>
-                <Box sx={{display: 'flex', gap: 4, width: '60%', justifyContent: 'space-between', flexDirection: {sm:'row', xs: 'column'},}}>
-                    <Box sx={{display: 'flex',  alignItems: 'center', width: '120%'}}>
+                <Box className={'animate__animated animate__fadeInDown wow'} sx={{alignItems: 'flex-start', display: 'flex', gap: 4, width: '100%', justifyContent: 'space-between', flexDirection: {sm:'row', xs: 'column'},}}>
+                    <Box sx={{display: 'flex',  alignItems: 'center',}}>
                         <img src={delivery1} alt="" style={{width: '80px', marginRight: '20px'}}/>
                         <Box>
                             <Typography sx={{fontWeight: 'bold', fontSize: {sm:'28px', xs: '24px'}}}>
@@ -34,6 +34,12 @@ const MainDelivery = () => {
                             <Typography sx={{fontSize: '20px'}}>{t("catalogText12")}</Typography>
                             <Typography sx={{fontSize: '20px'}}>{t("catalogText13")}</Typography>
                         </Box>
+                    </Box>
+                    <Box sx={{display: 'flex',  alignItems: 'center',}}>
+                        <img src={delivery3} alt="" style={{width: '80px', marginRight: '20px'}}/>
+                        <Typography sx={{fontWeight: 'bold', fontSize: {sm:'28px', xs: '24px'}}}>
+                            {t("catalogTitle3")}
+                        </Typography>
                     </Box>
                     <Box sx={{display: 'flex', alignItems: 'center'}}>
                         <img src={delivery2} alt="" style={{width: '80px', marginRight: '20px'}}/>
@@ -46,14 +52,10 @@ const MainDelivery = () => {
                             <Typography sx={{fontSize: '20px'}}>{t("catalogText23")}</Typography>
                         </Box>
                     </Box>
+
                 </Box>
-                <Box sx={{display: 'flex', gap: 5, width: '65%', justifyContent: 'space-between', flexDirection: {sm:'row', xs: 'column'}, marginTop: '4%'}}>
-                    <Box sx={{display: 'flex',  alignItems: 'center',}}>
-                        <img src={delivery3} alt="" style={{width: '80px', marginRight: '20px'}}/>
-                        <Typography sx={{fontWeight: 'bold', fontSize: {sm:'28px', xs: '24px'}}}>
-                            {t("catalogTitle3")}
-                        </Typography>
-                    </Box>
+                <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', width: '100%', justifyContent: 'center', flexDirection: {sm:'row', xs: 'column'}, marginTop: '0%'}}>
+
                     <MyBtn onClick={handleToggle} height={'70px'} radius={'20px'} width={{sm: '320px', xs: '230px'}}/>
                     <Backdrop
                         sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}

@@ -36,10 +36,10 @@ const StorageService = () => {
             <Container maxWidth={'xl'}>
                 <OrderService order={order}/>
                 <ReasonsBlock title={reasonTitle} reasons={reasons}/>
-                <Typography sx={{fontSize: {sm:'26px', xs: '20px'}, marginTop: '20px'}}>
+                <Typography className={'animate__animated animate__fadeInLeft wow'} sx={{fontSize: {sm:'26px', xs: '20px'}, marginTop: '20px'}}>
                     {t("storageDoc1")}
                 </Typography>
-                <Typography sx={{fontSize: {sm:'26px', xs: '20px'}, marginTop: '20px'}}>
+                <Typography className={'animate__animated animate__fadeInLeft wow'} sx={{fontSize: {sm:'26px', xs: '20px'}, marginTop: '20px'}}>
                     {t("storageDoc2")}
                 </Typography>
             </Container>

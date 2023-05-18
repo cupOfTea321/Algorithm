@@ -27,7 +27,7 @@ const LinesBlock = () => {
     };
     return (
         <Container maxWidth={'xl'}>
-            <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} className={'animate__animated animate__fadeInUp wow'}>
                 <Typography sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: 'center', marginTop: '40px', fontWeight: 'bold'}}>
                     {t("areasBlock")}
                 </Typography>

@@ -23,7 +23,7 @@ const AboutBanner = () => {
                 flexDirection: 'column',
                 paddingTop: '15%',
                 gap: 2
-            }}>
+            }} className={'animate__animated animate__fadeInLeft'}>
                 <Typography variant={'h1'} sx={{
                     fontSize: {lg: '48px', md: '36px', sm: '30px', xs: '36px'},
 

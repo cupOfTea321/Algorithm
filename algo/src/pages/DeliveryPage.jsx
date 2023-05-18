@@ -9,7 +9,7 @@ const DeliveryPage = () => {
         <>
             <MainDelivery/>
             <WhyDelivery/>
-            <Box sx={{marginTop: '4%'}}>
+            <Box sx={{marginTop: '6%'}}>
                 <FormBlock/>
             </Box>
 

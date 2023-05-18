@@ -20,12 +20,12 @@ const CollectorsLaws = () => {
     ]
     return (
         <Container maxWidth={'xl'}>
-            <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '10%', marginBottom: '5%'}}>
+            <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '5%', marginBottom: '5%'}}>
                 <Typography className={'oswFont'} sx={{textAlign: 'center', fontSize: '34px', width: {sm: '60%', xs: '100%'}}}>
                     {t("collectorsLaws")}
                 </Typography>
             </Box>
-            <Box>
+            <Box className={'animate__animated animate__fadeInLeft wow'}>
                 {lawsList.map((law, index) => (
                     <Box key={index} sx={{marginBottom: '3%'}}>
                         <Typography sx={{fontSize: '28px', color: '#A40000'}}>{law.title}</Typography>
@@ -37,7 +37,7 @@ const CollectorsLaws = () => {
                 <Typography sx={{fontSize: '28px', color: '#A40000'}}>{t("collectorsPoint")}</Typography>
 
             </Box>
-            <Box sx={{display: 'flex', justifyContent: 'center', margin: '4% 0'}}>
+            <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', justifyContent: 'center', margin: '4% 0'}}>
                 <MyBtn onClick={handleToggle} radius={'20px'} height={'70px'}/>
                 <Backdrop
                     sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}

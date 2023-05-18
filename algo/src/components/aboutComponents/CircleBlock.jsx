@@ -17,8 +17,8 @@ const CircleBlock = () => {
     ]
     return (
         <Container maxWidth={'xl'}>
-            <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <Typography sx={{
+            <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                <Typography   sx={{
                     fontSize: {sm: '34px', xs: '28px'},
                     textAlign: 'center',
                     marginTop: '40px',
@@ -26,15 +26,6 @@ const CircleBlock = () => {
                 }}>
                     {t("benefitsBlock")}
                 </Typography>
-
-                {/*<Box sx={{*/}
-                {/*    display: {sm: 'flex', xs: 'none'},*/}
-                {/*    flexDirection: 'column',*/}
-                {/*    alignItems: 'center',*/}
-                {/*    marginTop: '40px'*/}
-                {/*}}>*/}
-                {/*    <img src={circle} alt="circle" style={{width: '80%'}}/>*/}
-                {/*</Box>*/}
                 <Box sx={{
                     display: {sm: 'flex', xs: 'none'},
                     flexDirection: 'column',

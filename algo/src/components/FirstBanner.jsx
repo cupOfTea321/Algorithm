@@ -29,18 +29,17 @@ const FirstBanner = () => {
                     fontSize: {lg: '48px', md: '36px', sm: '30px', xs: '36px'},
 
                 }}>
-                    {/*{t("mainBanner")}*/}
-                    Группа компаний АЛТ -
+                    {t("mainBanner")}
                 </Typography>
                 <Typography variant={'h3'} sx={{
                     fontSize: {sm: '24px', xs: '18px'}
                 }}>
-                    {/*{t("mainBanner2")}*/}
-                    современная <Typography sx={{color: '#A40000', fontSize: {sm: '24px', xs: '18px'}}} component={'span'}>топливная группа</Typography>,
-                    объединяющая в себе юридические лица, осуществляющие деятельность в области разработки, внедрения, консультирования по вопросам
-                    эмиссии парниковых газов сокращением СО2 и технологий возобновляемых источников энергии, в том числе реализацией проекта производства
-                    биодизельного FAME из любого вида сырьяи биодизельного топлива, а также хранения, перевалки, экспортного оформления продуктов нефтепереработки,
-                    производства товаров-присадок, в том числе через собственный терминал на станции Мичуринск Воронежский, услуги смешанной логистики.
+                    {t("mainBannerBefore")}
+                    <Typography sx={{color: 'red', fontSize: {sm: '24px', xs: '18px'}, fontWeight: 'bold'}} component={'span'}>
+                        {t("mainBannerRed")}
+                    </Typography>,
+                    {t("mainBannerAfter")}
+
                 </Typography>
                 <Box sx={{
                     display: 'flex',

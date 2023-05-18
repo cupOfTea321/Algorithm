@@ -27,22 +27,22 @@ const ServicesMainBlock = () => {
                 color: 'white'
             }}>
                 <Box sx={{display: 'flex', flexDirection: {md: 'row', sm: 'column', xs: 'column'}, textAlign: {md: 'left', sm: 'center', xs: 'center'}}}>
-                    <Box sx={{width: {md: '60%', sm: '100%', xs: '100%'}}}>
-                        <Typography className={'oswFont'} variant={'h1'} sx={{ fontSize: {lg: '60px', md: '48px', sm: '42px', xs: '36px'},}}>
+                    <Box className={'animate__animated animate__fadeInLeft wow'} sx={{width: {md: '60%', sm: '100%', xs: '100%'}}}>
+                        <Typography  className={'oswFont'} variant={'h1'} sx={{ fontSize: {lg: '60px', md: '48px', sm: '42px', xs: '36px'},}}>
                             {t("servicesMain")}
                         </Typography>
                         <Typography sx={{ fontSize: {lg: '30px', md: '22px', sm: '18px', xs: '22px'},}}>
                             {t("servicesMain2")}
                         </Typography>
                     </Box>
-                    <Box sx={{width: {md: '40%', sm: '100%', xs: '100%'}, marginLeft: {lg: '20px'}}}>
+                    <Box className={'animate__animated animate__fadeInRight wow'} sx={{width: {md: '40%', sm: '100%', xs: '100%'}, marginLeft: {lg: '20px'}}}>
                         <Typography sx={{ fontSize: {lg: '32px', md: '26px', sm: '24px', xs: '24px'},}}>
                             {t("ourServices")}
                         </Typography>
                     </Box>
                 </Box>
 
-                <Box sx={{
+                <Box className={'animate__animated animate__fadeInUp wow'} sx={{
                     marginTop: {sm: '2%', xs: '5%'},
                     // marginBottom: {sm: '100px', xs: '180px'},
                     display: {md: 'grid'},

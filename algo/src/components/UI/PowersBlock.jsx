@@ -23,14 +23,13 @@ const PowersBlock = () => {
 
     return (
         <Container maxWidth={'xl'} >
-            <Typography className={'oswFont'} variant={'h4'} sx={{
+            <Typography className={'oswFont animate__animated animate__fadeInLeft wow'} variant={'h4'} sx={{
                 marginTop: {lg: '3%',md: '120px',sm: '120px', xs:'280px'},
                 fontSize: {sm:'34px', xs: '28px'},
                 marginBottom: '3%',
-                textAlign: {md: 'left',xs: 'center'}
+                textAlign: {md: 'center',xs: 'center'}
             }} >
-                {/*{t("powersBlock")}*/}
-                ПРЕДОСТАВЛЯЕМЫЕ МОЩНОСТИ
+                {t("powersBlock")}
             </Typography>
 
             {/*ПК версия*/}

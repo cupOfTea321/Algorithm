@@ -79,7 +79,7 @@ const ClientsDocs = () => {
     ]
     return (
         <>
-            <Typography sx={{fontSize: {md: '34px', sm:'26px', xs: '20px'}, color: '#A81A1A'}}>
+            <Typography className={'animate__animated animate__fadeInUp wow'} sx={{fontSize: {md: '34px', sm:'26px', xs: '20px'}, color: '#A81A1A'}}>
                 {t("docs")}
             </Typography>
 
@@ -93,7 +93,7 @@ const ClientsDocs = () => {
                 gridTemplateRows: {md: 'repeat(2, 420px)', sm: 'repeat(1, 320px)', xs: 'repeat(1, 220px)'},
                 gap: 4,
 
-            }}>
+            }} className={'animate__animated animate__fadeInUp wow'}>
                 {docs.map((doc, index) => (
                     <Box key={index} >
                         <Box  sx={{

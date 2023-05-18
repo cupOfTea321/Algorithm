@@ -26,14 +26,14 @@ const NewsAboutBlock = () => {
     return (
         <Container maxWidth={'xl'}>
             <Box>
-                <Typography sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: 'center', marginTop: '40px', fontWeight: 'bold'}}>
+                <Typography className={'animate__animated animate__fadeInUp wow'} sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: 'center', marginTop: '40px', fontWeight: 'bold'}}>
                     {t("comparisonBlock")}
                 </Typography>
-                <Box sx={{display: 'flex', alignItems: 'center', flexDirection: {sm: 'row', xs: 'column'}, marginTop: '60px'}}>
-                    <Box sx={{width: '100%'}}>
+                <Box  sx={{display: 'flex', alignItems: 'center', flexDirection: {sm: 'row', xs: 'column'}, marginTop: '60px'}}>
+                    <Box sx={{width: '100%'}} className={'animate__animated animate__fadeInLeft wow'}>
                         <img src={danger} alt="danger"/>
                     </Box>
-                    <Box sx={{marginLeft: '20px', width: '100%'}}>
+                    <Box sx={{marginLeft: '20px', width: '100%'}} className={'animate__animated animate__fadeInRight wow'}>
                         {problems.map((problem, index) => (
                             <Box key={index}>
                                 <Typography sx={{ fontWeight: 'bold', fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>{problem.title}</Typography>
@@ -43,8 +43,8 @@ const NewsAboutBlock = () => {
                         ))}
                     </Box>
                 </Box>
-                <Box sx={{display: 'flex', alignItems: 'center', marginTop: '20px', flexDirection: {sm: 'row', xs: 'column-reverse'}}}>
-                    <Box sx={{width: '100%'}}>
+                <Box  sx={{display: 'flex', alignItems: 'center', marginTop: '20px', flexDirection: {sm: 'row', xs: 'column-reverse'}}}>
+                    <Box sx={{width: '100%'}} className={'animate__animated animate__fadeInLeft wow'}>
                         <Typography sx={{fontWeight: 'bold', fontSize: {xl:'28px', lg: '24px', md: '22px', sm: '22px', xs: '24px'}}}>
                             {t("problemTitle5")}
                         </Typography>
@@ -60,7 +60,7 @@ const NewsAboutBlock = () => {
                         </Typography>
 
                     </Box>
-                    <Box sx={{width: '100%'}}>
+                    <Box sx={{width: '100%'}} className={'animate__animated animate__fadeInRight wow'}>
                         <img src={danger2} alt="danger"/>
                     </Box>
                 </Box>
