@@ -17,39 +17,42 @@ const MainDelivery = () => {
     const handleToggle = () => {
         setOpen(!open);
     };
+    const title = {fontWeight: 'bold', fontSize: {sm:'24px', xs: '24px'}}
+    const text = {fontSize: '20px'}
+    const imgStyles = {width: '70px', marginRight: '20px'}
     return (
-        <Container maxWidth={'xl'}>
-            <Box sx={{display: 'flex', flexDirection: 'column', width: '100%', gap: 4, alignItems: 'center', }}>
-                <Typography className={'animate__animated animate__fadeInDown wow'} sx={{fontSize: {lg: '40px', md: '32px', sm: '28px', xs: '24px'}, }}>
+        <Container maxWidth={'md'}>
+            <Box sx={{display: 'flex', flexDirection: 'column', width: '100%', gap: 4, alignItems: 'center', marginTop: '4%'}}>
+                <Typography className={'animate__animated animate__fadeInDown wow'} sx={{fontSize: {md: '32px', sm: '28px', xs: '24px'}, }}>
                     {t("catalogMain")}
                 </Typography>
-                <Box className={'animate__animated animate__fadeInDown wow'} sx={{alignItems: 'flex-start', display: 'flex', gap: 4, width: '100%', justifyContent: 'space-between', flexDirection: {sm:'row', xs: 'column'},}}>
+                <Box className={'animate__animated animate__fadeInDown wow'} sx={{alignItems: 'flex-start', display: 'flex', gap: 0, width: '100%', justifyContent: 'space-between', flexDirection: {md:'row', sm: 'column', xs: 'column'},}}>
                     <Box sx={{display: 'flex',  alignItems: 'center',}}>
-                        <img src={delivery1} alt="" style={{width: '80px', marginRight: '20px'}}/>
-                        <Box>
-                            <Typography sx={{fontWeight: 'bold', fontSize: {sm:'28px', xs: '24px'}}}>
+                        <img src={delivery1} alt="" style={imgStyles}/>
+                        <Box >
+                            <Typography sx={title}>
                                 {t("catalogTitle1")}
                             </Typography>
-                            <Typography sx={{fontSize: '20px'}}>{t("catalogText11")}</Typography>
-                            <Typography sx={{fontSize: '20px'}}>{t("catalogText12")}</Typography>
-                            <Typography sx={{fontSize: '20px'}}>{t("catalogText13")}</Typography>
+                            <Typography sx={text}>{t("catalogText11")}</Typography>
+                            <Typography sx={text}>{t("catalogText12")}</Typography>
+                            <Typography sx={text}>{t("catalogText13")}</Typography>
                         </Box>
                     </Box>
                     <Box sx={{display: 'flex',  alignItems: 'center',}}>
-                        <img src={delivery3} alt="" style={{width: '80px', marginRight: '20px'}}/>
-                        <Typography sx={{fontWeight: 'bold', fontSize: {sm:'28px', xs: '24px'}}}>
+                        <img src={delivery3} alt="" style={imgStyles}/>
+                        <Typography sx={title}>
                             {t("catalogTitle3")}
                         </Typography>
                     </Box>
-                    <Box sx={{display: 'flex', alignItems: 'center'}}>
-                        <img src={delivery2} alt="" style={{width: '80px', marginRight: '20px'}}/>
+                    <Box sx={{display: 'flex', alignItems: 'center', width: '30%'}}>
+                        <img src={delivery2} alt="" style={imgStyles}/>
                         <Box>
-                            <Typography sx={{fontWeight: 'bold', fontSize: {sm:'28px', xs: '24px'}}}>
+                            <Typography sx={title}>
                                 {t("catalogTitle2")}
                             </Typography>
-                            <Typography sx={{fontSize: '20px'}}>{t("catalogText21")}</Typography>
-                            <Typography sx={{fontSize: '20px'}}>{t("catalogText22")}</Typography>
-                            <Typography sx={{fontSize: '20px'}}>{t("catalogText23")}</Typography>
+                            <Typography sx={text}>{t("catalogText21")}</Typography>
+                            <Typography sx={text}>{t("catalogText22")}</Typography>
+                            <Typography sx={text}>{t("catalogText23")}</Typography>
                         </Box>
                     </Box>
 

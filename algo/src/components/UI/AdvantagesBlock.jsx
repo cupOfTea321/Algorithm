@@ -25,17 +25,17 @@ const AdvantagesBlock = () => {
         {text: t("point7"), icon: <SearchOutlinedIcon sx={{width: '100px', height: '100px'}}/>},
     ]
     return (
-        <Container maxWidth={'xl'} className={'animate__animated animate__fadeInUp wow'}>
+        <Container maxWidth={'md'} className={'animate__animated animate__fadeInUp wow'}>
             <Typography className={'oswFont'} variant={'h4'} sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: 'center', marginTop: '5%', }}>
                 {t("whyUsBlock")}
             </Typography>
-            <Grid container spacing={2} sx={{marginTop: '1%'}}>
+            <Grid container spacing={4} sx={{marginTop: '1%'}}>
                 {advantages.map(advantage => (
                     <Grid lg={4} md={6} sm={12} item sx={{display: 'flex', alignItems: 'center', height: '150px'}}>
                         <Box sx={{color: '#A40000'}}>
                             {advantage.icon}
                         </Box>
-                        <Typography variant={'h5'} sx={{fontSize: {sm:'24px', xs: '20px'}, marginLeft: '4%'}}>
+                        <Typography variant={'h5'} sx={{fontSize: {sm:'18px', xs: '16px'}, marginLeft: '4%'}}>
                             {advantage.text}
                         </Typography>
                     </Grid>

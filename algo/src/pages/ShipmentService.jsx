@@ -36,7 +36,7 @@ const ShipmentService = () => {
     return (
         <>
             <ServicesBanner storage={storage}/>
-            <Container maxWidth={'xl'}>
+            <Container maxWidth={'md'}>
                 <OrderService order={order}/>
                 <ReasonsBlock title={reasonTitle} reasons={reasons}/>
             </Container>

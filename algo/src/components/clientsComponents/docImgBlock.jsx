@@ -10,8 +10,8 @@ const DocImgBlock = ({image, name, link}) => {
                 marginBottom: '44%',
                 backgroundSize: 'cover',
                 borderRadius: '20px',
-                height: {sm:'360px', xs: '200px'},
-                width: {xl: '560px',lg: '420px', md: '480px', sm: '420px', xs: '320px'},
+                height: {sm:'220px', xs: '200px'},
+                width: {md: '340px', sm: '420px', xs: '320px'},
             }}>
                 <Box  sx={{
 
@@ -20,8 +20,8 @@ const DocImgBlock = ({image, name, link}) => {
                     backgroundImage: `url(${image})`,
                     backgroundSize: 'cover',
                     opacity: '0.4',
-                    height: {sm:'360px', xs: '200px'},
-                    width: {xl: '560px', lg: '420px',md: '480px', sm: '420px', xs: '320px'},
+                    height: {sm:'220px', xs: '200px'},
+                    width: {md: '340px', sm: '420px', xs: '320px'},
 
 
                 }}>

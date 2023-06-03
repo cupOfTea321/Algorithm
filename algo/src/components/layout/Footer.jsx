@@ -13,7 +13,7 @@ const Footer = () => {
             background: '#D9D9D9',
             paddingTop: '3%'
         }}>
-            <Container maxWidth={'xl'}>
+            <Container maxWidth="md">
                 <Box sx={{
                     display: 'flex',
                     width: '100%',
@@ -31,7 +31,7 @@ const Footer = () => {
                         </a>
 
 
-                        <Typography sx={{fontSize: {sm: '16px', xs: '20px'}, fontWeight: 'bold'}}>
+                        <Typography sx={{fontSize: {sm: '14px', xs: '20px'}, fontWeight: 'bold'}}>
                             <a href="src/components/layout/Footer.jsx#"
                                style={{textDecoration: 'underline', color: 'black'}}>info@alg-bio.ru</a>
                         </Typography>

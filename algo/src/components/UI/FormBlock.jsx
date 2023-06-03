@@ -8,7 +8,7 @@ import {useTranslation} from "react-i18next";
 const FormBlock = () => {
     const { t, i18n } = useTranslation();
     return (
-        <Container maxWidth={'xl'}>
+        <Container maxWidth={'md'}>
             <Typography variant={'h3'} sx={{fontSize: '42px', textAlign: 'center', marginTop: '3%'}}>
                 {t("pageForm")}
             </Typography>

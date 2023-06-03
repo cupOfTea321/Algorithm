@@ -1,6 +1,6 @@
 import React from 'react';
 import {Paper} from "@mui/material";
-import backImg from '../assets/back1.png'
+import backImg from '../assets/финалка.png'
 import FirstBanner from "../components/FirstBanner.jsx";
 import MainServices from "../components/MainServices.jsx";
 import PowersBlock from "../components/UI/PowersBlock.jsx";

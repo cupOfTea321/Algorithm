@@ -8,7 +8,7 @@ import {useTranslation} from "react-i18next";
 const MapBlock = () => {
     const { t, i18n } = useTranslation();
     return (
-        <Container id={'mapBlock'} maxWidth={'xl'} sx={{marginTop: '2%'}} className={'animate__animated animate__fadeInUp wow'}>
+        <Container id={'mapBlock'} maxWidth={'md'} sx={{marginTop: '2%'}} className={'animate__animated animate__fadeInUp wow'}>
             <Box sx={{display: 'flex', alignItems: 'center', justifyContent: {lg: 'flex-end', md: 'center', sm: 'center', xs: 'center'}, marginBottom: '50px'}}>
                 <img src={mark} alt="mark" style={{width: '55px', height: '70px'}}/>
                 <Typography className={'oswFont'} sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: '', marginLeft: '2%'}}>

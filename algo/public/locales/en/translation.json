@@ -1,12 +1,12 @@
 {
     "main": "Home",
-    "about": "Biodiesel",
-    "clients": "Clients",
-    "services": "Services",
-    "catalog": "Catalog",
+    "about": "BIODIESEL",
+    "clients": "CLIENTS",
+    "services": "SERVICES",
+    "catalog": "CATALOG",
     "mybtn": "Submit a request",
 
-    "mainBanner": "ALT Group of Companies -",
+    "mainBanner": "ALT GROUP OF COMPANIES -",
     "mainBannerBefore": "is a modern",
     "mainBannerRed": "fuel group",
     "mainBannerAfter": "that unites legal entities engaged in the development, implementation, consulting on greenhouse gas emissions by CO2 reduction and renewable energy technologies, including the implementation of a project for the production of biodiesel FAME from any type of raw materials and biodiesel, as well as storage, transshipment, export processing of products oil refining, production of additive products, including through its own terminal at the Michurinsk Voronezh station, mixed logistics services.",
@@ -35,7 +35,7 @@
     "power8": "export /domestic market",
     "titlePower8": "Automobile filling",
 
-    "stagesBlock": "How does it work?",
+    "stagesBlock": "HOW DOES IT WORK?",
     "title1": "Consultation",
     "stage1": "Discussion of all details by phone or in person: volume selection, fuel type, product consultation, delivery method selection",
     "title2": "Contract",
@@ -45,7 +45,7 @@
     "title4": "Delivery",
     "stage4": "Delivery by fuel trucks and railway transportation",
 
-    "whyUsBlock": "Why should you choose “ALT?",
+    "whyUsBlock": "WHY SHOULD YOU CHOOSE “ALT?",
     "point1": "One of the first biodiesel producers",
     "point2": "Ready for a research exchange",
     "point3": "Information openness",
@@ -54,10 +54,10 @@
     "point6": "Customer support at every stage",
     "point7": "Transparency of delivery",
 
-    "mapBlock": "Our location",
+    "mapBlock": "OUR LOCATION",
     "mapAbout": "LLC \"ALT\" is a modern production enterprise, which focuses on the storage, transshipment, processing, and shipment of diesel fuel from Russian manufacturers through the Michurinsk-Nikolskoye oil products terminal.",
 
-    "pageForm": "Didn't find the right service?",
+    "pageForm": "DIDN`T FIND THE RIGHT SERVICE?",
     "clientName": "Name",
     "clientNumber": "Phone number",
     "clientComment": "Comment",

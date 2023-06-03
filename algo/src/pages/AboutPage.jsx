@@ -15,19 +15,16 @@ const AboutPage = () => {
             <Box sx={{
                 height: '740px',
                 background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg})`,
-                // boxShadow: '12px 12px 2px 2px grey',
                 backgroundSize: {sm: 'cover'},
                 borderRadius: {sm:'0 0px 15% 15%',xs: '0 0 0 0'},
                 zIndex: '100',
                 position: 'absolute',
                 top: '125px',
                 width: '100vw',
-                // filter: 'blur(1px)',
             }}>
                 <AboutBanner/>
             </Box>
             <Box sx={{
-                // height: {lg: '940px', md: '1240px'},
                 paddingBottom: '5%',
                 background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg2})`,
                 backgroundSize: 'cover',

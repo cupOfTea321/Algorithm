@@ -15,10 +15,10 @@ const FirstBanner = () => {
         setOpen(!open);
     };
     return (
-        <Container maxWidth={'xl'}>
+        <Container maxWidth="xl">
             <Box sx={{
                 color: 'white',
-                width: {md: '60%', xs: '100%'},
+                width: {md: '50%', xs: '50%'},
                 display: 'flex',
                 flexDirection: 'column',
                 paddingTop: '10%',

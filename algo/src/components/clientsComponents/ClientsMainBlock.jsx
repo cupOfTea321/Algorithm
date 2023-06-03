@@ -18,16 +18,16 @@ const ClientsMainBlock = () => {
     };
 
     return (
-        <Container maxWidth={'xl'}>
+        <Container maxWidth={'md'}>
             <Box sx={{
                 display: 'flex',
                 flexDirection: 'column',
-                paddingTop: '10%',
+                paddingTop: '4%',
                 gap: 4,
                 textAlign: 'center',
             }} >
                 <Typography className={'oswFont'} variant={'h1'} sx={{
-                    fontSize: {lg: '60px', md: '48px', sm: '42px', xs: '36px'},
+                    fontSize: {md: '42px', sm: '36px', xs: '36px'},
                     color: '#A81A1A',
                 }} className={'animate__animated animate__fadeInDown wow'}>
                     {t("clientsMain")}
@@ -40,7 +40,7 @@ const ClientsMainBlock = () => {
                 </Typography>
                 <Box sx={{display: 'flex', width: '100%', justifyContent: 'center', gap: {sm: 6, xs: 1}, marginTop: '3%'}}>
 
-                    <Box  sx={{display: 'flex', flexDirection: 'column',background: 'white', borderRadius: '20px',  width: {sm: '82%', xs: '98%'}, paddingTop: '20px', paddingBottom: '20px'}}>
+                    <Box  sx={{display: 'flex', flexDirection: 'column',background: 'white', borderRadius: '20px',  width: {md: '100%',sm: '82%', xs: '98%'}, paddingTop: '20px', paddingBottom: '0px'}}>
                         <ClientsDocs/>
                     </Box>
                 </Box>
@@ -57,7 +57,7 @@ const ClientsMainBlock = () => {
                         </NavLink>
                     </Typography>
                 </Box>
-                <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', justifyContent: 'center', marginTop: '2%', marginBottom: '10%'}}>
+                <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', justifyContent: 'center', marginTop: '2%', marginBottom: '10%', paddingBottom: {sm: '3%', xs:'10%'}}}>
                     <MyBtn onClick={handleToggle} radius={'20px'} height={'70px'}/>
                     <Backdrop
                         sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}

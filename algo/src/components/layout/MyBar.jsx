@@ -12,7 +12,7 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const MyBar = () => {
     const { t, i18n } = useTranslation();
     const pages = [
-        {name: t("main"), route: '/'},
+        // {name: t("main"), route: '/'},
         {name: t("about"), route: '/about'},
         {name: t("clients"), route: '/clients'},
         {name: t("services"), route: '/services'},
@@ -43,10 +43,7 @@ const MyBar = () => {
 
         }}>
             {/*под мобильники*/}
-            <Container maxWidth="xl"
-            sx={{
-
-            }}>
+            <Container maxWidth="md">
                 <Toolbar disableGutters sx={{
                     display: 'flex',
                     justifyContent: 'space-between',
@@ -57,7 +54,7 @@ const MyBar = () => {
                         component={'a'}
                         href={'/'}
                         sx={{
-                            mr: 2,
+                            // mr: 2,
                             display: { xs: 'none', md: 'flex' },
                         }}>
                         <Box component={'img'} sx={{width: {md: '80px', sm: '60px'}}} src={logo} alt={'LOGO'}/>
@@ -112,24 +109,23 @@ const MyBar = () => {
                     }}>
                         <Box
                             sx={{
-                                mr: 2,
-                                // height: '60px',
+                                // mr: 2,
                                 display: { xs: 'flex', md: 'none' },
-                                // flexGrow: 1,
                             }}>
                             <Box component={'img'} sx={{width: {md: '80px', sm: '60px', xs: '60px'}}} src={logo} alt={'LOGO'}/>
                         </Box>
                         <Box  sx={{  display: { xs: 'none', md: 'flex' }}}>
                             {pages.map((page) => (
-                                <NavLink key={page.name} style={{color: 'black', paddingRight: '20px'}} to={page.route}>
-                                    <MenuItem sx={{fontSize: {xl: '23px', lg: '18px'}}} onClick={handleCloseNavMenu}>
+                                <NavLink key={page.name} style={{color: 'black', paddingRight: '0px'}} to={page.route}>
+                                    <MenuItem sx={{fontSize: {xl: '16px', lg: '18px'}}} onClick={handleCloseNavMenu}>
                                         {page.name}
                                     </MenuItem>
                                 </NavLink>
                             ))}
                         </Box>
                         <Box sx={{paddingRight: '10px'}}>
-                            <MyBtn weight={'normal'}  onClick={handleToggle} radius={'14px'} display={'none'} width={'260px'}/>
+                            <MyBtn weight={'normal'}  onClick={handleToggle} radius={'14px'} display={'none'} width={{lg: '180px', md: '180px'}}
+                                   size={'14px'} padding={{xl: '18px 10px',  md: '12px 20px', sm: '2px'}} />
                         </Box>
 
                         <Backdrop

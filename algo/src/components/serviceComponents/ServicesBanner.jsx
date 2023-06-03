@@ -11,10 +11,9 @@ const ServicesBanner = ({storage}) => {
             backgroundSize: 'cover',
 
         }}>
-        <Container maxWidth={'xl'}>
+        <Container maxWidth={'md'}>
             <Box sx={{
                 color: 'white',
-                width: {md: '48%', xs: '100%'},
                 display: 'flex',
                 flexDirection: 'column',
                 paddingTop: '10%',
@@ -22,24 +21,24 @@ const ServicesBanner = ({storage}) => {
                 textAlign: {sm: 'left', xs: 'center'}
             }}>
                 <Typography className={'oswFont animate__animated animate__fadeInLeft wow'} variant={'h1'} sx={{
-                    fontSize: {lg: '48px', md: '36px', sm: '30px', xs: '36px'},
-
+                    fontSize: { md: '36px', sm: '30px', xs: '36px'},
+                    width: {sm: '80%', xs: '100%'},
                 }}>
                     {storage.mainTitle}
                 </Typography>
                 <Typography className={'animate__animated animate__fadeInLeft wow'} variant={'h3'} sx={{
-                    width: {md: '140%', sm: '100%'},
+                    width: {sm: '80%', xs: '100%'},
                     fontSize: '24px'
                 }}>
                     {storage.secondTitle}
                 </Typography>
-                <Grid className={'animate__animated animate__fadeInUp wow'} container sx={{width: {md: '200%', sm: '100%'}, marginTop: '10%', }}>
+                <Grid className={'animate__animated animate__fadeInUp wow'} container sx={{width: {md: '100%', sm: '100%'}, marginTop: '10%', }}>
                     {storage.list.map((item, index) => (
                         <Grid key={index} item lg={3} md={6} sm={6} xs={12} sx={{width: '25%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingBottom: '20px'}}>
-                            <Box sx={{backgroundImage: `url(${starBack})`, height: '122px', width: '132px', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                                <Box component={'img'} src={star} sx={{height: '35px', backgroundSize: 'cover', width: '35px', }}/>
+                            <Box sx={{backgroundImage: `url(${starBack})`, height: '82px', width: '91px', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                                <Box component={'img'} src={star} sx={{height: '28px', backgroundSize: 'cover', width: '28px', }}/>
                             </Box>
-                            <Typography sx={{fontSize: '24px', width: '100%', textAlign: 'center'}}>
+                            <Typography sx={{fontSize: '22px', width: '100%', textAlign: 'center'}}>
                                 {item}
                             </Typography>
 

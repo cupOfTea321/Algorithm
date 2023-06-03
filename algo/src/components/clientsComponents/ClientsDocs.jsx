@@ -88,10 +88,11 @@ const ClientsDocs = () => {
                 marginTop: {sm: '2%', xs: '5%'},
                 display: {md: 'grid'},
                 // height: '100vh',
-                justifyContent: 'center',
-                gridTemplateColumns: {xl: 'repeat(2, 560px)', lg: 'repeat(2, 420px)',md: 'repeat(1, 480px)', sm: 'repeat(1, 420px)'},
-                gridTemplateRows: {md: 'repeat(2, 420px)', sm: 'repeat(1, 320px)', xs: 'repeat(1, 220px)'},
-                gap: 4,
+                padding: '0 60px',
+                justifyContent: 'space-between',
+                gridTemplateColumns: {md: 'repeat(2, 320px)', sm: 'repeat(1, 420px)'},
+                gridTemplateRows: {md: 'repeat(2, 320px)', sm: 'repeat(1, 320px)', xs: 'repeat(1, 220px)'},
+                // gap: 4,
 
             }} className={'animate__animated animate__fadeInUp wow'}>
                 {docs.map((doc, index) => (
@@ -100,7 +101,7 @@ const ClientsDocs = () => {
                             display: 'flex',
                             justifyContent: 'center',
                             // marginBottom: '40px',
-                            height: {sm: '360px', xs: '240px'}
+                            height: {sm: '220px', xs: '240px'}
                         }}
                               onClick={doc.toggle}>
                             <DocImgBlock link={doc.link} image={doc.img} name={doc.name}/>

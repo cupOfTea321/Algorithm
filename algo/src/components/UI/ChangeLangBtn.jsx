@@ -16,12 +16,13 @@ const ChangeLangBtn = () => {
                     changeLanguage("en")
                     setLang('en')
                 }} sx={{
-                    borderRadius: '50%',
+                    // borderRadius: '50%',
+                    borderRadius: '30px',
                     color: 'rgba(0, 0, 0, 0.25)',
                     border: '1px solid rgba(0, 0, 0, 0.25)',
-                    height: '60px',
+                    height: '58px',
                     width: '36px',
-                    fontSize: '18px'
+                    fontSize: {lg: '18px', md: '14px'}
                 }}>
                     En
                 </Button>

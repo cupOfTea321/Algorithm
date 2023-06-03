@@ -11,33 +11,32 @@ const AboutBlock = () => {
         t("warning3"),
         t("warning4"),
     ]
+    const size = {fontSize: {xl: '22px', lg: '18px', md: '16px', sm: '14px', xs: '12px'}, marginBottom: '20px'}
     return (
-        <Container maxWidth={'xl'}>
-            <Box sx={{
-                color: 'white',
-                // width: {md: '63%', xs: '100%'},
+            <Container maxWidth={'md'}>
+                <Box sx={{
+                    color: 'white',
                 display: 'flex',
-
                 alignItems: 'center',
                 flexDirection: {lg: 'row', md:'column', sm: 'column', xs: 'column'},
-                paddingTop: {lg: '15%', md: '25%', sm: '30%', xs: '50%'},
+                paddingTop: {lg: '25%', md: '25%', sm: '30%', xs: '50%'},
                 gap: 2
             }}>
-                <Box className={'animate__animated animate__fadeInLeft'} sx={{color: 'black', background: 'white', width: {lg: '45%', md: '80%'}, padding: '30px', borderRadius: '20px ', marginRight: {lg: '60px', md: '0', sm: '0', xs: '0'}}}>
+                <Box className={'animate__animated animate__fadeInLeft'} sx={{color: 'black', background: 'white', width: {lg: '100%', md: '80%'}, padding: '30px', borderRadius: '20px ', marginRight: {lg: '10px', md: '0', sm: '0', xs: '0'}}}>
                     <Typography variant={'h4'} sx={{marginBottom: '20px', paddingTop: '20px', fontWeight: 'bold'}}>
                         {t("leftAbout")}
                     </Typography>
-                    <Typography sx={{fontSize: {xl: '32px', lg: '28px', md: '26px', sm: '20px', xs: '16px'}, marginBottom: '20px'}}>
+                    <Typography sx={size}>
                         {t("p1")}
                     </Typography>
-                    <Typography sx={{fontSize: {xl: '32px', lg: '28px', md: '26px', sm: '20px', xs: '16px'}, marginBottom: '20px'}}>
+                    <Typography sx={size}>
                         {t("p2")}
                     </Typography>
-                    <Typography sx={{fontSize: {xl: '32px', lg: '28px', md: '26px', sm: '20px', xs: '16px'}, marginBottom: '20px'}}>
+                    <Typography sx={size}>
                         {t("p3")}
                     </Typography>
                 </Box>
-                <Box className={'animate__animated animate__fadeInRight wow'}>
+                <Box sx={{width: '100%'}} className={'animate__animated animate__fadeInRight wow'}>
                     <Typography component={'h2'} sx={{fontSize: '34px', }}>
                         {t("rightAbout")}
                     </Typography>

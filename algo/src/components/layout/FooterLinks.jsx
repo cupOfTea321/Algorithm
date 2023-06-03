@@ -57,7 +57,7 @@ const FooterLinks = () => {
                         <Typography
 
 
-                            sx={{fontSize: {sm: '16px', xs: '20px'}, color: 'black'}}
+                            sx={{fontSize: {sm: '12px', xs: '20px'}, color: 'black'}}
                         >
                             {row.name}
                         </Typography>
@@ -74,7 +74,7 @@ const FooterLinks = () => {
                         <Typography
 
 
-                            sx={{fontSize: {sm: '16px', xs: '20px'}, color: 'black'}}
+                            sx={{fontSize: {sm: '12px', xs: '20px'}, color: 'black'}}
                         >
                             {row.name}
                         </Typography>
@@ -88,7 +88,7 @@ const FooterLinks = () => {
                 {clientsCol.map(row => (
                     <NavLink key={row.id} to={'/clients'}>
                         <Typography
-                            sx={{fontSize: {sm: '16px', xs: '20px'}, color: 'black'}}
+                            sx={{fontSize: {sm: '12px', xs: '20px'}, color: 'black'}}
                         >
                             {row.name}
                         </Typography>
@@ -99,10 +99,10 @@ const FooterLinks = () => {
                 <Typography
                     sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>{t("footerServices")}</Typography>
                 <NavLink to="/services">
-                    <Typography sx={{fontSize: {sm: '16px', xs: '20px', color: 'black'}}}>{t("servicesTypes")}</Typography>
+                    <Typography sx={{fontSize: {sm: '12px', xs: '20px', color: 'black'}}}>{t("servicesTypes")}</Typography>
                 </NavLink>
                 <NavLink to="/services">
-                    <Typography sx={{fontSize: {sm: '16px', xs: '20px', color: 'black'}}}>{t("servicesPowers")}</Typography>
+                    <Typography sx={{fontSize: {sm: '12px', xs: '20px', color: 'black'}}}>{t("servicesPowers")}</Typography>
                 </NavLink>
 
             </Grid>
@@ -113,7 +113,7 @@ const FooterLinks = () => {
                         <Typography
                             sx={{fontWeight: 'bold', fontSize: {sm: '16px', xs: '20px'}}}>{t("footerCatalog")}</Typography>
                         <NavLink to="/delivery">
-                            <Typography sx={{fontSize: {sm: '16px', xs: '20px'}, color: 'black'}}>{t("catalogProducts")}</Typography>
+                            <Typography sx={{fontSize: {sm: '12px', xs: '20px'}, color: 'black'}}>{t("catalogProducts")}</Typography>
                         </NavLink>
                     </Box>
                     <Box sx={{display: 'flex', justifyContent: 'center', width: {sm:'50%', xs: '100%'}}}>

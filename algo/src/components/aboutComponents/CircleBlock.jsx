@@ -15,8 +15,10 @@ const CircleBlock = () => {
         t("benefit5"),
         t("benefit6"),
     ]
+    const typography = {fontSize: {lg:'24px', sm: '18px'}, width: '35%', border: '1px solid grey', borderRadius: '20px', height: '130px', display: 'flex', alignItems: 'center', justifyContent: 'center'}
+    const typo2 = {fontSize: {lg:'24px', sm: '18px'}, border: '1px solid grey', borderRadius: '20px', height: '160px', display: 'flex', alignItems: 'center'}
     return (
-        <Container maxWidth={'xl'}>
+        <Container maxWidth={'md'}>
             <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <Typography   sx={{
                     fontSize: {sm: '34px', xs: '28px'},
@@ -33,23 +35,23 @@ const CircleBlock = () => {
                     justifyContent: 'center',
                     marginTop: '40px',
                     fontWeight: '500',
-                    width: '80%',
+                    width: {md: '100%', sm: '80%'},
                 }}>
-                    <Box sx={{width: '30%', margin: '0 auto', paddingBottom: '40px'}}>
-                        <Typography sx={{fontSize: {lg:'24px', sm: '20px'}}}>{t("benefit1")}</Typography>
+                    <Box sx={{width: '40%', margin: '0 auto', paddingBottom: '40px'}}>
+                        <Typography sx={typo2}>{t("benefit1")}</Typography>
                     </Box>
                     <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                        <Typography sx={{fontSize: {lg:'24px', sm: '20px'}, width: '30%'}}>{t("benefit6")}</Typography>
-                        <Typography sx={{fontSize: {lg:'24px', sm: '20px'}, width: '30%'}}>{t("benefit2")}</Typography>
+                        <Typography sx={typography}>{t("benefit6")}</Typography>
+                        <Typography sx={typography}>{t("benefit2")}</Typography>
                     </Box>
                     <Box component={'img'} src={circleImg} sx={{width: {lg:'200px', md: '150px', sm: '130px'}, margin: '0 auto'}}/>
 
                     <Box  sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-                        <Typography sx={{fontSize: {lg:'24px', sm: '20px'}, width: '30%'}}>{t("benefit5")}</Typography>
-                        <Typography sx={{fontSize: {lg:'24px', sm: '20px'}, width: '30%'}}>{t("benefit3")}</Typography>
+                        <Typography sx={typography}>{t("benefit5")}</Typography>
+                        <Typography sx={typography}>{t("benefit3")}</Typography>
                     </Box>
-                    <Box sx={{width: '40%', margin: '0 auto', paddingTop: '40px'}}>
-                        <Typography sx={{fontSize: {lg:'24px', sm: '20px'}}}>{t("benefit4")}</Typography>
+                    <Box sx={{width: '60%', margin: '0 auto', paddingTop: '40px'}}>
+                        <Typography sx={typo2}>{t("benefit4")}</Typography>
                     </Box>
                 </Box>
 

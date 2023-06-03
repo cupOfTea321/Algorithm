@@ -25,7 +25,7 @@ const OrderService = ({order}) => {
                 alignItems: 'center',
                 flexDirection: {lg: 'row', md: 'column', xs: 'column'},
                 textAlign: {lg: 'left', md: 'center', xs: 'center'},
-                width: {md: '80%', sm: '100%'},
+                width: {md: '100%', sm: '100%'},
                 margin: '0 auto',
                 marginTop: '4%',
             }}>

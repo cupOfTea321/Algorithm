@@ -33,7 +33,7 @@ const StorageService = () => {
     return (
         <>
             <ServicesBanner storage={storage}/>
-            <Container maxWidth={'xl'}>
+            <Container maxWidth={'md'}>
                 <OrderService order={order}/>
                 <ReasonsBlock title={reasonTitle} reasons={reasons}/>
                 <Typography className={'animate__animated animate__fadeInLeft wow'} sx={{fontSize: {sm:'26px', xs: '20px'}, marginTop: '20px'}}>

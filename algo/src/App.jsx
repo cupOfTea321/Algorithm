@@ -51,17 +51,6 @@ function App() {
                   {routes.map(route => (
                       <Route path={route.path} exact element={route.element}/>
                   ))}
-                  {/*<Route path={''} exact element={<MainPage/>}/>*/}
-                  {/*<Route path={'about'} exact element={<AboutPage/>}/>*/}
-                  {/*<Route path={'delivery'} exact element={<DeliveryPage/>}/>*/}
-                  {/*<Route path={'services'} exact element={<ServicesPage/>}/>*/}
-                  {/*<Route path={'services/storage'} exact element={<StorageService/>}/>*/}
-                  {/*<Route path={'services/transportation'} exact element={<TransportationService/>}/>*/}
-                  {/*<Route path={'services/registration'} exact element={<RegistrationService/>}/>*/}
-                  {/*<Route path={'services/shipment'} exact element={<ShipmentService/>}/>*/}
-                  {/*<Route path={'clients'} exact element={<ForClientsPage/>}/>*/}
-                  {/*<Route path={'clients/collectors'} exact element={<CollectorsPage/>}/>*/}
-                  {/*<Route path={'*'} element={<NotFound/>}/>*/}
               </Route>
           </Routes>
       </Box>

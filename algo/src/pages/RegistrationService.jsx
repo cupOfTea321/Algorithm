@@ -39,7 +39,7 @@ const RegistrationService = () => {
     return (
         <>
             <ServicesBanner storage={storage}/>
-            <Container maxWidth={'xl'}>
+            <Container maxWidth={'md'}>
                 <OrderService order={order}/>
                 <Box sx={{display: 'flex', justifyContent: 'space-between', flexDirection: {sm: 'row', xs: 'column'}}}>
                     <ReasonsBlock title={reasonTitle} reasons={reasons}/>

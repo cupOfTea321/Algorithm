@@ -17,7 +17,7 @@ const MainServices = () => {
         {text: t("shipment"), img: serv4, link: 'services/shipment'},
     ]
     return (
-        <Container maxWidth={'xl'}>
+        <Container maxWidth="md">
             <Box sx={{
                 // gap: 2,
                 marginTop: '3%',
@@ -37,21 +37,21 @@ const MainServices = () => {
                     marginBottom: {sm: '3%', xs: '330px'},
                     display: {sm: 'grid'},
 
-                    justifyContent: 'center',
-                    gridTemplateColumns: {lg: 'repeat(4, 250px)', md: 'repeat(2, 250px)', sm: 'repeat(2, 250px)', xs: 'repeat(2, 200px)'},
+                    justifyContent: {lg: 'space-between', md: 'center', sm: 'center', xs: 'center'},
+                    gridTemplateColumns: {lg: 'repeat(4, 200px)', md: 'repeat(2, 250px)', sm: 'repeat(2, 250px)', xs: 'repeat(2, 200px)'},
                     gridTemplateRows: 'repeat(1, 70px)',
                     gap: 2,
-                    height: '70px',
+                    // height: '70px',
 
 
                 }} className={'animate__animated animate__fadeInUp wow'}>
                     {services.map(service => (
                         <Grid item  key={service.text}  sx={{
                             display: 'flex',
-                            justifyContent: 'center',
+                            // justifyContent: 'center',
                             marginBottom: '40px',
                             // padding: '10px'
-                            height: '45px'
+                            // height: '45px'
                         }}>
                             <ServicesBtn link={service.link} img={service.img} text={service.text}/>
                         </Grid>

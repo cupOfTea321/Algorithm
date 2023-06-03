@@ -29,7 +29,7 @@ const StagesBlock = () => {
             backgroundPosition: 'top center',
             paddingBottom: '5%',
         }}>
-            <Container maxWidth={'xl'} sx={{marginTop: '5%', paddingTop: '5%', width: '100vw', }} className={'animate__animated animate__fadeInUp wow'}>
+            <Container maxWidth="md" sx={{marginTop: '5%', paddingTop: '5%', width: '100vw', }} className={'animate__animated animate__fadeInUp wow'}>
                 <Typography className={'oswFont'} variant={'h3'} sx={{color: 'white', fontSize: '48px', textAlign: 'center'}}>
                     {t("stagesBlock")}
                 </Typography>
@@ -39,10 +39,10 @@ const StagesBlock = () => {
                             <Typography variant={'h3'} sx={{fontSize: {md:'160px', sm: '120px', xs: '120px'}, lineHeight: '113.2%', color: '#A40000', fontWeight: 'bold', textShadow: '0 0 5px rgba(0, 0, 0, 0.3)'}}>
                                 {index + 1}
                             </Typography>
-                            <Typography className={'oswFont'} variant={'h4'} sx={{fontSize: {lg:'34px', md: '26px', sm: '32px', xs: '32px'}}}>
+                            <Typography className={'oswFont'} variant={'h4'} sx={{fontSize: {lg:'26px', md: '24px', sm: '32px', xs: '32px'}}}>
                                 {stage.name}
                             </Typography>
-                            <Typography variant={'h5'} sx={{fontSize: {lg: '24px', md: '18px', sm: '26px', xs: '18px'}}}>
+                            <Typography variant={'h5'} sx={{fontSize: {lg: '18px', md: '16px', sm: '26px', xs: '18px'}}}>
                                 {stage.about}
                             </Typography>
                         </Grid>
