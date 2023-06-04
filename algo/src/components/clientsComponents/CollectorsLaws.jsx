@@ -19,9 +19,9 @@ const CollectorsLaws = () => {
         {title: t("collectorsLaw3"), body: t("collectorsText3")},
     ]
     return (
-        <Container maxWidth={'xl'}>
+        <Container maxWidth={'md'}>
             <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '5%', marginBottom: '5%'}}>
-                <Typography className={'oswFont'} sx={{textAlign: 'center', fontSize: '34px', width: {sm: '60%', xs: '100%'}}}>
+                <Typography className={'oswFont'} sx={{textAlign: 'center', fontSize: '28px', width: {sm: '60%', xs: '100%'}}}>
                     {t("collectorsLaws")}
                 </Typography>
             </Box>

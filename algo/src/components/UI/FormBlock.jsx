@@ -9,7 +9,7 @@ const FormBlock = () => {
     const { t, i18n } = useTranslation();
     return (
         <Container maxWidth={'md'}>
-            <Typography variant={'h3'} sx={{fontSize: '42px', textAlign: 'center', marginTop: '3%'}}>
+            <Typography variant={'h3'} sx={{fontSize: {sm: '32px', xs: '28px'}, textAlign: 'center', marginTop: '3%'}}>
                 {t("pageForm")}
             </Typography>
             <Box  sx={{
@@ -25,7 +25,7 @@ const FormBlock = () => {
                     <MyForm />
                 </Box>
 
-                <Typography className={'animate__animated animate__fadeInRight wow'} sx={{fontSize: {md: '26px', sm: '20px'}, width: {md: '40%', sm: '60%'}, marginLeft: {lg:'50px'}, textAlign: {lg:'left', md: 'center'}}}>
+                <Typography className={'animate__animated animate__fadeInRight wow'} sx={{fontSize: {sm: '24px', xs: '18px'}, width: {md: '40%', sm: '60%'}, marginLeft: {lg:'50px'}, textAlign: {lg:'left', md: 'center'}}}>
                     {t("pageFormText")}
                 </Typography>
             </Box>

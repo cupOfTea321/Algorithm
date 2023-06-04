@@ -19,16 +19,14 @@ const MainServices = () => {
     return (
         <Container maxWidth="md">
             <Box sx={{
-                // gap: 2,
                 marginTop: '3%',
                 flexFlow: 'row nowrap',
-
             }} className={'animate__animated animate__fadeInUp wow'} >
                 <Typography variant={'h3'} className={'oswFont'} sx={{
                     display: 'flex',
                     justifyContent: 'center',
 
-                    fontSize: {sm:'34px', xs: '28px'}, textAlign: 'center', marginTop: '40px'
+                    fontSize: {sm:'32px', xs: '28px'}, textAlign: 'center', marginTop: '40px'
                 }}>
                     {t("servicesBlock")}
                 </Typography>
@@ -41,17 +39,11 @@ const MainServices = () => {
                     gridTemplateColumns: {lg: 'repeat(4, 200px)', md: 'repeat(2, 250px)', sm: 'repeat(2, 250px)', xs: 'repeat(2, 200px)'},
                     gridTemplateRows: 'repeat(1, 70px)',
                     gap: 2,
-                    // height: '70px',
-
-
                 }} className={'animate__animated animate__fadeInUp wow'}>
                     {services.map(service => (
                         <Grid item  key={service.text}  sx={{
                             display: 'flex',
-                            // justifyContent: 'center',
                             marginBottom: '40px',
-                            // padding: '10px'
-                            // height: '45px'
                         }}>
                             <ServicesBtn link={service.link} img={service.img} text={service.text}/>
                         </Grid>

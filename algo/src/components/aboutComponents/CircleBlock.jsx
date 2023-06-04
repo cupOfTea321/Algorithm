@@ -21,7 +21,7 @@ const CircleBlock = () => {
         <Container maxWidth={'md'}>
             <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                 <Typography   sx={{
-                    fontSize: {sm: '34px', xs: '28px'},
+                    fontSize: {sm: '32px', xs: '28px'},
                     textAlign: 'center',
                     marginTop: '40px',
                     fontWeight: 'bold'

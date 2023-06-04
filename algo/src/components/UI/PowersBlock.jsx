@@ -20,12 +20,18 @@ const PowersBlock = () => {
         {name: t("power7"), about: t("titlePower7")},
         {name: t("power8"), about: t("titlePower8")},
     ]
-
+    const powersStyles = {
+        display: {md: 'flex', xs: 'none'},
+        justifyContent: 'space-between',
+        width: '100%',
+        alignItems: 'center',
+        marginTop: '3%',
+    }
+    const typoSize = {fontSize: {lg: '18px',md: '14px',sm: '16px', xs: '10px'}}
     return (
         <Container maxWidth={'xl'} >
             <Typography className={'oswFont animate__animated animate__fadeInLeft wow'} variant={'h4'} sx={{
-                marginTop: {lg: '3%',md: '120px',sm: '120px', xs:'280px'},
-                fontSize: {sm:'34px', xs: '28px'},
+                fontSize: {sm:'32px', xs: '28px'},
                 marginBottom: '3%',
                 textAlign: {md: 'center',xs: 'center'}
             }} >
@@ -33,24 +39,16 @@ const PowersBlock = () => {
             </Typography>
 
             {/*ПК версия*/}
-            <Box sx={{
-                display: {md: 'flex', xs: 'none'},
-                // gap: 2,
-                justifyContent: 'space-between',
-                width: '100%',
-                alignItems: 'center'
-            }} className={'animate__animated animate__fadeInLeft wow'}>
+            <Box sx={powersStyles} className={'animate__animated animate__fadeInLeft wow'}>
                 {powersFirst.map(power => (
                     <Grid key={power.name} item xs={4} sx={{
                         justifyContent: 'space-between',
                         maxWidth: '18%',
                         alignItems: '',
                         height: '150px',
-                        marginLeft: {lg: '0%', xs:'-4%'},
+                        marginLeft: {md: '0%', xs:'-4%'},
                     }}>
-                        <Typography className={'oswFont'} variant={'h5'} sx={{
-                            fontSize: {xl: '20px', lg: '16px', md: '12px', sm: '16px', xs: '10px'},
-                        }}>
+                        <Typography className={'oswFont'} variant={'h5'} sx={typoSize}>
                             {power.name}
                         </Typography>
                         <Box sx={{display: {md: 'block', sm: 'none', xs: 'none'},}}>
@@ -77,24 +75,14 @@ const PowersBlock = () => {
                             <img src={pointLeft} alt="point"/>
                         </Box>
 
-                        <Typography variant={'h6'} sx={{
-                            fontSize: {xl: '20px', lg: '16px', md: '12px',  sm: '16px', xs: '10px'},
-                            marginBottom: '30%'
-                        }}>
+                        <Typography variant={'h6'} sx={typoSize}>
                             {power.about}
                         </Typography>
                     </Grid>
                 ))}
             </Box>
 
-            <Box sx={{
-                display: {md: 'flex', xs: 'none'},
-                justifyContent: 'space-between',
-                width: '100%',
-                alignItems: 'center',
-                marginTop: '3%',
-                marginLeft: {lg: '0%', xs:'-4%'},
-            }} className={'animate__animated animate__fadeInLeft wow'}>
+            <Box sx={powersStyles} className={'animate__animated animate__fadeInLeft wow'}>
                 {powersSecond.map(power => (
                     <Grid key={power.name} item xs={4} sx={{
                         justifyContent: 'space-between',
@@ -104,7 +92,7 @@ const PowersBlock = () => {
 
                     }} className={'animate__animated animate__fadeInLeft wow'}>
                         <Typography className={'oswFont'} variant={'h5'}
-                                    sx={{fontSize: {xl: '20px', lg: '16px', md: '12px', sm: '16px', xs: '10px'}}}>
+                                    sx={typoSize}>
                             {power.name}
                         </Typography>
                         <Box sx={{display: {md: 'block', sm: 'none', xs: 'none'},}}>
@@ -131,7 +119,7 @@ const PowersBlock = () => {
                         }}>
                             <img src={pointLeft} alt="point"/>
                         </Box>
-                        <Typography variant={'h6'} sx={{fontSize: {xl: '20px', lg: '16px', md: '12px',  sm: '16px', xs: '10px'}}}>
+                        <Typography variant={'h6'} sx={typoSize}>
                             {power.about}
                         </Typography>
 

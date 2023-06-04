@@ -25,7 +25,7 @@ const AboutBanner = () => {
                 gap: 2
             }} className={'animate__animated animate__fadeInLeft'}>
                 <Typography variant={'h1'} sx={{
-                    fontSize: {lg: '48px', md: '36px', sm: '30px', xs: '36px'},
+                    fontSize: {md: '36px', sm: '30px', xs: '28px'},
 
                 }}>
                     {t("aboutMain")}

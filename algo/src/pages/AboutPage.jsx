@@ -1,6 +1,6 @@
 import React from 'react';
 import {Box} from "@mui/material";
-import backImg from "../assets/Union.png";
+import backImg from "../assets/aboutBlack.png";
 import backImg2 from "../assets/aboutBack2.png";
 import AboutBanner from "../components/aboutComponents/AboutBanner.jsx";
 import AboutBlock from "../components/aboutComponents/AboutBlock.jsx";
@@ -13,8 +13,10 @@ const AboutPage = () => {
     return (
         <>
             <Box sx={{
-                height: '740px',
-                background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg})`,
+                // height: '740px',
+                paddingBottom: {sm: '160px', xs: '60px'},
+                background: `url(${backImg})`,
+                // background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg})`,
                 backgroundSize: {sm: 'cover'},
                 borderRadius: {sm:'0 0px 15% 15%',xs: '0 0 0 0'},
                 zIndex: '100',
@@ -28,7 +30,7 @@ const AboutPage = () => {
                 paddingBottom: '5%',
                 background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg2})`,
                 backgroundSize: 'cover',
-                marginTop: '590px',
+                marginTop: {md: '450px', sm: '360px', xs: '360px'},
                 zIndex: '-10',
             }}>
                 <AboutBlock/>

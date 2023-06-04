@@ -11,7 +11,7 @@ const AboutBlock = () => {
         t("warning3"),
         t("warning4"),
     ]
-    const size = {fontSize: {xl: '22px', lg: '18px', md: '16px', sm: '14px', xs: '12px'}, marginBottom: '20px'}
+    const size = {fontSize: {md: '18px', sm: '14px', xs: '12px'}, marginBottom: '20px'}
     return (
             <Container maxWidth={'md'}>
                 <Box sx={{
@@ -19,11 +19,11 @@ const AboutBlock = () => {
                 display: 'flex',
                 alignItems: 'center',
                 flexDirection: {lg: 'row', md:'column', sm: 'column', xs: 'column'},
-                paddingTop: {lg: '25%', md: '25%', sm: '30%', xs: '50%'},
+                paddingTop: {lg: '25%', md: '25%', sm: '30%', xs: '70%'},
                 gap: 2
             }}>
-                <Box className={'animate__animated animate__fadeInLeft'} sx={{color: 'black', background: 'white', width: {lg: '100%', md: '80%'}, padding: '30px', borderRadius: '20px ', marginRight: {lg: '10px', md: '0', sm: '0', xs: '0'}}}>
-                    <Typography variant={'h4'} sx={{marginBottom: '20px', paddingTop: '20px', fontWeight: 'bold'}}>
+                <Box className={'animate__animated animate__fadeInLeft'} sx={{color: 'black', background: 'white', width: {lg: '100%', md: '80%'}, padding: '30px', borderRadius: '20px ', marginRight: {md: '10px', sm: '0', xs: '0'}}}>
+                    <Typography variant={'h4'} sx={{fontSize: {sm: '32px', xs: '28px'}, marginBottom: '20px', paddingTop: '20px', fontWeight: 'bold'}}>
                         {t("leftAbout")}
                     </Typography>
                     <Typography sx={size}>
@@ -37,13 +37,13 @@ const AboutBlock = () => {
                     </Typography>
                 </Box>
                 <Box sx={{width: '100%'}} className={'animate__animated animate__fadeInRight wow'}>
-                    <Typography component={'h2'} sx={{fontSize: '34px', }}>
+                    <Typography component={'h2'} sx={{fontSize: {sm: '32px', xs: '28px'},marginBottom: '28px' }}>
                         {t("rightAbout")}
                     </Typography>
                     {points.map((point, index) => (
                         <Box key={index} sx={{display: 'flex', alignItems: 'center'}}>
-                            <img src={rightPoint} alt="rightPoint" style={{height: '40px', width: '40px', marginRight: '20px'}}/>
-                            <Typography sx={{fontSize: '24px', marginBottom: '20px', marginTop: '10px'}}>
+                            <Box component={'img'} src={rightPoint} alt="rightPoint" sx={{height: {sm: '30px', xs: '20px'}, width: {sm: '30px', xs: '20px'}, marginRight: '20px', marginBottom: '20px'}}/>
+                            <Typography sx={size}>
                                 {point}
                             </Typography>
                         </Box>

@@ -27,13 +27,13 @@ const ClientsMainBlock = () => {
                 textAlign: 'center',
             }} >
                 <Typography className={'oswFont'} variant={'h1'} sx={{
-                    fontSize: {md: '42px', sm: '36px', xs: '36px'},
+                    fontSize: {md: '36px', sm: '30px', xs: '28px'},
                     color: '#A81A1A',
                 }} className={'animate__animated animate__fadeInDown wow'}>
                     {t("clientsMain")}
                 </Typography>
                 <Typography className={'animate__animated animate__fadeInUp wow'} variant={'h3'} sx={{
-                    fontSize: '28px',
+                    fontSize: {sm: '24px', xs: '18px'},
                     color: '#A81A1A',
                 }}>
                     {t("clientsMain2")}
@@ -44,19 +44,19 @@ const ClientsMainBlock = () => {
                         <ClientsDocs/>
                     </Box>
                 </Box>
-                <Box  sx={{display: 'flex', flexDirection: 'column', width: {sm: '82%', xs: '98%'}, margin: '0 auto', background: 'white', borderRadius: '20px', gap: 2,  paddingTop: '20px', paddingBottom: '20px'}}>
-                    <Typography className={'animate__animated animate__fadeInDown wow'} sx={{fontSize: {md: '34px', sm:'26px', xs: '20px'}, color: '#A81A1A'}}>
-                        {t("algo")}
-                    </Typography>
-                    <Typography sx={{fontSize: '20px'}} className={'animate__animated animate__fadeInUp wow'}>
-                        {t("algoAbout")}
-                    </Typography>
-                    <Typography sx={{fontSize: '20px'}} className={'animate__animated animate__fadeInUp wow'}>
-                        <NavLink to={'collectors'} style={{textDecoration: 'underline', color: 'black', marginBottom: '10px'}}>
-                            {t("algoMore")}
-                        </NavLink>
-                    </Typography>
-                </Box>
+                {/*<Box  sx={{display: 'flex', flexDirection: 'column', width: {sm: '82%', xs: '98%'}, margin: '0 auto', background: 'white', borderRadius: '20px', gap: 2,  paddingTop: '20px', paddingBottom: '20px'}}>*/}
+                {/*    <Typography className={'animate__animated animate__fadeInDown wow'} sx={{fontSize: {sm: '32px', xs: '28px'}, color: '#A81A1A'}}>*/}
+                {/*        {t("algo")}*/}
+                {/*    </Typography>*/}
+                {/*    <Typography sx={{fontSize: '20px'}} className={'animate__animated animate__fadeInUp wow'}>*/}
+                {/*        {t("algoAbout")}*/}
+                {/*    </Typography>*/}
+                {/*    <Typography sx={{fontSize: '20px'}} className={'animate__animated animate__fadeInUp wow'}>*/}
+                {/*        <NavLink to={'collectors'} style={{textDecoration: 'underline', color: 'black', marginBottom: '10px'}}>*/}
+                {/*            {t("algoMore")}*/}
+                {/*        </NavLink>*/}
+                {/*    </Typography>*/}
+                {/*</Box>*/}
                 <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', justifyContent: 'center', marginTop: '2%', marginBottom: '10%', paddingBottom: {sm: '3%', xs:'10%'}}}>
                     <MyBtn onClick={handleToggle} radius={'20px'} height={'70px'}/>
                     <Backdrop

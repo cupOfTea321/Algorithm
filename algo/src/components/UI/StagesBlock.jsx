@@ -30,7 +30,7 @@ const StagesBlock = () => {
             paddingBottom: '5%',
         }}>
             <Container maxWidth="md" sx={{marginTop: '5%', paddingTop: '5%', width: '100vw', }} className={'animate__animated animate__fadeInUp wow'}>
-                <Typography className={'oswFont'} variant={'h3'} sx={{color: 'white', fontSize: '48px', textAlign: 'center'}}>
+                <Typography className={'oswFont'} variant={'h3'} sx={{color: 'white', fontSize: {sm: '32px', xs: '28px'}, textAlign: 'center'}}>
                     {t("stagesBlock")}
                 </Typography>
                 <Grid spacing={1} container sx={{color: 'white', display: 'flex', textAlign: 'center', marginTop: {md: '30px', sm: '15px', xs: '10px'}}}>

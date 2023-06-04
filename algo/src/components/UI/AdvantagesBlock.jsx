@@ -26,7 +26,7 @@ const AdvantagesBlock = () => {
     ]
     return (
         <Container maxWidth={'md'} className={'animate__animated animate__fadeInUp wow'}>
-            <Typography className={'oswFont'} variant={'h4'} sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: 'center', marginTop: '5%', }}>
+            <Typography className={'oswFont'} variant={'h4'} sx={{fontSize: {sm:'32px', xs: '28px'}, textAlign: 'center', marginTop: '5%', }}>
                 {t("whyUsBlock")}
             </Typography>
             <Grid container spacing={4} sx={{marginTop: '1%'}}>

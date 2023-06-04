@@ -3,7 +3,7 @@ import {Button, Typography} from "@mui/material";
 import './UIStyle.css'
 import {useTranslation} from "react-i18next";
 import {Link, NavLink} from "react-router-dom";
-const SecondBtn = ({to = '/delivery', onClick ,color = 'white', height = 'auto', width = '300px', text = 'Перейти к каталогу', fontSize = "fontSize: {lg: '20px', md: '16px', sm: '14px'},"}) => {
+const SecondBtn = ({to = '/delivery', onClick ,color = 'white', height = 'auto', width = '300px', text = 'Перейти к каталогу', fontSize = {lg: '16px', md: '14px', sm: '14px', xs: '14px'}}) => {
     const { t, i18n } = useTranslation();
     return (
         <Link to={to}>

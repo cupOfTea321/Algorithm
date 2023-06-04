@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Grid, Typography} from "@mui/material";
+import {Box, Container, Grid, Typography} from "@mui/material";
 import starBack from "../../assets/starBack.png";
 import plus from "../../assets/plus.png";
 import backRound from "../../assets/backRound.png";
@@ -14,7 +14,7 @@ const CollectorsQualities = () => {
         t("collectorsAction4"),
     ]
     return (
-        <>
+        <Container maxWidth={'md'}>
         <Box sx={{
             background: '#908B8B',
             color: 'white',
@@ -23,20 +23,18 @@ const CollectorsQualities = () => {
 
             justifyContent: 'space-between',
             alignItems: 'center',
-            // flexDirection: {lg: 'row', md: 'column', xs: 'column'},
             textAlign: {lg: 'left', md: 'center', xs: 'center'},
-            width: {md: '80%', sm: '100%'},
             margin: '0 auto',
             marginTop: '-10%',
         }} className={'animate__animated animate__fadeInUp wow'}>
-            <Typography className={'oswFont'} sx={{ fontSize: {lg: '44px', md: '32px', sm: '28px', xs: '28px'}, textAlign: 'center'}}>
+            <Typography className={'oswFont'} sx={{ fontSize: {md: '32px', sm: '28px', xs: '28px'}, textAlign: 'center'}}>
                 {t("collectorsActions")}
             </Typography>
             <Grid container sx={{width: '100%', marginTop: '5%', }}>
                 {list.map((item, index) => (
                     <Grid key={index} item lg={3} md={6} sm={6} xs={12} sx={{width: '25%', display: 'flex', flexDirection: 'column', alignItems: 'center', paddingBottom: '20px'}}>
-                        <Box sx={{backgroundImage: `url(${starBack})`, height: '122px', width: '132px', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                            <Box component={'img'} src={plus} sx={{height: '45px', backgroundSize: 'cover', width: '45px', }}/>
+                        <Box sx={{backgroundImage: `url(${starBack})`, height: '82px', width: '91px', backgroundSize: 'cover', backgroundRepeat: 'no-repeat', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                            <Box component={'img'} src={plus} sx={{height: '35px', backgroundSize: 'cover', width: '35px', }}/>
                         </Box>
                         <Typography sx={{fontSize: '24px', width: '100%', textAlign: 'center'}}>
                             {item}
@@ -69,7 +67,7 @@ const CollectorsQualities = () => {
         left: '50%',
         top: '800px'
     }}/>
-    </>
+    </Container>
     );
 };
 

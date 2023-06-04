@@ -11,7 +11,7 @@ const MapBlock = () => {
         <Container id={'mapBlock'} maxWidth={'md'} sx={{marginTop: '2%'}} className={'animate__animated animate__fadeInUp wow'}>
             <Box sx={{display: 'flex', alignItems: 'center', justifyContent: {lg: 'flex-end', md: 'center', sm: 'center', xs: 'center'}, marginBottom: '50px'}}>
                 <img src={mark} alt="mark" style={{width: '55px', height: '70px'}}/>
-                <Typography className={'oswFont'} sx={{fontSize: {sm:'34px', xs: '28px'}, textAlign: '', marginLeft: '2%'}}>
+                <Typography className={'oswFont'} sx={{fontSize: {sm:'32px', xs: '28px'}, textAlign: '', marginLeft: '2%'}}>
                     {t("mapBlock")}
                 </Typography>
             </Box>

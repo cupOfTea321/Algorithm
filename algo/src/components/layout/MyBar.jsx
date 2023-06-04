@@ -1,5 +1,17 @@
-import React from 'react';
-import {AppBar, Backdrop, Box, Button, Container, IconButton, Menu, MenuItem, Toolbar, Typography} from "@mui/material";
+import React, {useState} from 'react';
+import {
+    AppBar,
+    Backdrop,
+    Box,
+    Button,
+    Container,
+    IconButton,
+    Link,
+    Menu,
+    MenuItem, Popover, Portal,
+    Toolbar,
+    Typography
+} from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import {NavLink} from "react-router-dom";
 import logo from '../../assets/footerLogo.png'
@@ -14,7 +26,7 @@ const MyBar = () => {
     const pages = [
         // {name: t("main"), route: '/'},
         {name: t("about"), route: '/about'},
-        {name: t("clients"), route: '/clients'},
+        // {name: t("clients"), route: '/clients'},
         {name: t("services"), route: '/services'},
         {name: t("catalog"), route: '/delivery'},
     ];
@@ -34,6 +46,16 @@ const MyBar = () => {
     };
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
+    };
+
+    // открытие вкладки клиентам
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const openClients = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleCloseClients = () => {
+        setAnchorEl(null);
     };
     return (
         <AppBar position="static"
@@ -114,15 +136,49 @@ const MyBar = () => {
                             }}>
                             <Box component={'img'} sx={{width: {md: '80px', sm: '60px', xs: '60px'}}} src={logo} alt={'LOGO'}/>
                         </Box>
+
                         <Box  sx={{  display: { xs: 'none', md: 'flex' }}}>
                             {pages.map((page) => (
                                 <NavLink key={page.name} style={{color: 'black', paddingRight: '0px'}} to={page.route}>
-                                    <MenuItem sx={{fontSize: {xl: '16px', lg: '18px'}}} onClick={handleCloseNavMenu}>
+                                    <MenuItem sx={{fontSize: {lg: '16px'}}} onClick={handleCloseNavMenu}>
                                         {page.name}
                                     </MenuItem>
                                 </NavLink>
                             ))}
+
                         </Box>
+                        {/*ВЫПАДАЮЩЕЕ МЕНЮ*/}
+
+                        <NavLink
+                            // id="basic-button"
+                            // aria-controls={openClients ? 'basic-menu' : undefined}
+                            // aria-haspopup="true"
+                            // aria-expanded={openClients ? 'true' : undefined}
+                            onClick={handleClick}
+                            style={{color: 'black', paddingRight: '15px'}}
+                        >
+                            КЛИЕНТАМ
+                        </NavLink>
+                        <Menu
+                            id="basic-menu"
+                            anchorEl={anchorEl}
+                            open={openClients}
+                            onClose={handleCloseClients}
+                            MenuListProps={{
+                                'aria-labelledby': 'basic-button',
+                            }}
+                        >
+                            <MenuItem onClick={handleCloseClients}>
+                                <NavLink style={{color: 'black', paddingRight: '0px'}} to={'/clients'}>
+                                        ДОКУМЕНТЫ
+                                </NavLink>
+                            </MenuItem>
+                            <MenuItem sx={{fontSize: {lg: '16px'}}} onClick={handleCloseClients}>
+                                <NavLink style={{color: 'black', paddingRight: '0px'}} to={'/clients/collectors'}>
+                                УТИЛИЗАТОРАМ
+                                </NavLink>
+                            </MenuItem>
+                        </Menu>
                         <Box sx={{paddingRight: '10px'}}>
                             <MyBtn weight={'normal'}  onClick={handleToggle} radius={'14px'} display={'none'} width={{lg: '180px', md: '180px'}}
                                    size={'14px'} padding={{xl: '18px 10px',  md: '12px 20px', sm: '2px'}} />
