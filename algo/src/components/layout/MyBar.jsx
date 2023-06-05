@@ -20,7 +20,6 @@ import ModalForm from "../UI/ModalForm.jsx";
 import ChangeLangBtn from "../UI/ChangeLangBtn.jsx";
 import {useTranslation} from "react-i18next";
 
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const MyBar = () => {
     const { t, i18n } = useTranslation();
     const pages = [
@@ -29,6 +28,14 @@ const MyBar = () => {
         // {name: t("clients"), route: '/clients'},
         {name: t("services"), route: '/services'},
         {name: t("catalog"), route: '/delivery'},
+    ];
+    const pagesMobile = [
+        {name: t("main"), route: '/'},
+        {name: t("about"), route: '/about'},
+        {name: t("clients"), route: '/clients'},
+        {name: t("catalog"), route: '/delivery'},
+        {name: t("docsNav"), route: '/services'},
+        {name: t("collectors"), route: '/clients/collectors'},
     ];
     //for backdrop
     const [open, setOpen] = React.useState(false);
@@ -114,7 +121,7 @@ const MyBar = () => {
                             }}
                         >
                             {/*мобильное меню*/}
-                            {pages.map((page) => (
+                            {pagesMobile.map((page) => (
                                 <NavLink key={page.name} style={{color: 'black'}}  to={page.route}>
                                     <MenuItem   onClick={handleCloseNavMenu}>
                                             {page.name}
@@ -148,17 +155,15 @@ const MyBar = () => {
 
                         </Box>
                         {/*ВЫПАДАЮЩЕЕ МЕНЮ*/}
+                        <Box sx={{display: {md: 'block', sm: 'none', xs: 'none'}}}>
+                            <NavLink
+                                onClick={handleClick}
+                                style={{color: 'black', paddingRight: '30px', paddingLeft: '10px'}}
+                            >
+                                {t("clients")}
+                            </NavLink>
+                        </Box>
 
-                        <NavLink
-                            // id="basic-button"
-                            // aria-controls={openClients ? 'basic-menu' : undefined}
-                            // aria-haspopup="true"
-                            // aria-expanded={openClients ? 'true' : undefined}
-                            onClick={handleClick}
-                            style={{color: 'black', paddingRight: '15px'}}
-                        >
-                            КЛИЕНТАМ
-                        </NavLink>
                         <Menu
                             id="basic-menu"
                             anchorEl={anchorEl}
@@ -170,12 +175,12 @@ const MyBar = () => {
                         >
                             <MenuItem onClick={handleCloseClients}>
                                 <NavLink style={{color: 'black', paddingRight: '0px'}} to={'/clients'}>
-                                        ДОКУМЕНТЫ
+                                    {t("docsNav")}
                                 </NavLink>
                             </MenuItem>
                             <MenuItem sx={{fontSize: {lg: '16px'}}} onClick={handleCloseClients}>
                                 <NavLink style={{color: 'black', paddingRight: '0px'}} to={'/clients/collectors'}>
-                                УТИЛИЗАТОРАМ
+                                    {t("collectors")}
                                 </NavLink>
                             </MenuItem>
                         </Menu>

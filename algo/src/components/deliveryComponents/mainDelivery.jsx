@@ -22,11 +22,11 @@ const MainDelivery = () => {
     const imgStyles = {width: '70px', marginRight: '20px'}
     return (
         <Container maxWidth={'md'}>
-            <Box sx={{display: 'flex', flexDirection: 'column', width: '100%', gap: 4, alignItems: 'center', marginTop: '4%'}}>
-                <Typography className={'animate__animated animate__fadeInDown wow'} sx={{fontSize: {md: '32px', sm: '28px', xs: '24px'}, }}>
+            <Box sx={{display: 'flex', flexDirection: 'column', width: '100%', gap: 4, alignItems: 'center', color: 'white'}}>
+                <Typography className={'animate__animated animate__fadeInDown wow'} sx={{fontSize: {md: '36px', sm: '30px', xs: '28px'}, textAlign: 'center'}}>
                     {t("catalogMain")}
                 </Typography>
-                <Box className={'animate__animated animate__fadeInDown wow'} sx={{alignItems: 'flex-start', display: 'flex', gap: 0, width: '100%', justifyContent: 'space-between', flexDirection: {md:'row', sm: 'column', xs: 'column'},}}>
+                <Box className={'animate__animated animate__fadeInDown wow'} sx={{alignItems: {md: 'flex-start', sm: ''}, display: 'flex', gap: 0, width: '100%', justifyContent: 'space-between', flexDirection: {md:'row', sm: 'column', xs: 'column'},}}>
                     <Box sx={{display: 'flex',  alignItems: 'center',}}>
                         <img src={delivery1} alt="" style={imgStyles}/>
                         <Box >
@@ -44,7 +44,7 @@ const MainDelivery = () => {
                             {t("catalogTitle3")}
                         </Typography>
                     </Box>
-                    <Box sx={{display: 'flex', alignItems: 'center', width: '30%'}}>
+                    <Box sx={{display: 'flex', alignItems: 'center', width: {md:'30%', sm: '100%'}}}>
                         <img src={delivery2} alt="" style={imgStyles}/>
                         <Box>
                             <Typography sx={title}>

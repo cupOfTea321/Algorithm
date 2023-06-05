@@ -5,7 +5,7 @@ import SecondBtn from "./UI/SecondBtn.jsx";
 import './components.css'
 import ModalForm from "./UI/ModalForm.jsx";
 import {useTranslation} from "react-i18next";
-import imgMain from '../assets/безфона.png'
+import imgMain from '../assets/mainImg.png'
 const FirstBanner = () => {
     const { t, i18n } = useTranslation();
     const [open, setOpen] = React.useState(false);

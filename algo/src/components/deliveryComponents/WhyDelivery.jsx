@@ -26,7 +26,7 @@ const WhyDelivery = () => {
             paddingBottom: '2%',
 
         }}>
-            <Container className={'animate__animated animate__fadeInUp wow'} maxWidth={'md'} sx={{marginTop: '4%', paddingTop: '2%', width: '100vw', color: 'white'}}>
+            <Container className={'animate__animated animate__fadeInUp wow'} maxWidth={'md'} sx={{marginTop: '-40px', paddingTop: '2%', width: '100vw', color: 'white'}}>
 
                 <Typography className={'oswFont'} variant={'h4'}
                             sx={{fontSize: {sm: '34px', xs: '28px'}, textAlign: 'center', marginTop: '5%',}}>

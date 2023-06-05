@@ -1,6 +1,6 @@
 import React from 'react';
 import {Paper} from "@mui/material";
-import backImg from '../assets/финалка.png'
+import backImg from '../assets/mainPhone.png'
 // import backPhone from '../assets/безфона.png'
 import FirstBanner from "../components/FirstBanner.jsx";
 import MainServices from "../components/MainServices.jsx";
@@ -14,10 +14,8 @@ const MainPage = () => {
     return (
         <>
             <Paper sx={{
-                // height: {sm:'740px'},
                 // background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg})`,
-                // background: ` url(${backImg})`,
-                background: `#868c9e`,
+                background: ` url(${backImg})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'top center',

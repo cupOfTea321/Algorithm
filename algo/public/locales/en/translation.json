@@ -1,9 +1,11 @@
 {
-    "main": "Home",
+    "main": "HOME",
     "about": "BIODIESEL",
     "clients": "CLIENTS",
     "services": "SERVICES",
     "catalog": "CATALOG",
+    "docsNav": "DOCUMENTS",
+    "collectors": "COLLECTORS",
     "mybtn": "Submit a request",
 
     "mainBanner": "ALT GROUP OF COMPANIES -",
@@ -67,18 +69,18 @@
     "aboutMain" : "WE WERE ONE OF THE FIRST BIODIESEL PRODUCERS IN RUSSIA",
     "aboutMain2": "Order high-quality biodiesel and experience the difference with fossil fuels!",
 
-    "leftAbout" : "What do you need to know about biodiesel fuel?",
+    "leftAbout" : "WHAT DO YOU NEED TO KNOW ABOUT BIODIESEL FUEL?",
     "p1" : "Biodiesel is a type of fuel consisting of biological raw materials that solves the problem of the need to reduce CO2 emissions.",
     "p2" : "Almost all States have now adopted the Paris Agreement under the UN Climate Change Convention. ",
     "p3" : "A new SVAM system for accounting for carbon dioxide emissions turnover has been introduced.",
 
-    "rightAbout" : "What is the risk of introducing SVAM?",
+    "rightAbout" : "WHAT IS THE RISK OF INTRODUCING SVAM?",
     "warning1" : "introduction of a bordertax on CO2 emissions;",
     "warning2" : "conductedan internal audit of emissions in companies;",
     "warning3" : "monitoring of changesin CO2 emission quotes;",
     "warning4" : "tax on cement, steel and fertilizers.",
 
-    "benefitsBlock": "Benefits of biodiesel",
+    "benefitsBlock": "BENEFITS OF BIODIESEL",
     "benefit1": "Complete biodegradation in case of leaks within a month",
     "benefit2": "No persistent odor",
     "benefit3": "Economic benefit from the introduction a border tax",
@@ -86,7 +88,7 @@
     "benefit5": "Easy to wash off with water",
     "benefit6": "Re-involvement of waste back into the production process",
 
-    "comparisonBlock": "Comparison with fossil fuels:",
+    "comparisonBlock": "COMPARISON WITH FOSSIL FUELS:",
     "problemTitle1": "The main problem of fossil fuels -",
     "problem1": "is the content of aromatic and polycyclic aromatic hydrocarbons.",
     "problemTitle2": "Restrictions:",
@@ -101,7 +103,7 @@
     "problemTitle6": "Due to the difference in density, this indicator is equalized and, taking into account the completeness of combustion, fuel consumption remains the same.",
     "problem6": "Biological fuels contain fewer impurities compared to traditional ones, and this allows mechanisms and engines to work longer.",
 
-    "areasBlock": "What areas are our products suitable for?",
+    "areasBlock": "WHAT AREAS ARE OUR PRODUCTS SUITABLE FOR?",
     "areas": "ALT LLC develops high-quality biodiesel fuel for both the domestic market and for export.",
     "area1": "For heating systems of country houses",
     "area2": "On motor vehicles in pure form and in various mixtures with diesel fuel",
@@ -109,7 +111,7 @@
 
     "clientsMain": "WHOLESALE SUPPLIES OF BIODIESEL AND DIESEL FUEL SINCE 2016",
     "clientsMain2": "Please read the required documentation before placing an order",
-    "docs": "Our documentation",
+    "docs": "OUR DOCUMENTATION",
     "balance1": "Balance sheet",
     "registrationDoc": "Certificate of registration",
     "inn": "INN",
@@ -133,11 +135,11 @@
     "storageP3": "Control of shelf",
     "storageP4": "life Compliance with storage conditions",
 
-    "orderService": "Order a service",
+    "orderService": "ORDER A SERVICE",
     "orderAbout": "Make a request for the service, and we will contact you as soon as possible, answer all your questions, and get started.",
     "orderPrice": "15 r/t per day",
 
-    "storageRequests": "Main requirements for fuel storage conditions",
+    "storageRequests": "MAIN REQUIREMENTS FOR FUEL STORAGE CONDITIONS",
     "storageRequest1": "compliance of containers with the requirements of industry regulations;",
     "storageRequest2": "providing free access to transport, lighting the territory in the dark;",
     "storageRequest3": "availability of fire-fighting equipment;",
@@ -154,7 +156,7 @@
     "transport4": "Temperature control",
     "transportPrice": "500 r/t",
 
-    "transportRequests": "What is included in the service:",
+    "transportRequests": "WHAT IS INCLUDED IN THE SERVICE:",
     "transportRequest1": "acceptance of railway tank cars or tank trucks;",
     "transportRequest2": "draining-filling from railway tank cars or tank trucks provided by the client.",
 
@@ -183,13 +185,13 @@
     "shipmentAbout": "Make a request for the service and we will contact you as soon as possible to provide you with an accurate calculation.",
     "shipmentPrice": "50 r/t",
 
-    "shipmentRequests": "Interaction format and price calculation",
+    "shipmentRequests": "INTERACTION FORMAT AND PRICE CALCULATION",
     "shipmentRequest1": "Making a deal",
     "shipmentRequest2": "Reimbursement of expenses",
     "shipmentRequest3": "Exchange fee",
     "shipmentRequest4": "Clearing fee",
 
-    "catalogMain": "Fuel and petroleum products with 24-hour delivery",
+    "catalogMain": "FUEL AND PETROLEUM PRODUCTS WITH 24-HOUR DELIVERY",
     "catalogTitle1": "Diesel fuel",
     "catalogText11": "Summer time",
     "catalogText13": "Winter menu",
@@ -200,7 +202,7 @@
     "catalogText23": "AI-98 petrol",
     "catalogTitle3": "Biodiesel fuel",
 
-    "catalogWhy": "Why should you choose “ALT\"?",
+    "catalogWhy": "WHY SHOULD YOU CHOOSE ALT?",
     "catalog1": "One of the first biodiesel producers",
     "catalog2": "Ready for a research exchange",
     "catalog3": "Information openness",
@@ -211,7 +213,7 @@
 
     "collectorsMain": "FOR WASTE COLLECTORS",
     "collectorsSecond": "We offer cooperation to legal entities and individual entrepreneurs in order to purchase and use waste products for the production биодизельногоof biodiesel in the future",
-    "collectorsActions": "You carry out an activity",
+    "collectorsActions": "YOU CARRY OUT AN ACTIVITY",
     "collectorsAction1": "By collection",
     "collectorsAction2": "Transportation",
     "collectorsAction3": "Processing",

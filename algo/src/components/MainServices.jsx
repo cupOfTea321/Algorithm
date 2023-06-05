@@ -32,7 +32,7 @@ const MainServices = () => {
                 </Typography>
                 <Grid container sx={{
                     marginTop: {sm: '3%', xs: '5%'},
-                    marginBottom: {sm: '3%', xs: '330px'},
+                    marginBottom: {sm: '3%', xs: '30px'},
                     display: {sm: 'grid'},
 
                     justifyContent: {lg: 'space-between', md: 'center', sm: 'center', xs: 'center'},

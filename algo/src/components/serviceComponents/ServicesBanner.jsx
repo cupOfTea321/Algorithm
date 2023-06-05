@@ -2,7 +2,7 @@ import React from 'react';
 import {Box, Container, Grid, Typography} from "@mui/material";
 import star from '../../assets/star.png'
 import starBack from '../../assets/starBack.png'
-import backImg from "../../assets/servicesBack.png";
+import backImg from "../../assets/servicesBackBlack2.png";
 const ServicesBanner = ({storage}) => {
     return (
         <Box sx={{

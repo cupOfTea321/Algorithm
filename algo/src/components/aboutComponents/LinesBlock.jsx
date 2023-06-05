@@ -69,7 +69,7 @@ const Lines = () => {
             <Box sx={{display: {lg: 'none', md: 'flex', sm: 'flex', xs: 'flex'}, flexDirection: 'column', alignItems: 'center'}}>
                 {afterLines.map((item, index) => (
                     <Box key={index} sx={{textAlign: 'center'}}>
-                        <img src={mobileLine} style={{height: '90px', width: '31px', backgroundSize: 'cover', marginBottom: '20px', marginTop: '20px'}} alt=""/>
+                        <img src={mobileLine} style={{height: '40px', width: '16px', backgroundSize: 'cover', marginBottom: '20px', marginTop: '20px'}} alt=""/>
                         <Typography sx={{fontSize: {sm:'28px', xs: '24px'}, textAlign: 'center'}}>{item}</Typography>
                     </Box>
 

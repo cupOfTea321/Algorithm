@@ -131,7 +131,7 @@ const PowersBlock = () => {
             <Box sx={{display: {md: 'none', sm: 'flex', xs: 'flex'}, flexDirection: 'column', alignItems: 'center'}}>
                 {powersFirst.map(item => (
                     <Box key={item.name} sx={{textAlign: 'center'}}>
-                        <img src={mobileLine} style={{height: '60px', width: '16px', backgroundSize: 'cover', marginBottom: '20px', marginTop: '20px'}} alt=""/>
+                        <img src={mobileLine} style={{height: '40px', width: '16px', backgroundSize: 'cover', marginBottom: '20px', marginTop: '20px'}} alt=""/>
                         <Typography className={'oswFont'} sx={{fontSize: {sm:'28px', xs: '24px'}, textAlign: 'center'}}>{item.name}</Typography>
                         <Typography sx={{fontSize: {sm:'28px', xs: '20px'}, textAlign: 'center'}}>{item.about}</Typography>
                     </Box>
@@ -139,7 +139,7 @@ const PowersBlock = () => {
                 ))}
                 {powersSecond.map(item => (
                     <Box key={item.name} sx={{textAlign: 'center'}}>
-                        <img src={mobileLine} style={{height: '60px', width: '16px', backgroundSize: 'cover', marginBottom: '20px', marginTop: '20px'}} alt=""/>
+                        <img src={mobileLine} style={{height: '40px', width: '16px', backgroundSize: 'cover', marginBottom: '20px', marginTop: '20px'}} alt=""/>
                         <Typography className={'oswFont'}  sx={{fontSize: {sm:'28px', xs: '24px'}, textAlign: 'center'}}>{item.name}</Typography>
                         <Typography sx={{fontSize: {sm:'28px', xs: '20px'}, textAlign: 'center'}}>{item.about}</Typography>
                     </Box>

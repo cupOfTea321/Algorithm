@@ -15,7 +15,7 @@ const CollectorsQualities = () => {
     ]
     return (
         <Container maxWidth={'md'}>
-        <Box sx={{
+        <Box  sx={{
             background: '#908B8B',
             color: 'white',
             borderRadius: '20px',
@@ -26,7 +26,8 @@ const CollectorsQualities = () => {
             textAlign: {lg: 'left', md: 'center', xs: 'center'},
             margin: '0 auto',
             marginTop: '-10%',
-        }} className={'animate__animated animate__fadeInUp wow'}>
+            boxShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
+        }} className={'animate__animated animate__fadeInUp wow '}>
             <Typography className={'oswFont'} sx={{ fontSize: {md: '32px', sm: '28px', xs: '28px'}, textAlign: 'center'}}>
                 {t("collectorsActions")}
             </Typography>

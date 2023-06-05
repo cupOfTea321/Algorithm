@@ -1,6 +1,6 @@
 import React from 'react';
 import {Box, Container, Typography} from "@mui/material";
-import backImg from "../../assets/servicesBack.png";
+import backImg from "../../assets/servicesBackBlack2.png";
 import {useTranslation} from "react-i18next";
 const CollectorsMain = () => {
     const { t, i18n } = useTranslation();

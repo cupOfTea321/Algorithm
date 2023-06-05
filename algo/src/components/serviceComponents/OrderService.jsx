@@ -14,6 +14,8 @@ const OrderService = ({order}) => {
         setOpen(!open);
     };
     return (
+        <>
+
             <Box sx={{
                 display: 'flex',
                 background: '#908B8B',
@@ -28,8 +30,9 @@ const OrderService = ({order}) => {
                 width: {md: '100%', sm: '100%'},
                 margin: '0 auto',
                 marginTop: '4%',
+                boxShadow: '0 0 5px rgba(0, 0, 0, 0.3)',
             }}>
-                <Box className={'animate__animated animate__fadeInLeft wow'} sx={{width: {lg: '50%', sm: '100%', xs: '100%'}}}>
+                <Box className={'animate__animated animate__fadeInLeft wow'} sx={{width: {lg: '50%', sm: '100%', xs: '100%'},}}>
                     <Typography className={'oswFont'} sx={{fontSize: '34px', marginBottom: '20px'}}>
                         {t("orderService")}
                     </Typography>
@@ -51,29 +54,31 @@ const OrderService = ({order}) => {
                     </Backdrop>
                 </Box>
 
-                {/* Фоновые круги */}
-                <Box component={'img'} src={backRound} sx={{
-                    position: 'absolute',
-                    width: '150px',
-                    zIndex: '-1',
-                    left: '10%',
-                    top: '780px'
-                }}/>
-                <Box component={'img'} src={backRound} sx={{
-                    position: 'absolute',
-                    width: '150px',
-                    zIndex: '-1',
-                    right: '10%',
-                    top: '800px'
-                }}/>
-                <Box component={'img'} src={backRound} sx={{
-                    position: 'absolute',
-                    width: '150px',
-                    zIndex: '-1',
-                    left: '50%',
-                    top: '980px'
-                }}/>
+
             </Box>
+            {/* Фоновые круги */}
+            <Box component={'img'} src={backRound} sx={{
+                position: 'absolute',
+                width: '150px',
+                zIndex: '-1',
+                left: '10%',
+                top: '780px'
+            }}/>
+            <Box component={'img'} src={backRound} sx={{
+                position: 'absolute',
+                width: '150px',
+                zIndex: '-1',
+                right: '10%',
+                top: '800px'
+            }}/>
+            <Box component={'img'} src={backRound} sx={{
+                position: 'absolute',
+                width: '150px',
+                zIndex: '-1',
+                left: '50%',
+                top: '980px'
+            }}/>
+        </>
     );
 };
 
