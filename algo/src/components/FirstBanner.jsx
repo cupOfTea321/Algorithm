@@ -23,7 +23,7 @@ const FirstBanner = () => {
                     width: {md: '50%', xs: '100%'},
                     display: 'flex',
                     flexDirection: 'column',
-                    paddingTop: '10%',
+                    paddingTop: {md: '2%', xs: '10%'},
                     // justifyContent: 'center',
                     gap: 2
                 }} className={'animate__animated animate__fadeInLeft'}>
