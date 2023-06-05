@@ -11,46 +11,50 @@ const AboutBlock = () => {
         t("warning3"),
         t("warning4"),
     ]
-    const size = {fontSize: {md: '18px', sm: '14px', xs: '12px'}, marginBottom: '20px'}
+    const rightText = {fontSize: {md: '18px', sm: '14px', xs: '12px'}, marginBottom: '20px', textAlign: 'right'}
+    const leftText = {fontSize: {md: '18px', sm: '14px', xs: '12px'}, marginBottom: '20px', textAlign: 'left'}
     return (
-            <Container maxWidth={'md'}>
+            <Container maxWidth={'md'} sx={{position: 'relative'}}>
                 <Box sx={{
                     color: 'white',
-                display: 'flex',
-                alignItems: 'center',
-                flexDirection: {lg: 'row', md:'column', sm: 'column', xs: 'column'},
                 paddingTop: {lg: '25%', md: '25%', sm: '30%', xs: '70%'},
-                gap: 2
-            }}>
-                <Box className={'animate__animated animate__fadeInLeft'} sx={{color: 'black', background: 'white', width: {lg: '100%', md: '80%'}, padding: '30px', borderRadius: '20px ', marginRight: {md: '10px', sm: '0', xs: '0'}}}>
-                    <Typography variant={'h4'} sx={{fontSize: {sm: '32px', xs: '28px'}, marginBottom: '20px', paddingTop: '20px', fontWeight: 'bold'}}>
+                gap: 2,
+                width: '100%'}}>
+                <Box className={'animate__animated animate__fadeInLeft'} sx={{width:  '80%', }}>
+                    <Typography variant={'h4'} sx={{fontSize: {sm: '32px', xs: '28px'}, marginBottom: '20px', paddingTop: '20px', fontWeight: 'bold', textAlign: 'left'}}>
                         {t("leftAbout")}
                     </Typography>
-                    <Typography sx={size}>
-                        {t("p1")}
-                    </Typography>
-                    <Typography sx={size}>
+                    <Typography sx={leftText}>
+                        <Typography component={'span'} sx={{fontSize: {md: '18px', sm: '14px', xs: '12px'}, marginBottom: '20px', color: '#A40000', fontWeight: 'bold'}}>{t("p1")}</Typography>
                         {t("p2")}
                     </Typography>
-                    <Typography sx={size}>
-                        {t("p3")}
-                    </Typography>
                 </Box>
-                <Box sx={{width: '100%'}} className={'animate__animated animate__fadeInRight wow'}>
+                <Box sx={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-end'}} className={'animate__animated animate__fadeInRight wow'}>
+                    <Box sx={{}}>
                     <Typography component={'h2'} sx={{fontSize: {sm: '32px', xs: '28px'},marginBottom: '28px' }}>
                         {t("rightAbout")}
+                        <Typography component={'span'} sx={{fontSize: {sm: '32px', xs: '28px'},marginBottom: '28px', color: '#A40000', fontWeight: 'bold'}}>{t("rightAboutRed")}</Typography>
                     </Typography>
-                    {points.map((point, index) => (
-                        <Box key={index} sx={{display: 'flex', alignItems: 'center'}}>
-                            <Box component={'img'} src={rightPoint} alt="rightPoint" sx={{height: {sm: '30px', xs: '20px'}, width: {sm: '30px', xs: '20px'}, marginRight: '20px', marginBottom: '20px'}}/>
-                            <Typography sx={size}>
-                                {point}
-                            </Typography>
-                        </Box>
 
-                    ))}
+                        {points.map((point, index) => (
+                            <Box key={index} sx={{textAlign: 'right'}}>
+                                {/*<Box component={'img'} src={rightPoint} alt="rightPoint" sx={{height: {sm: '30px', xs: '20px'}, width: {sm: '30px', xs: '20px'}, marginRight: '20px', marginBottom: '20px'}}/>*/}
+                                <Typography sx={leftText}>
+                                    {point}
+                                </Typography>
+                            </Box>
+
+                        ))}
+                    </Box>
+
                 </Box>
             </Box>
+                <Box component={'img'} src={rightPoint} sx={{
+                    width: '60px',
+                    position: 'absolute',
+                    top: '180px',
+                    left: '-40px'
+                }}/>
         </Container>
     );
 };

@@ -15,7 +15,7 @@ const AboutBanner = () => {
         setOpen(!open);
     };
     return (
-        <Container maxWidth={'md'}>
+        <Container maxWidth={'md'} sx={{}}>
             <Box sx={{
                 color: 'white',
                 width: {md: '80%', xs: '100%'},
@@ -52,6 +52,9 @@ const AboutBanner = () => {
                     <SecondBtn height={'70px'}/>
                 </Box>
             </Box>
+            <Typography sx={{position: 'absolute', bottom: '10px', left: '5px', fontSize: '10px'}}>
+                Rochak Shukla
+            </Typography>
         </Container>
     );
 };
