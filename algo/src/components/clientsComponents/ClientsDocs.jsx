@@ -79,7 +79,7 @@ const ClientsDocs = () => {
     ]
     return (
         <>
-            <Typography className={'animate__animated animate__fadeInUp wow'} sx={{fontSize: {sm:'32px', xs: '28px'}, color: '#A81A1A'}}>
+            <Typography className={'animate__animated animate__fadeInUp wow'} sx={{fontSize: {sm:'24px', xs: '21px'}, color: '#A81A1A'}}>
                 {t("docs")}
             </Typography>
 
@@ -88,7 +88,7 @@ const ClientsDocs = () => {
                 marginTop: {sm: '2%', xs: '5%'},
                 display: {md: 'grid'},
                 // height: '100vh',
-                padding: '0 60px',
+                padding: '0 30px',
                 justifyContent: 'space-between',
                 gridTemplateColumns: {md: 'repeat(2, 320px)', sm: 'repeat(1, 420px)'},
                 gridTemplateRows: {md: 'repeat(2, 320px)', sm: 'repeat(1, 320px)', xs: 'repeat(1, 220px)'},
@@ -106,7 +106,7 @@ const ClientsDocs = () => {
                               onClick={doc.toggle}>
                             <DocImgBlock link={doc.link} image={doc.img} name={doc.name}/>
                         </Box>
-                        <Typography className={'serviceName'} sx={{fontSize: {sm: '24px', xs: '18px'}, color: '#A40000',
+                        <Typography className={'serviceName'} sx={{fontSize: {sm: '18px', xs: '14px'}, color: '#A40000',
                             textDecoration: 'underline', textAlign: 'center', marginTop: {sm:'20px', xs: '-30px'}, marginBottom: {xs:'20px'},
                             filter: 'blur(0px)', opacity: '1'}}>
                             {doc.name}

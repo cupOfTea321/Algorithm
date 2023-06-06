@@ -1,9 +1,9 @@
 import React from 'react';
 import {Backdrop, Box, Container, Typography} from "@mui/material";
-import logo from '../../assets/footerLogo.png'
 import policy from '../../docs/policy.pdf'
 import FooterLinks from "./FooterLinks.jsx";
 import {useTranslation} from "react-i18next";
+
 const Footer = () => {
     const { t, i18n } = useTranslation();
     const [openPolicy, setOpenPolicy] = React.useState(false);
@@ -45,7 +45,7 @@ const Footer = () => {
                     {/*    </Typography>*/}
                     {/*</Box>*/}
                     <FooterLinks/>
-                <Box sx={{display: 'flex', flexDirection: 'column', alignItems: {sm: 'flex-end', xs: 'center'}, marginTop: '20px'}}>
+                <Box sx={{display: 'flex', flexDirection: 'column', alignItems: {sm: 'flex-end', xs: 'center'}, marginTop: '20px', paddingBottom: '30px'}}>
                     {/*<a  target="_blank" rel="noopener noreferrer">Политика обработки персональных данных</a>*/}
 
                     <Typography onClick={handleTogglePolicy} component={'a'} sx={{color: 'black', textAlign: 'right', textDecoration: 'underline'}}>

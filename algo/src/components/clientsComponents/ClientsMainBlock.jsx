@@ -39,8 +39,8 @@ const ClientsMainBlock = () => {
                     {t("clientsMain2")}
                 </Typography>
                 <Box sx={{display: 'flex', width: '100%', justifyContent: 'center', gap: {sm: 6, xs: 1}, marginTop: '3%'}}>
-
-                    <Box  sx={{display: 'flex', flexDirection: 'column',background: 'white', borderRadius: '20px',  width: {md: '100%',sm: '82%', xs: '98%'}, paddingTop: '20px', paddingBottom: '0px'}}>
+                    <Box  sx={{display: 'flex', flexDirection: 'column',background: 'transparent', borderRadius: '20px',
+                        width: {md: '86.5%',sm: '82%', xs: '98%'}, paddingTop: '20px', paddingBottom: '0px'}}>
                         <ClientsDocs/>
                     </Box>
                 </Box>
