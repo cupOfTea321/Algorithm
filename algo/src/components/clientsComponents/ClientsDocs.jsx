@@ -79,7 +79,7 @@ const ClientsDocs = () => {
     ]
     return (
         <>
-            <Typography className={'animate__animated animate__fadeInUp wow'} sx={{fontSize: {sm:'24px', xs: '21px'}, color: '#A81A1A'}}>
+            <Typography className={'animate__animated animate__fadeInUp wow'} sx={{fontSize: {sm:'24px', xs: '21px'}, color: '#A81A1A', marginBottom: '1%'}}>
                 {t("docs")}
             </Typography>
 
@@ -101,7 +101,7 @@ const ClientsDocs = () => {
                             display: 'flex',
                             justifyContent: 'center',
                             // marginBottom: '40px',
-                            height: {sm: '220px', xs: '240px'}
+                            height: {md: '230px', sm: '220px', xs: '240px'}
                         }}
                               onClick={doc.toggle}>
                             <DocImgBlock link={doc.link} image={doc.img} name={doc.name}/>

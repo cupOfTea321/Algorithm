@@ -23,7 +23,7 @@ const NewsAboutBlock = () => {
         {title: t("problemTitle3"), text: t("problem3")},
         {title: t("problemTitle4"), text: t("problem4")},
     ]
-    const problemTitle = { fontWeight: 'bold', fontSize: {xs: '18px'}}
+    const problemTitle = { fontWeight: 'bold', fontSize: {xs: '18px'}, color: '#A40000'}
     const problemText = {marginBottom: '20px', fontSize: {xs: '18px'}}
     return (
         <Container maxWidth={'md'}>
@@ -34,7 +34,7 @@ const NewsAboutBlock = () => {
                 <Box component={'hr'} sx={{backgroundColor: '#A40000', color: '#A40000', height: '2px', border: 'none', width: '80%', margin: '0 auto'}}/>
                 <Box  sx={{display: 'flex', marginTop: '30px', flexDirection: {md: 'row', sm: 'column', xs: 'column'}}}>
 
-                    <Box sx={{ width: {md: '65%'}, marginRight: '10px'}} className={'animate__animated animate__fadeInRight wow'}>
+                    <Box sx={{ width: {md: '65%'}, marginRight: '10px'}} className={'animate__animated animate__fadeInLeft wow'}>
                         {problems.map((problem, index) => (
                             <Box key={index}>
                                 <Typography sx={problemTitle}>{problem.title}</Typography>
@@ -51,7 +51,7 @@ const NewsAboutBlock = () => {
                             {t("problem5")}
                         </Typography>
 
-                        <Typography sx={problemTitle}>
+                        <Typography sx={problemText}>
                             {t("problemTitle6")}
                         </Typography>
                         <Typography sx={problemText}>

@@ -15,7 +15,7 @@ const ServicesBtn = ({text, img, link}) => {
             }}>
                 <img className={'serviceImg'} src={img} style={{width: '30px'}}/>
                 <Typography sx={{
-                    fontSize: {lg: '18px', sm: '14px'},
+                    fontSize: {sm: '14px'},
                     color: 'white',
                     marginLeft: '20px'
                 }}>

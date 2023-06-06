@@ -1,6 +1,7 @@
 import React from 'react';
 import {Box, Container, Typography} from "@mui/material";
 import rightPoint from '../../assets/pointRight.png'
+import round from '../../assets/backRound.png'
 import {useTranslation} from "react-i18next";
 
 const AboutBlock = () => {
@@ -14,7 +15,7 @@ const AboutBlock = () => {
     const rightText = {fontSize: {md: '18px', sm: '14px', xs: '12px'}, marginBottom: '20px', textAlign: 'right'}
     const leftText = {fontSize: {md: '18px', sm: '14px', xs: '12px'}, marginBottom: '20px', textAlign: 'left'}
     return (
-            <Container maxWidth={'md'} sx={{position: 'relative'}}>
+            <Container maxWidth={'md'} sx={{position: 'relative', zIndex: '1'}}>
                 <Box sx={{
                     color: 'white',
                 paddingTop: {lg: '25%', md: '25%', sm: '30%', xs: '70%'},
@@ -54,6 +55,20 @@ const AboutBlock = () => {
                     position: 'absolute',
                     top: '180px',
                     left: '-40px'
+                }}/>
+                <Box component={'img'} src={round} sx={{
+                    width: '120px',
+                    position: 'absolute',
+                    bottom: '0px',
+                    left: '40px',
+                    zIndex: '-1'
+                }}/>
+                <Box component={'img'} src={round} sx={{
+                    width: '90px',
+                    position: 'absolute',
+                    bottom: '400px',
+                    right: '40px',
+                    zIndex: '-1'
                 }}/>
         </Container>
     );

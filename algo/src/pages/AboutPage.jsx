@@ -42,6 +42,7 @@ const AboutPage = () => {
             <Box sx={{
                 paddingBottom: {sm: '20px', xs: '60px'},
                 paddingTop: {sm: '20px', xs: '60px'},
+                marginTop: {sm: '60px', xs: '60px'},
                 background: `url(${backImg3})`,
                 backgroundSize: {sm: 'cover'},
                 // backgroundPosition: 'bottom left',

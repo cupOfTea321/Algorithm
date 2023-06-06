@@ -4,6 +4,7 @@ import WhyDelivery from "../components/deliveryComponents/WhyDelivery.jsx";
 import FormBlock from "../components/UI/FormBlock.jsx";
 import {Box, Paper} from "@mui/material";
 import backPhone from '../assets/deliveryPhone.png'
+import AdvantagesBlock from "../components/UI/AdvantagesBlock.jsx";
 const DeliveryPage = () => {
     return (
         <>
@@ -19,7 +20,8 @@ const DeliveryPage = () => {
                 <MainDelivery/>
 
             </Paper>
-            <WhyDelivery/>
+            {/*<WhyDelivery/>*/}
+            <AdvantagesBlock/>
             <Box sx={{marginTop: '6%'}}>
                 <FormBlock/>
             </Box>

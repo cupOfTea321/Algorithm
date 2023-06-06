@@ -2,6 +2,7 @@ import React from 'react';
 import CollectorsMain from "../components/clientsComponents/CollectorsMain.jsx";
 import CollectorsQualities from "../components/clientsComponents/CollectorsQualities.jsx";
 import CollectorsLaws from "../components/clientsComponents/CollectorsLaws.jsx";
+import {Box} from "@mui/material";
 
 const CollectorsPage = () => {
 
@@ -10,7 +11,17 @@ const CollectorsPage = () => {
         <>
             <CollectorsMain/>
             <CollectorsQualities/>
-            <CollectorsLaws/>
+            <Box sx={{
+                background: '#5b5959',
+                color: 'white',
+                paddingTop: '20px',
+                paddingBottom: '10px',
+                marginTop: '40px',
+                marginBottom: '-90px'
+            }}>
+                <CollectorsLaws/>
+            </Box>
+
         </>
 
     );

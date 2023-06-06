@@ -30,7 +30,7 @@ const CircleBlock = () => {
                 </Typography>
                 <Box sx={{
                     display: {sm: 'flex', xs: 'none'},
-                    // flexDirection: 'column',
+                    flexDirection: 'column',
                     textAlign: 'center',
                     justifyContent: 'center',
                     alignItems: 'center',
@@ -38,15 +38,30 @@ const CircleBlock = () => {
                     fontWeight: '500',
                     // width: {md: '100%', sm: '80%'},
                 }}>
-                    <Box component={'img'} src={circleImg} sx={{height: {md: '150px', sm: '130px'}, width: { md: '150px', sm: '130px'}, marginBottom: '40px'}}/>
-                    <Grid container>
-                        {advantages.map((item, index) => (
-                            <Grid key={index} item sx={{width: '45%', margin: '0 auto', paddingBottom: '40px'}}>
-                                <Typography sx={typo2}>{item}</Typography>
-                            </Grid>
-                        ))}
+                    {/*<Box component={'img'} src={circleImg} sx={{height: {md: '150px', sm: '130px'}, width: { md: '150px', sm: '130px'}, marginBottom: '40px'}}/>*/}
+                    <Box sx={{width: '40%', margin: '0 auto', paddingBottom: '40px'}}>
+                        <Typography sx={typo2}>{t("benefit1")}</Typography>
+                    </Box>
+                    <Box sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                        <Typography sx={typography}>{t("benefit6")}</Typography>
+                        <Typography sx={typography}>{t("benefit2")}</Typography>
+                    </Box>
+                    <Box component={'img'} src={circleImg} sx={{width: {lg:'200px', md: '150px', sm: '130px'}, margin: '0 auto'}}/>
+                    {/*<Grid container>*/}
+                    {/*    {advantages.map((item, index) => (*/}
+                    {/*        <Grid key={index} item sx={{width: '45%', margin: '0 auto', paddingBottom: '40px'}}>*/}
+                    {/*            <Typography sx={typo2}>{item}</Typography>*/}
+                    {/*        </Grid>*/}
+                    {/*    ))}*/}
 
-                    </Grid>
+                    {/*</Grid>*/}
+                    <Box  sx={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                        <Typography sx={typography}>{t("benefit5")}</Typography>
+                        <Typography sx={typography}>{t("benefit3")}</Typography>
+                    </Box>
+                    <Box sx={{width: '60%', margin: '0 auto', paddingTop: '40px'}}>
+                        <Typography sx={typo2}>{t("benefit4")}</Typography>
+                    </Box>
 
 
 

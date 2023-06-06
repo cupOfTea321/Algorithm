@@ -38,26 +38,13 @@ const ClientsMainBlock = () => {
                 }}>
                     {t("clientsMain2")}
                 </Typography>
-                <Box sx={{display: 'flex', width: '100%', justifyContent: 'center', gap: {sm: 6, xs: 1}, marginTop: '3%'}}>
-                    <Box  sx={{display: 'flex', flexDirection: 'column',background: 'transparent', borderRadius: '20px',
-                        width: {md: '86.5%',sm: '82%', xs: '98%'}, paddingTop: '20px', paddingBottom: '0px'}}>
+                <Box sx={{display: 'flex', width: '100%', justifyContent: 'center', gap: {sm: 2, xs: 1}, marginTop: '-1%'}}>
+                    <Box  sx={{display: 'flex', flexDirection: 'column',background: 'transparent',
+                        width: {md: '96%',sm: '82%', xs: '98%'}}}>
                         <ClientsDocs/>
                     </Box>
                 </Box>
-                {/*<Box  sx={{display: 'flex', flexDirection: 'column', width: {sm: '82%', xs: '98%'}, margin: '0 auto', background: 'white', borderRadius: '20px', gap: 2,  paddingTop: '20px', paddingBottom: '20px'}}>*/}
-                {/*    <Typography className={'animate__animated animate__fadeInDown wow'} sx={{fontSize: {sm: '32px', xs: '28px'}, color: '#A81A1A'}}>*/}
-                {/*        {t("algo")}*/}
-                {/*    </Typography>*/}
-                {/*    <Typography sx={{fontSize: '20px'}} className={'animate__animated animate__fadeInUp wow'}>*/}
-                {/*        {t("algoAbout")}*/}
-                {/*    </Typography>*/}
-                {/*    <Typography sx={{fontSize: '20px'}} className={'animate__animated animate__fadeInUp wow'}>*/}
-                {/*        <NavLink to={'collectors'} style={{textDecoration: 'underline', color: 'black', marginBottom: '10px'}}>*/}
-                {/*            {t("algoMore")}*/}
-                {/*        </NavLink>*/}
-                {/*    </Typography>*/}
-                {/*</Box>*/}
-                <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', justifyContent: 'center', marginTop: '2%', marginBottom: '10%', paddingBottom: {sm: '3%', xs:'10%'}}}>
+                <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', justifyContent: 'center', marginTop: '-4%', marginBottom: '15%', }}>
                     <MyBtn onClick={handleToggle} radius={'20px'} height={'70px'}/>
                     <Backdrop
                         sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}

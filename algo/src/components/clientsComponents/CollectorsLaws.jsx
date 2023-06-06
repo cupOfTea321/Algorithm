@@ -20,22 +20,25 @@ const CollectorsLaws = () => {
     ]
     return (
         <Container maxWidth={'md'}>
-            <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '5%', marginBottom: '5%'}}>
+            <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '20px'}}>
                 <DeleteIcon sx={{width: '100px', height: '100px', color: '#A40000'}}/>
                 <Typography className={'oswFont'} sx={{textAlign: 'center', fontSize: '28px', width: {sm: '60%', xs: '100%'}}}>
                     {t("collectorsLaws")}
                 </Typography>
             </Box>
-            <Grid spacing={4    } container className={'animate__animated animate__fadeInLeft wow'}>
+            <Grid spacing={4} container className={'animate__animated animate__fadeInLeft wow'}>
                 {lawsList.map((law, index) => (
-                    <Grid item md={6} sm={12} key={index} sx={{marginBottom: '3%'}}>
+                    <Grid item md={6} sm={12} key={index} sx={{marginBottom: '20px'}}>
                         <Typography sx={{fontSize: '28px', color: '#A40000'}}>{law.title}</Typography>
                         <Typography sx={{fontSize: '28px'}}>{law.body}</Typography>
                     </Grid>
 
                 ))}
                 {/*<Typography sx={{fontSize: '28px', color: '#A40000', marginBottom: '10px'}}>{t("collectorsPoint2")}</Typography>*/}
-                <Typography sx={{fontSize: '28px', color: '#A40000', marginLeft: 4}}>{t("collectorsPoint")}</Typography>
+                <Grid item md={6} sm={12} sx={{marginBottom: '20px'}}>
+                    <Typography sx={{fontSize: '28px', color: '#A40000'}}>{t("collectorsPoint")}</Typography>
+
+                </Grid>
 
             </Grid>
             <Box className={'animate__animated animate__fadeInUp wow'} sx={{display: 'flex', justifyContent: 'center', margin: '4% 0'}}>
