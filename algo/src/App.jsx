@@ -23,8 +23,9 @@ const routes = [
     { path: 'services',  element: <ServicesPage />, nodeRef: createRef() },
     { path: 'services/storage',  element: <StorageService />, nodeRef: createRef() },
     { path: 'services/transportation',  element: <TransportationService />, nodeRef: createRef() },
-    { path: 'services/registration',  element: <RegistrationService />, nodeRef: createRef() },
-    { path: 'services/shipment',  element: <ShipmentService />, nodeRef: createRef() },
+    // registration shipment поменяны местами
+    { path: 'services/shipment',  element: <RegistrationService />, nodeRef: createRef() },
+    { path: 'services/registration',  element: <ShipmentService />, nodeRef: createRef() },
     { path: 'clients',  element: <ForClientsPage />, nodeRef: createRef() },
     { path: 'clients/collectors',  element: <CollectorsPage />, nodeRef: createRef() },
     { path: '*',  element: <NotFound />, nodeRef: createRef() },

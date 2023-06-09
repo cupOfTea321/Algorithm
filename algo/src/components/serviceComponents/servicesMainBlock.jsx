@@ -34,7 +34,7 @@ const ServicesMainBlock = () => {
                 alignItems: 'center',
                 color: 'white'
             }}>
-                    <Typography  className={'oswFont'} variant={'h1'} sx={{ fontSize: {md: '36px', sm: '30px', xs: '28'},}}>
+                    <Typography  className={'oswFont'} variant={'h1'} sx={{ fontSize: {md: '36px', sm: '30px', xs: '28px'},}}>
                         {t("servicesMain")}
                     </Typography>
                     <Box  sx={{

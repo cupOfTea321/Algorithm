@@ -15,7 +15,7 @@ const CollectorsPage = () => {
                 background: '#5b5959',
                 color: 'white',
                 paddingTop: '20px',
-                paddingBottom: '10px',
+                paddingBottom: {md: '40px', sm: '80px', xs: '100px'},
                 marginTop: '40px',
                 marginBottom: '-90px'
             }}>

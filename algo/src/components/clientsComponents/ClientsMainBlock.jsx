@@ -26,10 +26,10 @@ const ClientsMainBlock = () => {
                 gap: 4,
                 textAlign: 'center',
             }} >
-                <Typography className={'oswFont'} variant={'h1'} sx={{
+                <Typography className={'oswFont animate__animated animate__fadeInDown wow'} variant={'h1'} sx={{
                     fontSize: {md: '36px', sm: '30px', xs: '28px'},
                     color: '#A81A1A',
-                }} className={'animate__animated animate__fadeInDown wow'}>
+                }}>
                     {t("clientsMain")}
                 </Typography>
                 <Typography className={'animate__animated animate__fadeInUp wow'} variant={'h3'} sx={{

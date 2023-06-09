@@ -19,7 +19,7 @@ const AboutPage = () => {
                 background: `url(${backImg})`,
                 // background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg})`,
                 backgroundSize: {sm: 'cover'},
-                backgroundPosition: 'bottom left',
+                backgroundPosition: {sm: 'bottom left', xs: 'right top'},
                 // borderRadius: {sm:'0 0px 15% 15%',xs: '0 0 0 0'},
                 zIndex: '100',
                 position: 'absolute',

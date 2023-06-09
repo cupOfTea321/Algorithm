@@ -32,7 +32,7 @@ const AboutBlock = () => {
                 </Box>
                 <Box sx={{width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'flex-end'}} className={'animate__animated animate__fadeInRight wow'}>
                     <Box sx={{}}>
-                    <Typography component={'h2'} sx={{fontSize: {sm: '32px', xs: '28px'},marginBottom: '28px' }}>
+                    <Typography component={'h2'} sx={{fontSize: {sm: '32px', xs: '28px'}, fontWeight: 'bold', marginBottom: '28px' }}>
                         {t("rightAbout")}
                         <Typography component={'span'} sx={{fontSize: {sm: '32px', xs: '28px'},marginBottom: '28px', color: '#A40000', fontWeight: 'bold'}}>{t("rightAboutRed")}</Typography>
                     </Typography>
@@ -50,12 +50,6 @@ const AboutBlock = () => {
 
                 </Box>
             </Box>
-                <Box component={'img'} src={rightPoint} sx={{
-                    width: '60px',
-                    position: 'absolute',
-                    top: '180px',
-                    left: '-40px'
-                }}/>
                 <Box component={'img'} src={round} sx={{
                     width: '120px',
                     position: 'absolute',

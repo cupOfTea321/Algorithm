@@ -3,13 +3,13 @@ import {Box, Container, Grid, Typography} from "@mui/material";
 import star from '../../assets/star.png'
 import starBack from '../../assets/starBack.png'
 import backImg from "../../assets/servicesBackBlack2.png";
-const ServicesBanner = ({storage}) => {
+const ServicesBanner = ({author = false, storage, back = `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg})`}) => {
     return (
         <Box sx={{
             paddingBottom: '5%',
-            background: `linear-gradient(68.5deg, rgba(65, 59, 59, 0.62) 35.69%, rgba(105, 105, 105, 0) 133.84%), url(${backImg})`,
+            background: back,
             backgroundSize: 'cover',
-
+            position: 'relative'
         }}>
         <Container maxWidth={'md'}>
             <Box sx={{
@@ -46,6 +46,9 @@ const ServicesBanner = ({storage}) => {
                     ))}
                 </Grid>
             </Box>
+            {author && <Typography sx={{position: 'absolute', left: '5px', bottom: '10px', fontSize: '10px'}}>
+                rawpixel.com
+            </Typography>}
         </Container>
         </Box>
     );

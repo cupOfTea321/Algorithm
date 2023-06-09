@@ -42,16 +42,17 @@ const AboutBanner = () => {
                     flexDirection: {sm: 'row', xs: 'column'},
                 }}>
                     <MyBtn onClick={handleToggle} radius={'32px'} height={'70px'}/>
-                    <Backdrop
-                        sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}
-                        open={open}
-                        onClick={handleClose}
-                    >
-                        <ModalForm/>
-                    </Backdrop>
+
                     <SecondBtn height={'70px'}/>
                 </Box>
             </Box>
+            <Backdrop
+                sx={{ color: 'black',backgroundColor: 'rgba(0,0,0,0.3)', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                open={open}
+                onClick={handleClose}
+            >
+                <ModalForm/>
+            </Backdrop>
             <Typography sx={{position: 'absolute', bottom: '10px', left: '5px', fontSize: '10px'}}>
                 Rochak Shukla
             </Typography>

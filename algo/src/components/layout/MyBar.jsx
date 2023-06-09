@@ -32,9 +32,9 @@ const MyBar = () => {
     const pagesMobile = [
         {name: t("main"), route: '/'},
         {name: t("about"), route: '/about'},
-        {name: t("clients"), route: '/clients'},
+        {name: t("docsNav"), route: '/clients'},
         {name: t("catalog"), route: '/delivery'},
-        {name: t("docsNav"), route: '/services'},
+        {name: t("services"), route: '/services'},
         {name: t("collectors"), route: '/clients/collectors'},
     ];
     //for backdrop
