@@ -16,7 +16,7 @@ const AboutBanner = () => {
     };
     return (
         <Container maxWidth={'md'} sx={{}}>
-            <Box sx={{
+            <Box id={'aboutBanner'} sx={{
                 color: 'white',
                 width: {md: '80%', xs: '100%'},
                 display: 'flex',

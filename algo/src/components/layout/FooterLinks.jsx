@@ -75,7 +75,7 @@ const FooterLinks = () => {
                     {t("footerAbout")}
                 </Typography>
                 {aboutCol.map(row => (
-                    <NavLink key={row.id} to={'/about'}>
+                    <NavLink key={row.id} to={'/about#'}>
                         <Typography
 
 

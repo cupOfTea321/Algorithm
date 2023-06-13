@@ -38,7 +38,7 @@ function App() {
         const wow = new WOW({
             // Настройки по умолчанию
             offset: 100,
-            mobile: false,
+            // mobile: false,
             live: true,
         });
 
